@@ -1,0 +1,135 @@
+{
+  "header": {
+    "index": "Home",
+    "companyIntro": "About",
+    "product": "Products",
+    "applied": "Application",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "address": "No. 20-1, Sanlong Street, Shulin District, New Taipei City 238, Taiwan",
+    "phone": "02-8688-8680",
+    "fax": "02-8688-8678",
+    "email": "{'sale121@liyun.com.tw'}",
+    "company": "Liyun Enterprise Co., Ltd.",
+    "intro": "Supplier of insulation materials, conductive fabrics, etc."
+  },
+  "index": {
+    "intro": "<b>Liyun Enterprise Co., Ltd.</b> was founded in September 1987, initially engaged in the processing of materials such as red shell paper, electric wood boards, insulating paper, Mylar, Film, Nomex, copper foil (coil), etc. It has now expanded to include EMI prevention products. Due to the emphasis on customer needs and services, in recent years, the company has been dedicated to researching the latest technologies, increasing machinery and equipment, strengthening the production of insulation materials for various technological products such as electronics, communications, computers, and peripherals, providing a variety of high-quality products, and using laser machinery for sampling to serve customers.",
+    "feature1": "Innovative Technology",
+    "feature1_subtitle": "Innovative <br/> technology",
+    "feature2": "Collaboration in Application Fields",
+    "feature2_subtitle": "Cooperation <br/> in application fields",
+    "feature3": "Customized Service",
+    "feature3_subtitle": "Customized service",
+    "feature4": "Creating Added Value",
+    "feature4_subtitle": "Create added value",
+    "application": {
+      "intro": "Liyun constantly innovates technology and actively researches and develops high-quality insulation materials, conductive fabrics, conductive fabric foam, foam, fireproof adhesive tapes, absorbing materials, and conductive copper foil, etc. It adds the latest technology production equipment to produce a series of precise specifications, ultra-high quality, and user-friendly products, establishing a good reputation in the industry.",
+      "product1": "Electronic Communication",
+      "product2": "Battery",
+      "product3": "Medical",
+      "product4": "Networking",
+      "product5": "Automotive",
+      "product6": "Semiconductor",
+      "product7": "Computer",
+      "product8": "POS"
+    }
+  },
+  "product": {
+    "addAskPrice": "Add to Inquiry List",
+    "removeAskPrice": "Remove from Inquiry List"
+  },
+  "company": {
+    "companyIntro": {
+      "title": "Company Introduction",
+      "phase1": "Founded in 1987, as a world leading Auxiliary materials、consumables designer and manufacturer, ，<b>Li Yun Enterprise Co., Ltd.</b> is committed to providing Insulation 、 Conductive total solutions for electronic 、 electrical and other major industries. ",
+      "phase2": "Listening to the needs of customers, <b>Li Yun Enterprise</b> is doing research and the most advanced technologies continuously and providing a variety of conductive、insulating products for variety industries. They include, but are not limited to: electronic communications、network communications、 industrial computers、POS、automotive electronics、vehicles, energy、battery、medical、semiconductor, etc. "
+    },
+    "companyPhliosophy": {
+      "title": "Business Philosophy",
+      "phase1": "LI YUN ENTERPRISE is doing research and the most advanced technologies continuously, upgrade the equipment as well. Then, we manufacture Insulation Materials、Conductive Fabric、EMI Shielding Gasket、Sponge、Fire Barrier Tape、Absorber and conductive Copper Foil that with exact specification、the high quality also easy to use. Build up the reputation in Field."
+    },
+    "companyValue": {
+      "title": "Create Higher Added Value for Customers",
+      "phase1": "LI YUN ENTERPRISE is an ISO 9001 qualified manufacturer. You may find the product you need in our website. Also, we focus on the Custom-made product with special design/specification/properties/material and our product compliance RoHS、REACH and UL. If you have any questions, welcome to contact us in anytime."
+    },
+    "companyProduct": {
+      "phase1": "Liyun Enterprise Co., Ltd. produces a series of precise specifications, high-quality products. And with the latest technology production equipment, we can accept customer commissions to design and manufacture products with special specifications and characteristics.",
+      "phase2": {
+        "title": "UL Fire Barrier Tape compliant UL94 VTM-0",
+        "content": "UL Fire Barrier Tape compliant UL with good at resistance chemical solvent applied on Insulation for Electronic、 Electrical components, with a variety of colors.  "
+      },
+      "phase3": {
+        "title": "Special Insulation material and foaming material",
+        "content": "Insulation/foaming material with better on sealing、insulation and EMI Shielding is suitable on Power Supply、Hard Disk Drive、TV and Security cameras、Printed Circuit Board、Laptop and various business machines."
+      },
+      "phase4": {
+        "title": "Conductive Material、Conductive Fabric and Copper/Aluminum Foil",
+        "content": "We provide various of metal conduction product, such as Copper Foil、Aluminum Foil and Alloy copper. Also, we have Conductive Fabric、Conductive gasket、conductive adhesive as well."
+      },
+      "phase5": {
+        "title": "Design and Manufacture Insulation Material compliant UL applied in electronics and electric appliance",
+        "content": ""
+      },
+      "phase6": {
+        "title": "Copper (Aluminum) Foil Back Adhesive Processing, Manufacturing",
+        "content": ""
+      },
+      "phase7": {
+        "title": "Absorber",
+        "content": "EMC and suppress the internal noise of RF are the best solutions in wireless and high frequency epoch."
+      },
+      "phase8": {
+        "title": "Metal Conduction Antenna、EMI、Nickel Plate cladding",
+        "content": "Copper Foil、Aluminum Foil、Alloy copper and Nickel sheet."
+      }
+    },
+    "rba": {
+      "title": "RBA",
+      "content": "RESPONSIBLE BUSINESS ALLIANCE CODE OF CONDUCT <br> The Responsible Business Alliance (RBA), formerly the Electronic Industry Citizenship Coalition (EICC), Code of Conduct establishes standards to ensure that working conditions in the electronics industry or industries in which electronics is a key component and its supply chains are safe, that workers are treated with respect and dignity, and that business operations are environmentally responsible and conducted ethically."
+    },
+    "workerPolicy": {
+      "title": "Human rights policy of labors",
+      "content": "<b>Li Yun</b> will notify our employees about their human rights, including the basic laws and regulations. We established effective multi-communication mechanisms, wages, and benefits. We offer multi-training opportunities, eliminate forced labor to promote the freely chosen employment. In accordance with Labor Standards Act, <br>Li Yun</b> has abolished child laborers, supporting the physical and psychological well-being of minor laborers. For our employees, we provide annual training and notify employees of their rights by company website and email, to make sure our employees fully understand the contents and the spirit of the RBA policy."
+    },
+    "moralPolicy": {
+      "title": "Ethics policy",
+      "content": "<b>Li Yun</b> ’s employees are forbidden to do any illegal business activities and shall avoid conflicts of interests, accept a personal commission, rebate or any benefits inappropriate in any way."
+    },
+    "enviromentPolicy": {
+      "title": "Environmental health and safety policy",
+      "phase1": "<b>Li Yun</b> promotes environmental management and is committed to providing a healthy and good working environment for our employees.",
+      "phase2": "",
+      "phase3": "",
+      "phase4": "",
+      "phase5": "",
+      "phase6": "",
+      "phase7": ""
+    },
+    "moralMineral": {
+      "title": "Sourcing policy for conflict mineral",
+      "content": "We do not use or work with suppliers who source conflict minerals such as, Tin(Sn), tantalum(Ta), tungsten(W), gold(Au) from the Democratic Republic of Congo or any illegal mining activities. We request our suppliers sign the “Conflict Minerals Reporting Template (CMRT)”, ”Declaration of Metal Conflict-Free”, and ”Letter of commitment of supplier for RBA”, making sure our sourcing satisfies the laws and regulations and satisfies our customers request."
+    },
+    "hsf": {
+      "title": "HSF Policy",
+      "content": "<b>Li Yun</b> acts on the promotion of green purchasing policy, environmental protection, comply with the required of customers and laws and regulations."
+    }
+  },
+  "contact": {
+    "heading": "If you have any questions or suggestions, please complete the form and send them to us.",
+    "title": "Contact Inquiry",
+    "name": "Name",
+    "company": "Company/Organization",
+    "phone": "Phone",
+    "email": "E-mail",
+    "content": "Message Content",
+    "askingPrice": "Product for Inquiry",
+    "submit": "Submit",
+    "success": "Your message has been sent successfully. We will contact you as soon as possible. Thank you!",
+    "successTitle": "Message Sent Successfully",
+    "close": "close",
+    "isSending": "Sending",
+    "askingPriceEmpty": "You can find the product you want to inquire about on the product introduction page and contact us by adding it to the inquiry form."
+  }
+}
