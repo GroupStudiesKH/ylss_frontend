@@ -284,25 +284,17 @@ header {
 }
 
 footer {
-    background-image: url('../assets/img/footer_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-height: 370px;
-    height: 370px;
+    background-color: #d6d6d6;
+    max-height: 215px;
+    height: 215px;
 
     .company_info {
-        margin-top: 60px;
 
         .address {
             margin-top: 20px;
-            border-left: 2px solid #fff;
             line-height: 15px;
             padding-left: 10px;
 
-            a{
-                color: #fff !important;
-            }
 
             .material-icons {
                 font-size: 12pt;
@@ -317,17 +309,20 @@ footer {
     }
 
     .copyright {
-        img {
-            width: 50%;
-        }
-
-        margin: 250px 0 0 auto;
-        bottom: 10px;
+        background-color: #274e80;
+        width: 100%;
         text-align: right;
         font-size: 10pt;
+        line-height: 40px;
+    }
 
-        @media (max-width: 992px) {
-            margin-top: 10px;
+    .group_logo{
+        margin-top: -80px;
+        text-align: right;
+
+        img{
+            height: 40px;
+            padding: 0 10px;
         }
     }
 }
