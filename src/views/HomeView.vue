@@ -108,13 +108,13 @@ export default {
     <div id="company_info">
       <div class="row">
         <div class="col-md-6 col-lg-6 col-12" id="company_pic">
-          <div id="blue_triangle"></div>
           <img src="/assets/img/company_pic.png" alt="" />
         </div>
         <div class="col-md-6 col-lg-6 col-12" id="company_intro">
-          <h2>LIYUN</h2>
           <p v-html="$t('index.intro')"></p>
-          <router-link :to="{name: 'company'}" class="pill_button"> Learn More </router-link>
+          <router-link :to="{name: 'company'}" class="pill_button"> Learn More </router-link><br/><br/>
+          <router-link :to="{name: 'company'}" class="pill_button mt-5"> Learn More </router-link>
+
         </div>
       </div>
     </div>
@@ -122,22 +122,22 @@ export default {
     <div class="container" :class="isIntroScolled ? `scrolled` : ``" id="intro">
       <div class="row">
         <div class="col-6 col-md-3 badge">
-          <img src="/assets/img/index_intro_innovative_badge.png" alt="" />
+          <img src="/assets/img/home_section1.webp" alt="" />
           <h3 v-html="t('index.feature1')" v-if="locale != 'eng'"></h3>
           <p class="h5" v-html="t('index.feature1_subtitle')"></p>
         </div>
         <div class="col-6 col-md-3 badge">
-          <img src="/assets/img/index_intro_cooperation_badge.png" alt="" />
+          <img src="/assets/img/home_section2.webp" alt="" />
           <h3 v-html="t('index.feature2')" v-if="locale != 'eng'"></h3>
           <p class="h5" v-html="t('index.feature2_subtitle')"></p>
         </div>
         <div class="col-6 col-md-3 badge">
-          <img src="/assets/img/index_intro_customized_badge.png" alt="" />
+          <img src="/assets/img/home_section3.webp" alt="" />
           <h3 v-html="t('index.feature3')" v-if="locale != 'eng'"></h3>
           <p class="h5" v-html="t('index.feature3_subtitle')"></p>
         </div>
         <div class="col-6 col-md-3 badge">
-          <img src="/assets/img/index_intro_value_badge.png" alt="" />
+          <img src="/assets/img/home_section4.webp" alt="" />
           <h3 v-html="t('index.feature4')" v-if="locale != 'eng'"></h3>
           <p class="h5" v-html="t('index.feature4_subtitle')"></p>
         </div>

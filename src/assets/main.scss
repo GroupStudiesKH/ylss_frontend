@@ -400,6 +400,8 @@ main {
 
                 img {
                     width: 100%;
+                    max-width: 200px;
+                    margin: 20px 0;
                 }
 
                 @media screen and (max-width: 992px) {
@@ -453,10 +455,6 @@ main {
             overflow: hidden;
 
             #company_pic {
-                background-image: url('../assets/img/index_intro_blue_bg.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: right -8px center;
                 height: 560px;
                 margin-top: -50px;
                 z-index: 1;
