@@ -1,10 +1,15 @@
 {
   "header": {
     "index": "首頁",
-    "companyIntro": "關於俐元",
+    "companyIntro": "公司介紹",
     "product": "產品介紹",
-    "applied": "應用產業",
-    "contact": "聯絡我們"
+    "productSpec": "產品規格",
+    "techEquipment": "技術設備",
+    "news": "最新消息",
+    "sustainability": "企業永續",
+    "contact": "聯絡我們",
+    "recruitment": "人才招募",
+    "tradeService": "貿易服務"
   },
   "footer": {
     "address": "238新北市樹林區三龍街20-1號",

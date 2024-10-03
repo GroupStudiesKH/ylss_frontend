@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar navbar-expand-lg navbar-light">
+  <header class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="/assets/img/logo.png" alt="" />
@@ -23,11 +23,34 @@
           <li class="nav-item">
             <a class="nav-link" href="/product">{{ t("header.product") }}</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="/applied">{{ t("header.applied") }}</a>
-          </li> -->
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'contact'}">{{ t("header.contact") }}<div class="bg-danger header-notify" v-if="cartItem.length">{{ cartItem.length }}</div></router-link>
+            <a class="nav-link" href="/product-spec">{{ t("header.productSpec") }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tech-equipment">{{ t("header.techEquipment") }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news">{{ t("header.news") }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sustainability">{{ t("header.sustainability") }}</a>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{name: 'contact'}">{{ t("header.contact") }}</router-link>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/recruitment">{{ t("header.recruitment") }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/trade-service">{{ t("header.tradeService") }}</a>
+          </li>
+          <li class="nav-item ask_price">
+            <a class="nav-link" href="/trade-service">
+              <span class="material-icons">&#xea20;</span>
+
+              <span>詢價</span>
+              <div class="bg-danger header-notify">{{ cartItem.length }}</div>
+            </a>
           </li>
           <li class="nav-item language_switch dropdown">
             <div
@@ -37,7 +60,6 @@
               aria-expanded="false"
             >
               <span class="material-icons">&#xE894;</span>
-              <span>Language</span>
             </div>
 
             <ul class="dropdown-menu">
