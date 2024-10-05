@@ -68,7 +68,10 @@ strong {
 
 header {
 
-    background-color: rgba(20, 32, 50, 0.75);
+    background-color: rgba(20, 32, 50, 1);
+    &.home{
+        background-color: rgba(20, 32, 50, 0.75);
+    }
     z-index: 10;
 
     &.navbar {
@@ -758,25 +761,16 @@ main {
     &#applied,
     &#contact {
         .banner {
-            margin: 0 auto;
+            margin: 131px auto 0 auto;
             position: relative;
             max-width: 100%;
             z-index: -1;
+            background-size: cover; 
+            background-position: top center; 
+            height: 528px;
 
-            img {
-                width: 100%;
-            }
-
-            @media (max-width: 768px) {
-                display: flex;
-                justify-content: center;
-                overflow: hidden;
-
-                img {
-                    height: 130px;
-                    width: auto;
-                }
-
+            @media (max-width: 1280px) {
+                height: 350px;
             }
 
         }

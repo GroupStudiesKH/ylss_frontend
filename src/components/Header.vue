@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar navbar-expand-lg">
+  <header class="navbar navbar-expand-lg" :class="{ 'home': isHome }">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="/assets/img/logo.png" alt="" />
@@ -85,12 +85,15 @@
 <script>
 import { useI18n } from "vue-i18n";
 import cartService from "@/service/cart-service.js";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
+import { useRoute } from "vue-router";
+
 export default {
   name: "Header",
   setup() {
     const { t, locale } = useI18n();
     const cartItem = ref([]);
+    const route = useRoute();
     const localeOptions = ref([
       {
         lang: 'eng',
@@ -104,7 +107,11 @@ export default {
         lang: 'jp',
         name: '日本語'
       }
-    ])
+    ]);
+
+    const isHome = computed(() => {
+      return route.name === 'home';
+    });
 
     const setLocale = (lang) => {
       locale.value = lang;
@@ -126,7 +133,8 @@ export default {
       locale,
       setLocale,
       localeOptions,
-      cartItem
+      cartItem,
+      isHome
     };
   },
 };
