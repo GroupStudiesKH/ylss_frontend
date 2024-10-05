@@ -22,6 +22,7 @@
                     <img src="/assets/img/ac_logo.png" class="mt-4">
                 </div>
             </div>
+            <div id="footer_right_shape"></div>
         </div>
         <div class="copyright text-light">
             <div class="container">Copyright © Li Yun Enterprise Co., Ltd All rights reserved.</div>
