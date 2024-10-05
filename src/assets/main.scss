@@ -333,7 +333,7 @@ main {
     .pill_button {
         background-color: #fff;
         border-radius: 50px;
-        box-shadow: 0px 2px 10px #ccc;
+        border: 2px solid #ccc;
         text-decoration: none;
         padding: 5px 20px;
         color: #696969;
@@ -345,11 +345,18 @@ main {
             padding: 10px 20px;
         }
 
+        &.active{
+            background-color: #137db8;
+            color: #fff !important;
+            border: 2px solid #137db8;
+        }
+
         &:hover {
             background-color: #137db8;
             color: #fff !important;
             animation: fadein 0.5s;
-            box-shadow: none;
+            border: 2px solid #137db8;
+
         }
 
         @keyframes fadein {
@@ -599,7 +606,14 @@ main {
         }
 
 
-
+        #iso_quality{
+            padding: 100px 0 0 0;
+            margin-bottom: 200px;
+            font-size: 20px;
+            h3{
+                color: #274e80;
+            }
+        }
     }
 
     &#product,

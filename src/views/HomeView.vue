@@ -121,7 +121,7 @@ export default {
           <router-link :to="{ name: 'company' }" class="pill_button">
             Learn More </router-link
           ><br /><br />
-          <router-link :to="{ name: 'company' }" class="pill_button mt-5">
+          <router-link :to="{ name: 'company' }" class="pill_button mt-5 active">
             Learn More
           </router-link>
         </div>
@@ -175,6 +175,20 @@ export default {
                 目標2050年實現淨零排放，實踐企業永續發展願景
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="iso_quality">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>ISO 9001、JIS mark及IATF 16949 品質政策</h3>
+            <p>我們全面執行ISO 9001、JIS Q1001、及IATF 16949等相關作業標準來架構品質管理系統，以提升不銹鋼專業能力及服務品質，並落實持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會依據品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。</p>
+            <router-link :to="{ name: 'company' }" class="pill_button mt-5">
+            Learn More
+          </router-link>
           </div>
         </div>
       </div>
