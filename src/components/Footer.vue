@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 d-lg-block d-none">
-                    <img src="/assets/img/logo.png" class="mt-4">
+                    <img src="/assets/img/logo.png" class="mt-4 logo">
                 </div>
                 <div class="col-lg-3 col-md-6 company_info col-12" >
-                    <p class="h4">{{ $t('footer.company') }}</p>
+                    <p class="h5">{{ $t('footer.company') }}</p>
                     <p class="h6">{{ $t('footer.intro') }}</p>
                 </div>
                 <div class="col-lg-3">

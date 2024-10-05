@@ -286,28 +286,41 @@ header {
 }
 
 footer {
-    background-color: #d6d6d6;
+    background: rgb(189,189,189);
+    background: linear-gradient(166deg, rgba(189,189,189,1) 0%, rgba(211,211,211,1) 100%);
     max-height: 215px;
     height: 215px;
+    padding: 20px 0;
+
+    img.logo{
+        width: 100%;
+    }
 
     .company_info {
 
-        .address {
-            margin-top: 20px;
-            line-height: 15px;
-            padding-left: 10px;
+        margin-top: 1em;
 
-
-            .material-icons {
-                font-size: 12pt;
-                margin-right: 5px;
-            }
-
+        .h5{
+            font-weight: 700;
         }
 
         @media (max-width: 992px) {
             margin-top: 30px;
         }
+    }
+
+    .address {
+        margin-top: 20px;
+        line-height: 15px;
+        padding-left: 10px;
+        font-size: 16px;
+        height: 150px;
+
+        .material-icons {
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
     }
 
     .copyright {
