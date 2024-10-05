@@ -77,17 +77,12 @@ export default {
           :key="bannerIndex"
         >
           <a :href="banner.link">
-            <img :src="banner.img_url" alt="" />
-          </a>
-        </div>
-        <div
-          class="carousel-item"
-          :class="bannerIndex == 0 ? `active` : ``"
-          v-for="(banner, bannerIndex) in bannerLists"
-          :key="bannerIndex"
-        >
-          <a :href="banner.link">
-            <img :src="banner.img_url" alt="" />
+            <div :style="{ backgroundImage: `url(${banner.img_url})` }" class="banner-content">
+              <div class="container">
+                <h1>We embrace the world and engage into life.</h1>
+                <p>To Value Relationship and Sustainability</p>
+              </div>
+            </div>
           </a>
         </div>
       </div>
