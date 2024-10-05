@@ -537,89 +537,65 @@ main {
                 }
             }
 
-            #blue_triangle {
+            #company_info_right_shape {
                 position: absolute;
-                height: 560px;
-                width: 50%;
-                z-index: 2;
-                background-image: url('../assets/img/blue_triangle.png');
+                height: 900px;
+                width: 400px;
+                right: -60px;
+                top: 900px;
+                opacity: 0.7;
+                z-index: 0;
+                background-image: url('../assets/img/right_side_triangle.webp');
                 background-repeat: no-repeat;
-                background-size: auto;
+                background-size: contain;
                 background-position: right bottom;
-
-                @media (max-width: 1280px) {
-                    height: 500px;
-                }
-
-                @media (max-width: 1200px) {
-                    height: 450px;
-                }
-
-                @media (max-width: 992px) {
-                    height: 400px;
-                }
-
-                @media (max-width: 768px) {
-                    display: none;
-                }
             }
         }
 
-        #applications {
-            background-color: #f1f1f1;
-            margin-top: 100px;
-
-            #applications_title {
-                margin-top: -30px;
-                margin-bottom: 50px;
-
-                h2 {
-                    font-size: 36pt;
-                    color: #137db8;
-                    font-weight: 200;
-                }
-
-                p {
-                    font-size: 14pt;
-                    font-weight: 300;
-                    margin: 20px 0;
-                    line-height: 30px;
-                }
-            }
-
-            #industry_type {
-                padding-bottom: 30px;
-                color: #696969;
-
-                img {
-                    width: 100%;
-                }
-
-                p {
-                    font-size: 16pt;
-                    font-weight: 400;
-                }
-            }
-        }
-
-        #qualified {
-            margin-bottom: 50px;
-            text-align: center;
+        #csr_green{
+            background-image: url('../assets/img/csr_factory.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            left:0;
+            height: 750px;
+            margin-top: 50px;
             padding-top: 50px;
-
-            h2 {
-                font-size: 36pt;
-                color: #137db8;
-                font-weight: 200;
-                text-align: left;
+            @media (max-width: 768px) {
+                background-position: center left;
+                height: 520px;
+            }
+            
+            h3{
+                font-weight: 600;
+                font-size: 30px;
+                color: #eeff41;
+                letter-spacing: 2px;
+                margin-top: 20px;
             }
 
-            img {
-                margin: 30px auto 0 auto;
-                width: 100%;
-                max-width: 900px;
-            }
+            ul {
+                list-style-type: none;
+                padding-left: 0;
 
+                li {
+                    position: relative;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+
+
+                    &::before {
+                        content: '✓';
+                        position: absolute;
+                        font-weight: 900;
+
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
         }
 
 

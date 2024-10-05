@@ -70,17 +70,23 @@ export default {
     <div class="banner"></div>
     <div id="bannerCarousel" class="carousel slide">
       <div class="carousel-inner banner">
-        <div class="carousel-item" :class="bannerIndex == 0 ? `active` : ``" v-for="(banner, bannerIndex) in bannerLists" :key="bannerIndex">
-          <a
-            :href="banner.link"
-          >
+        <div
+          class="carousel-item"
+          :class="bannerIndex == 0 ? `active` : ``"
+          v-for="(banner, bannerIndex) in bannerLists"
+          :key="bannerIndex"
+        >
+          <a :href="banner.link">
             <img :src="banner.img_url" alt="" />
           </a>
         </div>
-        <div class="carousel-item" :class="bannerIndex == 0 ? `active` : ``" v-for="(banner, bannerIndex) in bannerLists" :key="bannerIndex">
-          <a
-            :href="banner.link"
-          >
+        <div
+          class="carousel-item"
+          :class="bannerIndex == 0 ? `active` : ``"
+          v-for="(banner, bannerIndex) in bannerLists"
+          :key="bannerIndex"
+        >
+          <a :href="banner.link">
             <img :src="banner.img_url" alt="" />
           </a>
         </div>
@@ -112,11 +118,16 @@ export default {
         </div>
         <div class="col-md-6 col-lg-6 col-12" id="company_intro">
           <p v-html="$t('index.intro')"></p>
-          <router-link :to="{name: 'company'}" class="pill_button"> Learn More </router-link><br/><br/>
-          <router-link :to="{name: 'company'}" class="pill_button mt-5"> Learn More </router-link>
-
+          <router-link :to="{ name: 'company' }" class="pill_button">
+            Learn More </router-link
+          ><br /><br />
+          <router-link :to="{ name: 'company' }" class="pill_button mt-5">
+            Learn More
+          </router-link>
         </div>
       </div>
+
+      <div id="company_info_right_shape"></div>
     </div>
 
     <div class="container" :class="isIntroScolled ? `scrolled` : ``" id="intro">
@@ -144,60 +155,27 @@ export default {
       </div>
     </div>
 
-    <div id="applications">
+    <div id="csr_green">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12" id="applications_title">
-            <h2>APPLICATIONS</h2>
-            <p>
-              {{ t("index.application.intro") }}
-            </p>
-            <!-- <router-link :to="{name: 'applied'}" class="pill_button"> Learn More </router-link> -->
+          <div class="col-12">
+            <img src="/assets/img/euro_logo.webp">
+            <h3>遠龍在乎綠色使命</h3>
+            <ul>
+              <li>
+                遠龍致力打造由內而外的綠色體質
+              </li>
+              <li>
+                採用ISO 50001能源管理系統及歐盟認證再生能源
+              </li>
+              <li>
+                優先採購綠色環保標章原物料，選用再生材料製作包裝
+              </li>
+              <li>
+                目標2050年實現淨零排放，實踐企業永續發展願景
+              </li>
+            </ul>
           </div>
-        </div>
-
-        <div class="row" id="industry_type">
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_commication.png" alt="" />
-            <p>{{ t("index.application.product1") }}</p>
-          </div>
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_battery.png" alt="" />
-            <p>{{ t("index.application.product2") }}</p>
-          </div>
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_medi.png" alt="" />
-            <p>{{ t("index.application.product3") }}</p>
-          </div>
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_commication.png" alt="" />
-            <p>{{ t("index.application.product4") }}</p>
-          </div>
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_vehicle.png" alt="" />
-            <p>{{ t("index.application.product5") }}</p>
-          </div>
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_ic.png" alt="" />
-            <p>{{ t("index.application.product6") }}</p>
-          </div>
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_computer.png" alt="" />
-            <p>{{ t("index.application.product7") }}</p>
-          </div>
-          <div class="col-6 col-sm-3">
-            <img src="/assets/img/index_application_pos.png" alt="" />
-            <p>{{ t("index.application.product8") }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" id="qualified">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>QUALFIED</h2>
-          <img src="/assets/img/index_qualified.png" alt="" />
         </div>
       </div>
     </div>
