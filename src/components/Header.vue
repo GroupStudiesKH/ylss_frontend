@@ -60,6 +60,8 @@
               aria-expanded="false"
             >
               <span class="material-icons">&#xE894;</span>
+              <span class="lang_switch_text">Language</span>
+
             </div>
 
             <ul class="dropdown-menu">
