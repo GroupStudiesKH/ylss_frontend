@@ -29,7 +29,8 @@ li {
     color: #fff !important;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 600;
 }
 
@@ -69,9 +70,10 @@ header {
 
     background-color: rgba(20, 32, 50, 0.75);
     z-index: 10;
+
     &.navbar {
 
-        .navbar-toggler-icon{
+        .navbar-toggler-icon {
             width: 1em;
             height: 1em;
         }
@@ -136,7 +138,7 @@ header {
                         border-bottom: 1.5px solid #137db8;
                     }
 
-                    .header-notify{
+                    .header-notify {
                         border-radius: 50%;
                         width: 20px;
                         height: 20px;
@@ -151,8 +153,7 @@ header {
                 }
 
                 .nav-item:nth-child(n+9) .nav-link,
-                .nav-item:last-child .nav-link
-                {
+                .nav-item:last-child .nav-link {
                     border-right: none;
                 }
             }
@@ -186,7 +187,8 @@ header {
             border-radius: 10px;
             font-size: 12pt;
             line-height: 16px;
-            .material-icons{
+
+            .material-icons {
                 font-size: 20px;
                 vertical-align: text-top;
                 margin-right: 5px;
@@ -316,11 +318,11 @@ footer {
         line-height: 40px;
     }
 
-    .group_logo{
+    .group_logo {
         margin-top: -80px;
         text-align: right;
 
-        img{
+        img {
             height: 40px;
             padding: 0 10px;
         }
@@ -345,7 +347,7 @@ main {
             padding: 10px 20px;
         }
 
-        &.active{
+        &.active {
             background-color: #137db8;
             color: #fff !important;
             border: 2px solid #137db8;
@@ -559,22 +561,23 @@ main {
             }
         }
 
-        #csr_green{
+        #csr_green {
             background-image: url('../assets/img/csr_factory.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
             width: 100%;
-            left:0;
+            left: 0;
             height: 750px;
             margin-top: 50px;
             padding-top: 50px;
+
             @media (max-width: 768px) {
                 background-position: center left;
                 height: 520px;
             }
-            
-            h3{
+
+            h3 {
                 font-weight: 600;
                 font-size: 30px;
                 color: #eeff41;
@@ -606,12 +609,31 @@ main {
         }
 
 
-        #iso_quality{
+        #iso_quality {
             padding: 100px 0 0 0;
             margin-bottom: 200px;
             font-size: 20px;
-            h3{
+
+            h3 {
                 color: #274e80;
+            }
+
+            .container{
+                z-index: 1;
+                position: relative;
+            }
+
+            #index_left_shape {
+                position: absolute;
+                height: 900px;
+                width: 277px;
+                opacity: 0.7;
+                z-index: 0;
+                background-image: url('../assets/img/home_left_bottom_shape.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left bottom;
+                transform: translateY(-550px);
             }
         }
     }
@@ -634,6 +656,7 @@ main {
                 display: flex;
                 justify-content: center;
                 overflow: hidden;
+
                 img {
                     height: 130px;
                     width: auto;
@@ -662,12 +685,12 @@ main {
                     }
                 }
 
-                p{
+                p {
                     margin: 0;
                 }
             }
 
-            .table{
+            .table {
                 max-width: 100% !important;
             }
         }
@@ -696,7 +719,7 @@ main {
             }
         }
 
-        #productMenuBtn{
+        #productMenuBtn {
             background-color: #137db8;
         }
 
@@ -1020,11 +1043,12 @@ main {
 
         .company_logo {
             text-align: center;
+
             img {
                 width: 100%;
 
                 @media (max-width: 576px) {
-                    &#logo_img{
+                    &#logo_img {
                         width: 50%;
                     }
                 }
@@ -1115,8 +1139,8 @@ main {
         }
     }
 
-    .page-item{
-        &.active a{
+    .page-item {
+        &.active a {
             color: #fff !important;
         }
     }

@@ -192,6 +192,7 @@ export default {
           </div>
         </div>
       </div>
+      <div id="index_left_shape"></div>
     </div>
   </main>
   <Footer />
