@@ -39,9 +39,9 @@ const router = createRouter({
       component: () => import("../views/CertView.vue"),
     },
     {
-      path: "/tech",
-      name: "tech",
-      component: () => import("../views/TechView.vue"),
+      path: "/equip",
+      name: "equip",
+      component: () => import("../views/EquipView.vue"),
     },
     {
       path: "/applied",

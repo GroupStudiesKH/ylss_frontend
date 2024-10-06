@@ -13,9 +13,24 @@ export default {
   },
   setup() {
     const { locale } = useI18n();
+    const selectedImage = ref(null);
+    const showModal = ref(false);
+
+    const openModal = (imageSrc) => {
+      selectedImage.value = imageSrc;
+      showModal.value = true;
+    };
+
+    const closeModal = () => {
+      showModal.value = false;
+    };
 
     return {
       locale,
+      selectedImage,
+      showModal,
+      openModal,
+      closeModal,
     };
   },
 };
@@ -23,10 +38,9 @@ export default {
 
 <template>
   <Header />
-  <main id="company">
+  <main id="tech">
     <div class="banner" style="background-image: url('/assets/img/tech_banner.webp');">
     </div>
-
 
     <div class="container">
       <div class="row">
@@ -41,7 +55,7 @@ export default {
             <div class="col-12">
               <div class="row">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100" src="/assets/img/zm1.webp">
+                    <img class="w-100 clickable-image" src="/assets/img/zm1.webp" @click="openModal('/assets/img/zm1.webp')">
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎二十重式冷軋機(ZM1) </h4>
@@ -52,7 +66,7 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100" src="/assets/img/ba2.webp">
+                    <img class="w-100 clickable-image" src="/assets/img/ba2.webp" @click="openModal('/assets/img/ba2.webp')">
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎光輝退火線-(BA2)</h4>
@@ -63,7 +77,7 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100" src="/assets/img/spl.webp">
+                    <img class="w-100 clickable-image" src="/assets/img/spl.webp" @click="openModal('/assets/img/spl.webp')">
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎調質精軋機(SPL)</h4>
@@ -74,7 +88,7 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100" src="/assets/img/tll.webp">
+                    <img class="w-100 clickable-image" src="/assets/img/tll.webp" @click="openModal('/assets/img/tll.webp')">
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎張力整平線(TLL) </h4>
@@ -85,7 +99,7 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100" src="/assets/img/sl.webp">
+                    <img class="w-100 clickable-image" src="/assets/img/sl.webp" @click="openModal('/assets/img/sl.webp')">
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎鋼捲分條線(SL)</h4>
@@ -97,12 +111,20 @@ export default {
           </div>
         </div>
       </div>
-
     </div>
 
     <div id="mid_right_shape"></div>
     <div id="bottom_left_shape"></div>
 
+    <!-- Image Modal -->
+    <transition name="fade">
+      <div v-if="showModal" class="modal-overlay" @click="closeModal">
+        <div class="modal-content" @click.stop>
+          <img :src="selectedImage" alt="Enlarged image" class="modal-image">
+          <button class="close-button" @click="closeModal">&times;</button>
+        </div>
+      </div>
+    </transition>
   </main>
   <Footer />
 </template>

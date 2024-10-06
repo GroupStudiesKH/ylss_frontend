@@ -27,7 +27,7 @@
             <a class="nav-link" href="/product-spec">{{ t("header.productSpec") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tech-equipment">{{ t("header.techEquipment") }}</a>
+            <router-link class="nav-link" :to="{name: 'equip'}">{{ t("header.techEquipment") }}</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/news">{{ t("header.news") }}</a>
