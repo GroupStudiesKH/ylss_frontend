@@ -66,6 +66,10 @@ strong {
     margin: 0;
 }
 
+.grecaptcha-badge{
+    display: none !important;
+}
+
 header {
 
     background-color: rgba(20, 32, 50, 1);
@@ -1056,19 +1060,18 @@ main {
                 }
 
                 .heading {
-                    border-left: 5px solid #067db7;
+                    border-left: 5px solid #274e80;
                     margin-left: 20px;
                 }
 
                 .secondHeading {
-                    border-left: 5px solid #4cc8f4;
+                    border-left: 5px solid #d52505;
                     margin-left: 20px;
                 }
 
                 input.form-control,
                 textarea.form-control {
-                    background-color: #f3f3f3;
-                    border: none;
+                    border: 2px solid #ededed;
 
                     &.error {
                         border: 1px solid red;
@@ -1368,7 +1371,7 @@ main {
         }
     }
 
-    &#tech{
+    &#tech, &#contact{
         #mid_right_shape {
             position: absolute;
             height: 250px;
@@ -1402,6 +1405,32 @@ main {
 
             @media (max-width: 991px) {
                 display: none;
+            }
+        }
+
+        .contact_bottom{
+            height: 865px;
+            width: 100%;
+            background-image: url('../assets/img/contact_bottom.webp');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right center;
+            margin-top: -100px;
+
+            @media (max-width: 991px) {
+                height: 480px;
+                width: 100%;
+                margin-top: 0px;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            @media (max-width: 768px) {
+                height: 290px;
+                width: 100%;
+                margin-top: 0px;
+                background-size: cover;
+                background-position: center center;
             }
         }
     }
