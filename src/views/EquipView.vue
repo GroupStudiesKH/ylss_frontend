@@ -38,7 +38,7 @@ export default {
 
 <template>
   <Header />
-  <main id="tech">
+  <main id="equip">
     <div class="banner" style="background-image: url('/assets/img/tech_banner.webp');">
     </div>
 
