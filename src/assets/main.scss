@@ -918,7 +918,7 @@ main {
             }
         }
 
-        #applied_content {
+        #company_content {
             .heading {
                 font-size: 24px;
                 color: #067db7;
@@ -929,19 +929,48 @@ main {
             }
 
             p {
-                font-size: 18px;
+                font-size: 16px;
                 color: #696969;
                 line-height: 30px;
+            }
+
+            h3{
+                color: #274e80;
+                margin-bottom: 10px;
             }
 
             img {
                 width: 100%;
                 height: auto;
+
+                &.heading_image {
+                    width: calc(100% + (100vw - 100%) / 2);
+                    max-width: 70vw;
+                    object-fit: cover;
+
+                    @media (min-width: 1920px) {
+                        max-width: 1300px;
+                    }
+
+                    @media (max-width: 1600px){
+                        max-width: 75vw;
+                    }
+
+                    @media (max-width: 1440px){
+                        max-width: 74vw;
+                    }
+
+                    @media (max-width: 1366px){
+                        max-width: 74vw;
+                    }
+
+                    @media (max-width: 1280px) {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
             }
 
-            .col {
-                border-bottom: 2px dotted #ccc;
-            }
         }
 
         #contact_content {
@@ -1247,6 +1276,27 @@ main {
             @media (max-width: 786px) {
                 border-left: none;
                 padding-left: 0;
+            }
+        }
+    }
+
+    &#company{
+        #company_intro_bottom{
+            height: 1331px;
+            width: 100%;
+            background-image: url('../assets/img/company_intro_image.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+
+            @media (max-width: 991px) {
+                height: 850px;
+            }
+
+            #company_intro_bottom_text{
+                background-color: #274e80;
+                color: #fff;
+                padding: 30px 20px;
             }
         }
     }
