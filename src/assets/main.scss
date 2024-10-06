@@ -16,7 +16,7 @@ a {
     color: #696969 !important;
 
     &:hover {
-        color: #137db8 !important;
+        color: #274e80 !important;
     }
 }
 
@@ -140,12 +140,12 @@ header {
                         }
 
                         &:hover {
-                            color: #137db8;
+                            color: #274e80;
                         }
                     }
 
                     &:hover {
-                        border-bottom: 1.5px solid #137db8;
+                        border-bottom: 1.5px solid #274e80;
                     }
 
                     .header-notify {
@@ -273,7 +273,7 @@ header {
 
                 .dropdown-item:hover {
                     background-color: #fff;
-                    color: #137db8;
+                    color: #274e80;
                 }
 
                 li {
@@ -414,16 +414,16 @@ main {
         }
 
         &.active {
-            background-color: #137db8;
+            background-color: #274e80;
             color: #fff !important;
-            border: 2px solid #137db8;
+            border: 2px solid #274e80;
         }
 
         &:hover {
-            background-color: #137db8;
+            background-color: #274e80;
             color: #fff !important;
             animation: fadein 0.5s;
-            border: 2px solid #137db8;
+            border: 2px solid #274e80;
 
         }
 
@@ -623,7 +623,7 @@ main {
 
                 h2 {
                     font-size: 36pt;
-                    color: #137db8;
+                    color: #274e80;
                     margin: 0 0 10px 0;
                     font-weight: 200;
                 }
@@ -829,10 +829,11 @@ main {
         }
 
         #productMenuBtn {
-            background-color: #137db8;
+            background-color: #274e80;
         }
 
         #productMenu,
+        #companyMenu,
         #appliedMenu {
             .title {
                 a {
@@ -844,6 +845,7 @@ main {
         @media screen and (min-width: 991px) {
 
             #productMenu,
+            #companyMenu,
             #appliedMenu {
                 display: block !important;
                 height: auto !important;
@@ -852,6 +854,7 @@ main {
             }
 
             #productMenuBtn,
+            #companyMenuBtn,
             #appliedMenuBtn {
                 display: none;
             }
@@ -866,9 +869,9 @@ main {
                 font-weight: 600;
                 padding: 5px 20px;
                 margin-top: 30px;
-                background-color: #137db8;
+                background-color: #274e80;
                 color: #fff;
-                border-radius: 15px;
+                text-align: center;
             }
 
             .secondMenu {
@@ -899,16 +902,16 @@ main {
                         }
 
                         &:hover {
-                            color: #137db8 !important;
+                            color: #274e80 !important;
                         }
                     }
 
                     &:hover {
-                        color: #137db8 !important;
+                        color: #274e80 !important;
                     }
 
                     #secondMenu li:hover {
-                        color: #137db8 !important;
+                        color: #274e80 !important;
                     }
 
                 }

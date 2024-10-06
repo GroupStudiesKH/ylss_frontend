@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import AppliedMenu from "@/components/AppliedMenu.vue";
+import CompanyMenu from "@/components/CompanyMenu.vue";
 import apiService from "@/service/api-service.js";
 import { useI18n } from "vue-i18n";
 
@@ -11,7 +11,7 @@ export default {
   components: {
     Header,
     Footer,
-    AppliedMenu,
+    CompanyMenu,
   },
   setup() {
     const router = useRouter();
@@ -98,7 +98,7 @@ export default {
 
     <div class="container">
       <div class="row">
-        <AppliedMenu />
+        <CompanyMenu />
         <div class="col-12 col-lg-10 list" id="applied_content">
           <div class="row">
             <div class="col-12 route">
