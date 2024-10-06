@@ -18,7 +18,7 @@
                         <router-link to="quality">品質政策</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="">標準認證</router-link>
+                        <router-link to="cert">標準認證</router-link>
                     </li>
                 </ul>
             </div>
