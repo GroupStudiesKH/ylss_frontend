@@ -12,10 +12,10 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <router-link to="">關於遠龍</router-link>
+                        <router-link to="company">關於遠龍</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="">品質政策</router-link>
+                        <router-link to="quality">品質政策</router-link>
                     </li>
                     <li class="list-group-item">
                         <router-link to="">標準認證</router-link>
