@@ -1,7 +1,7 @@
 import axios from "axios";
 
 let devEnv = ["ylss.hanyuan.info"].indexOf(location.hostname) == -1 ? true : false;
-let apiUrl = devEnv ? "https://api.ylss.hanyuan.info/api/" : "http://localhost:8000/api/";
+let apiUrl = devEnv ? "http://localhost:8000/api/" : "https://api.ylss.hanyuan.info/api/"
 
 //Cookie ExpireDate
 let expire = new Date();
