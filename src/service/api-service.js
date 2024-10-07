@@ -1,9 +1,7 @@
 import axios from "axios";
 
-// let devEnv = ["beta.7cplay.com", "7cplay.com", "webproxy.7cplay.com"].indexOf(location.hostname) == -1 ? true : false;
-// let apiUrl = devEnv ? "https://apinew.7cplay.com/" : "https://apinew.7cplay.com/";
-// let apiUrl = "https://api.liyun.com.tw/api/";
-let apiUrl = "http://localhost:8000/api/";
+let devEnv = ["ylss.hanyuan.info"].indexOf(location.hostname) == -1 ? true : false;
+let apiUrl = devEnv ? "https://api.ylss.hanyuan.info/api/" : "http://localhost:8000/api/";
 
 //Cookie ExpireDate
 let expire = new Date();
