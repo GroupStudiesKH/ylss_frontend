@@ -21,31 +21,31 @@
             <router-link class="nav-link" :to="{name: 'company'}">{{ t("header.companyIntro") }}</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/product">{{ t("header.product") }}</a>
+            <a class="nav-link" href="#">{{ t("header.product") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/product-spec">{{ t("header.productSpec") }}</a>
+            <a class="nav-link" href="#">{{ t("header.productSpec") }}</a>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" :to="{name: 'equip'}">{{ t("header.techEquipment") }}</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/news">{{ t("header.news") }}</a>
+            <a class="nav-link" href="#">{{ t("header.news") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/sustainability">{{ t("header.sustainability") }}</a>
+            <a class="nav-link" href="#">{{ t("header.sustainability") }}</a>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" :to="{name: 'contact'}">{{ t("header.contact") }}</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/recruitment">{{ t("header.recruitment") }}</a>
+            <a class="nav-link" href="#">{{ t("header.recruitment") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/trade-service">{{ t("header.tradeService") }}</a>
+            <a class="nav-link" href="#">{{ t("header.tradeService") }}</a>
           </li>
           <li class="nav-item ask_price">
-            <a class="nav-link" href="/trade-service">
+            <a class="nav-link" href="#">
               <span class="material-icons">&#xea20;</span>
 
               <span>詢價</span>
