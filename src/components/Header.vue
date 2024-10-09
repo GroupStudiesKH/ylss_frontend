@@ -29,9 +29,9 @@
           <li class="nav-item">
             <router-link class="nav-link" :to="{name: 'equip'}">{{ t("header.techEquipment") }}</router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">{{ t("header.news") }}</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#">{{ t("header.sustainability") }}</a>
           </li>

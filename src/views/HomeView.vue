@@ -116,9 +116,6 @@ export default {
           <router-link :to="{ name: 'company' }" class="pill_button">
             Learn More </router-link
           ><br /><br />
-          <router-link :to="{ name: 'company' }" class="pill_button mt-5 active">
-            Learn More
-          </router-link>
         </div>
       </div>
 
@@ -153,10 +150,10 @@ export default {
     <div id="csr_green">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 pt-lg-5">
             <img src="/assets/img/euro_logo.webp">
             <h3>遠龍在乎綠色使命</h3>
-            <ul>
+            <ul class="mt-lg-4">
               <li>
                 遠龍致力打造由內而外的綠色體質
               </li>
