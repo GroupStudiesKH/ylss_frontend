@@ -1440,8 +1440,40 @@ main {
     }
 
     &#equip {
-        .clickable-image {
+          .clickable-image {
             cursor: pointer;
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 1;
+              background-color: rgba(39, 78, 128, 0.5);
+              transition: opacity 0.3s ease;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            }
+
+            &:hover {
+              &::before {
+                opacity: 0;
+              }
+
+              img {
+                transform: scale(1.1);
+              }
+            }
           }
           
           .modal-overlay {

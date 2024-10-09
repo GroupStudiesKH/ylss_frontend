@@ -55,7 +55,11 @@ export default {
             <div class="col-12">
               <div class="row">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100 clickable-image" src="/assets/img/zm1.webp" @click="openModal('/assets/img/zm1.webp')">
+
+                    <div class="clickable-image">
+                      <img class="w-100" src="/assets/img/zm1.webp" @click="openModal('/assets/img/zm1.webp')">
+                    </div>
+
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎二十重式冷軋機(ZM1) </h4>
@@ -66,7 +70,11 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100 clickable-image" src="/assets/img/ba2.webp" @click="openModal('/assets/img/ba2.webp')">
+
+                  <div class="clickable-image">
+                    <img class="w-100 " src="/assets/img/ba2.webp" @click="openModal('/assets/img/ba2.webp')">
+                  </div>
+
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎光輝退火線-(BA2)</h4>
@@ -77,7 +85,9 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100 clickable-image" src="/assets/img/spl.webp" @click="openModal('/assets/img/spl.webp')">
+                  <div class="clickable-image">
+                    <img class="w-100" src="/assets/img/ba2.webp" @click="openModal('/assets/img/ba2.webp')">
+                  </div>
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎調質精軋機(SPL)</h4>
@@ -88,7 +98,9 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100 clickable-image" src="/assets/img/tll.webp" @click="openModal('/assets/img/tll.webp')">
+                  <div class="clickable-image">
+                    <img class="w-100" src="/assets/img/tll.webp" @click="openModal('/assets/img/tll.webp')">
+                  </div>
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎張力整平線(TLL) </h4>
@@ -99,7 +111,10 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                    <img class="w-100 clickable-image" src="/assets/img/sl.webp" @click="openModal('/assets/img/sl.webp')">
+
+                  <div class="clickable-image">
+                    <img class="w-100" src="/assets/img/sl.webp" @click="openModal('/assets/img/sl.webp')">
+                  </div>
                 </div>
                 <div class="col-6 col-lg-5">
                     <h4>▎鋼捲分條線(SL)</h4>
