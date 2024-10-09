@@ -1446,6 +1446,13 @@ main {
             height: 400px;
             overflow: hidden;
 
+            @media (max-width: 991px) {
+                height: 200px;
+                &::before {
+                    background-color: rgba(39, 78, 128, 0) !important;
+                }            
+            }
+
             &::before {
               content: '';
               position: absolute;
@@ -1498,11 +1505,17 @@ main {
             align-items: center;
             max-width: 750px;
             max-height: 90vh;
+
+
+            @media (max-width: 991px) {
+                max-width: 100%;
+                max-height: 70vh;       
+            }
           }
           
           .modal-image {
-            max-width: 100%;
-            max-height: 100%;
+            max-width: 750px;
+            max-height: 90vh;
             object-fit: contain;
           }
           

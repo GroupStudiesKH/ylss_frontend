@@ -86,7 +86,7 @@ export default {
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
                   <div class="clickable-image">
-                    <img class="w-100" src="/assets/img/ba2.webp" @click="openModal('/assets/img/ba2.webp')">
+                    <img class="w-100" src="/assets/img/spl.webp" @click="openModal('/assets/img/spl.webp')">
                   </div>
                 </div>
                 <div class="col-6 col-lg-5">
