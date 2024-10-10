@@ -39,11 +39,11 @@
             <router-link class="nav-link" :to="{name: 'contact'}">{{ t("header.contact") }}</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">{{ t("header.recruitment") }}</a>
+            <router-link class="nav-link" :to="{name: 'recurit'}">{{ t("header.recruitment") }}</router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">{{ t("header.tradeService") }}</a>
-          </li>
+          </li> -->
           <li class="nav-item ask_price">
             <a class="nav-link" href="#">
               <span class="material-icons">&#xea20;</span>

@@ -66,7 +66,7 @@ strong {
     margin: 0;
 }
 
-.grecaptcha-badge{
+.grecaptcha-badge {
     display: none !important;
 }
 
@@ -169,7 +169,7 @@ header {
                     }
                 }
 
-                .nav-item:nth-child(n+8) .nav-link,
+                .nav-item:nth-child(n+7) .nav-link,
                 .nav-item:last-child .nav-link {
                     border-right: none;
                 }
@@ -772,6 +772,7 @@ main {
     &#applied,
     &#article,
     &#tech,
+    &#recurit,
     &#equip,
     &#contact {
 
@@ -979,6 +980,8 @@ main {
         }
 
         #company_content {
+            z-index: 1;
+
             .heading {
                 font-size: 24px;
                 color: #067db7;
@@ -1039,6 +1042,7 @@ main {
         }
 
         #tech_content {
+            z-index: 1;
 
             h4 {
                 color: #274e80;
@@ -1051,7 +1055,63 @@ main {
             }
         }
 
+        #recurit_content {
+
+            z-index: 1;
+
+            h4 {
+                color: #274e80;
+            }
+
+            h5.sub-heading {
+                border-bottom: 2px solid #ddd;
+                color: #666;
+                padding-bottom: 10px;
+            }
+
+            #recurit-link-btn {
+                color: #fff;
+                background-color: #274e80;
+                padding: 15px 0;
+                font-size: 20px;
+
+                &:hover,
+                &:active {
+                    color: #fff !important;
+                }
+            }
+
+            .recurit-col {
+                position: relative;
+
+                &:nth-child(2)::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 25px;
+                    height: 100%;
+                    background-image: url('../assets/img/recurit_line.webp');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                }
+
+                @media (max-width: 991px) {
+
+                    &:nth-child(1)::after,
+                    &:nth-child(1)::before,
+                    &:nth-child(2)::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+
         #article_content {
+            z-index: 1;
+
 
             h4 {
                 color: #274e80;
@@ -1065,6 +1125,8 @@ main {
         }
 
         #contact_content {
+            z-index: 1;
+
 
             .contact-container {
                 padding: 0 30px;
@@ -1391,7 +1453,8 @@ main {
         }
     }
 
-    &#tech, &#contact{
+    &#tech,
+    &#contact {
         #mid_right_shape {
             position: absolute;
             height: 250px;
@@ -1428,7 +1491,7 @@ main {
             }
         }
 
-        .contact_bottom{
+        .contact_bottom {
             height: 660px;
             width: 100%;
             background-image: url('../assets/img/contact_bottom.webp');
@@ -1460,7 +1523,7 @@ main {
     }
 
     &#equip {
-          .clickable-image {
+        .clickable-image {
             cursor: pointer;
             position: relative;
             height: 400px;
@@ -1468,43 +1531,44 @@ main {
 
             @media (max-width: 991px) {
                 height: 200px;
+
                 &::before {
                     background-color: rgba(39, 78, 128, 0) !important;
-                }            
+                }
             }
 
             &::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              opacity: 1;
-              background-color: rgba(39, 78, 128, 0.5);
-              transition: opacity 0.3s ease 0.3s;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                background-color: rgba(39, 78, 128, 0.5);
+                transition: opacity 0.3s ease 0.3s;
             }
 
             img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transition: transform 0.3s ease;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
             }
 
             &:hover {
-              &::before {
-                opacity: 0;
-              }
+                &::before {
+                    opacity: 0;
+                }
 
 
-              img {
-                transform: scale(1.1);
-              }
+                img {
+                    transform: scale(1.1);
+                }
             }
-          }
-          
-          .modal-overlay {
+        }
+
+        .modal-overlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -1515,9 +1579,9 @@ main {
             justify-content: center;
             align-items: center;
             z-index: 1000;
-          }
-          
-          .modal-content {
+        }
+
+        .modal-content {
             background-color: white;
             padding: 20px;
             position: relative;
@@ -1530,17 +1594,17 @@ main {
 
             @media (max-width: 991px) {
                 max-width: 100%;
-                max-height: 70vh;       
+                max-height: 70vh;
             }
-          }
-          
-          .modal-image {
+        }
+
+        .modal-image {
             max-width: 750px;
             max-height: 90vh;
             object-fit: contain;
-          }
-          
-          .close-button {
+        }
+
+        .close-button {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -1554,18 +1618,21 @@ main {
             transform: translateX(100px);
             font-size: 30px;
             cursor: pointer;
-          
+
             @media (max-width: 991px) {
-              transform: translateX(0) translateY(-100px);
+                transform: translateX(0) translateY(-100px);
             }
-          }
-          
-          .fade-enter-active, .fade-leave-active {
+        }
+
+        .fade-enter-active,
+        .fade-leave-active {
             transition: opacity 0.3s;
-          }
-          .fade-enter-from, .fade-leave-to {
+        }
+
+        .fade-enter-from,
+        .fade-leave-to {
             opacity: 0;
-          }
+        }
     }
 
     .page-item {
