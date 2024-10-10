@@ -768,6 +768,7 @@ main {
     }
 
     &#product,
+    &#product_detail,
     &#company,
     &#applied,
     &#article,
@@ -1519,6 +1520,31 @@ main {
             @media (max-width: 786px) {
                 border-left: none;
                 padding-left: 0;
+            }
+        }
+    }
+
+    &#product_detail{
+
+        #mid_right_shape {
+            height: 500px;
+            width: 400px;
+            right: 0px;
+            top: 1000px;
+
+            @media (max-width: 1600px) {
+                display: none;
+            }
+        }
+
+
+        #bottom_left_shape {
+            height: 400px;
+            width: 200px;
+            top: 560px;
+            transform: translateY(0px);
+            @media (max-width: 1600px) {
+                display: none;
             }
         }
     }

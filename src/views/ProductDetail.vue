@@ -23,7 +23,7 @@ export default {
 
 <template>
   <Header />
-  <main id="product">
+  <main id="product_detail">
     <div
       class="banner"
       style="background-image: url('/assets/img/product_banner.webp')"
