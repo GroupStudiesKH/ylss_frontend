@@ -46,28 +46,38 @@ export default {
                 </div>
                 <div class="row mt-4">
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                 </div>
 
-                <hr style="border: none; border-top: 3px dotted #000;">
+                <hr/>
 
                 <p>304不銹鋼是一種品質含量至少10.5%鉻的鋼。這種合金具有耐腐蝕和耐用性而聞名，並被廣泛評估廚房用具、醫療設備和建築材料等領域。</p>
                 
@@ -76,20 +86,28 @@ export default {
                 </div>
                 <div class="row mt-4">
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">BA/A表面</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/ba_a.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">BA/A表面</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
                     </div>
@@ -104,12 +122,16 @@ export default {
                 </div>
                 <div class="row mt-4">
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/product_package.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">不銹鋼捲外銷包裝</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/product_package.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">不銹鋼捲外銷包裝</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
-                        <img src="/assets/img/product_unpackage.webp" alt="BA/A表面" class="img-fluid w-100">
-                        <p class="mt-2">不銹鋼捲內銷包裝</p>
+                        <router-link :to="{ path: `/product/1` }">
+                            <img src="/assets/img/product_unpackage.webp" alt="BA/A表面" class="img-fluid w-100">
+                            <p class="mt-2">不銹鋼捲內銷包裝</p>
+                        </router-link>
                     </div>
                     <div class="col-6 col-lg">
                     </div>

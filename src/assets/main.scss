@@ -865,6 +865,7 @@ main {
             color: #fff;
             background-color: #d72118;
             position: absolute;
+            align-self: end;
 
             .material-icons {
                 font-size: 18pt;
@@ -875,8 +876,9 @@ main {
                 background-color: #2bd718;
             }
 
-            @media screen and (min-width: 991px) {
-                margin-top: 10px;
+            @media screen and (max-width: 991px) {
+                // margin-top: 30px;
+                position: relative;
             }
         }
 
@@ -1146,6 +1148,70 @@ main {
                 width: 150px;
                 text-align: center;
                 color: #fff;
+            }
+
+            hr{
+                border: none; 
+                border-top: 3px dotted #000;
+            }
+        }
+
+
+        #product_detail_content {
+            z-index: 1;
+            margin-bottom: 200px;
+
+            h4 {
+                color: #898989;
+            }
+
+            .title{
+                border-left: 10px solid #d7d7d7;
+                padding-left: 15px;
+                display: flex;
+                align-items: flex-end;
+                line-height: 50px;
+            }
+
+            hr{
+                border: none; 
+                border-top: 3px dotted #000;
+            }
+
+            .spec_tag_1{
+                background-color: #87aac9;
+                padding: 10px 20px;
+                margin: 0 10px;
+                position: relative;
+                color: #fff;
+                width: auto;
+                display: inline-block;
+                font-size: 18px;
+            }
+
+            .spec_tag_2{
+                background-color: #5d7b97;
+                padding: 10px 20px;
+                margin: 0 10px;
+                position: relative;
+                color: #fff;
+                width: auto;
+                display: inline-block;
+                font-size: 18px;
+            }
+
+            #mid_right_shape {
+                height: 250px;
+                width: 180px;
+                right: 0px;
+                top: 1500px;
+            }
+    
+    
+            #bottom_left_shape {
+                height: 850px;
+                width: 340px;
+                transform: translateY(50px);
             }
         }
 
