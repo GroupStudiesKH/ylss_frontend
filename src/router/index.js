@@ -13,16 +13,16 @@ const router = createRouter({
       name: "product",
       component: () => import("../views/ProductList.vue"),
     },
-    {
-      path: "/product/category/:categoryID",
-      name: "category-product",
-      component: () => import("../views/ProductList.vue"),
-    },
-    {
-      path: "/product/:id",
-      name: "product-detail",
-      component: () => import("../views/ProductDetail.vue"),
-    },
+    // {
+    //   path: "/product/category/:categoryID",
+    //   name: "category-product",
+    //   component: () => import("../views/ProductList.vue"),
+    // },
+    // {
+    //   path: "/product/:id",
+    //   name: "product-detail",
+    //   component: () => import("../views/ProductDetail.vue"),
+    // },
     {
       path: "/company",
       name: "company",
