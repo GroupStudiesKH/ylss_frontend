@@ -770,6 +770,7 @@ main {
     &#product,
     &#company,
     &#applied,
+    &#article,
     &#tech,
     &#equip,
     &#contact {
@@ -886,6 +887,7 @@ main {
         #companyMenu,
         #techMenu,
         #specMenu,
+        #articleMenu,
         #appliedMenu {
             .title {
                 a {
@@ -900,6 +902,7 @@ main {
             #companyMenu,
             #techMenu,
             #specMenu,
+            #articleMenu,
             #appliedMenu {
                 display: block !important;
                 height: auto !important;
@@ -911,6 +914,7 @@ main {
             #companyMenuBtn,
             #techMenuBtn,
             #specMenuBtn,
+            #articleMenuBtn,
             #appliedMenuBtn {
                 display: none;
             }
@@ -1035,6 +1039,19 @@ main {
         }
 
         #tech_content {
+
+            h4 {
+                color: #274e80;
+            }
+
+            h5.sub-heading {
+                border-bottom: 2px solid #ddd;
+                color: #666;
+                padding-bottom: 10px;
+            }
+        }
+
+        #article_content {
 
             h4 {
                 color: #274e80;

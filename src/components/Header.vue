@@ -33,7 +33,7 @@
             <a class="nav-link" href="#">{{ t("header.news") }}</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">{{ t("header.sustainability") }}</a>
+            <router-link class="nav-link" :to="{name: 'article'}">{{ t("header.sustainability") }}</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" :to="{name: 'contact'}">{{ t("header.contact") }}</router-link>
