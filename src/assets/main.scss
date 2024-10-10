@@ -169,7 +169,7 @@ header {
                     }
                 }
 
-                .nav-item:nth-child(n+9) .nav-link,
+                .nav-item:nth-child(n+8) .nav-link,
                 .nav-item:last-child .nav-link {
                     border-right: none;
                 }
@@ -885,6 +885,7 @@ main {
         #productMenu,
         #companyMenu,
         #techMenu,
+        #specMenu,
         #appliedMenu {
             .title {
                 a {
@@ -898,6 +899,7 @@ main {
             #productMenu,
             #companyMenu,
             #techMenu,
+            #specMenu,
             #appliedMenu {
                 display: block !important;
                 height: auto !important;
@@ -908,6 +910,7 @@ main {
             #productMenuBtn,
             #companyMenuBtn,
             #techMenuBtn,
+            #specMenuBtn,
             #appliedMenuBtn {
                 display: none;
             }

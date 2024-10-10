@@ -24,7 +24,7 @@
             <a class="nav-link" href="#">{{ t("header.product") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">{{ t("header.productSpec") }}</a>
+            <router-link class="nav-link" :to="{name: 'spec'}">{{ t("header.productSpec") }}</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" :to="{name: 'equip'}">{{ t("header.techEquipment") }}</router-link>

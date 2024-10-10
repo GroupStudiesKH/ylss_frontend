@@ -49,9 +49,9 @@ const router = createRouter({
       component: () => import("../views/TechView.vue"),
     },
     {
-      path: "/applied",
-      name: "applied",
-      component: () => import("../views/AppliedView.vue"),
+      path: "/spec",
+      name: "spec",
+      component: () => import("../views/SpecView.vue"),
     },
     {
       path: "/contact",
