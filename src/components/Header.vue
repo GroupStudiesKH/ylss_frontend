@@ -102,10 +102,6 @@ export default {
       {
         lang: 'zh_TW',
         name: '繁體中文'
-      },
-      {
-        lang: 'jp',
-        name: '日本語'
       }
     ]);
 

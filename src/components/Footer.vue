@@ -25,7 +25,7 @@
             <div id="footer_right_shape"></div>
         </div>
         <div class="copyright text-light">
-            <div class="container">Copyright © Li Yun Enterprise Co., Ltd All rights reserved.</div>
+            <div class="container">Copyright © Yuan long stainless steel Corp. All rights reserved.</div>
         </div>
     </footer>
 </template>

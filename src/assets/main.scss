@@ -698,8 +698,8 @@ main {
             }
 
             h3 {
-                font-weight: 600;
-                font-size: 30px;
+                font-weight: 800;
+                font-size: 40px;
                 color: #eeff41;
                 letter-spacing: 2px;
                 margin-top: 20px;
@@ -711,18 +711,13 @@ main {
 
                 li {
                     position: relative;
-                    padding-left: 20px;
+                    margin-left: -20px;
                     margin-bottom: 10px;
-                    font-weight: 600;
+                    font-weight: 700;
+                    font-size: 21px;
 
-
-                    &::before {
-                        content: '✓';
-                        position: absolute;
-                        font-weight: 900;
-
-                        left: 0;
-                        top: 0;
+                    img{
+                        width: 20px;
                     }
                 }
             }

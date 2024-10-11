@@ -155,15 +155,19 @@ export default {
             <h3>遠龍在乎綠色使命</h3>
             <ul class="mt-lg-4">
               <li>
+                <img src="/assets/img/check.webp">
                 遠龍致力打造由內而外的綠色體質
               </li>
               <li>
+                <img src="/assets/img/check.webp">
                 採用ISO 50001能源管理系統及歐盟認證再生能源
               </li>
               <li>
+                <img src="/assets/img/check.webp">
                 優先採購綠色環保標章原物料，選用再生材料製作包裝
               </li>
               <li>
+                <img src="/assets/img/check.webp">
                 目標2050年實現淨零排放，實踐企業永續發展願景
               </li>
             </ul>
