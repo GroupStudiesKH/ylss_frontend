@@ -102,7 +102,11 @@ export default {
       {
         lang: 'zh_TW',
         name: '繁體中文'
-      }
+      },
+      {
+        lang: 'zh_CN',
+        name: '簡體中文'
+      },
     ]);
 
     const isHome = computed(() => {

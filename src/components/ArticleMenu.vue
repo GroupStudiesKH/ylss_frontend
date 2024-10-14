@@ -12,31 +12,31 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <router-link to="tech">循環永續</router-link>
+                        <router-link to="#">循環永續</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">勞工關係</router-link>
+                        <router-link to="#">勞工關係</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">人權保障</router-link>
+                        <router-link to="#">人權保障</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">節能減碳</router-link>
+                        <router-link to="#">節能減碳</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">幸福職場</router-link>
+                        <router-link to="#">幸福職場</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">綠色採購</router-link>
+                        <router-link to="#">綠色採購</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">企業社會責任</router-link>
+                        <router-link to="#">企業社會責任</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">國際認證</router-link>
+                        <router-link to="#">國際認證</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">人才發展</router-link>
+                        <router-link to="#">人才發展</router-link>
                     </li>
                 </ul>
             </div>

@@ -12,19 +12,19 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <router-link to="tech">400系-化學成份及機械性質</router-link>
+                        <router-link to="#">400系-化學成份及機械性質</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">400系-不銹鋼鋼種特加成份與用途</router-link>
+                        <router-link to="#">400系-不銹鋼鋼種特加成份與用途</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">300系-化學成份及機械性質</router-link>
+                        <router-link to="#">300系-化學成份及機械性質</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">300系-不銹鋼鋼種特加成份與用途</router-link>
+                        <router-link to="#">300系-不銹鋼鋼種特加成份與用途</router-link>
                     </li>
                     <li class="list-group-item">
-                        <router-link to="equip">不銹鋼應用</router-link>
+                        <router-link to="#">不銹鋼應用</router-link>
                     </li>
                 </ul>
             </div>

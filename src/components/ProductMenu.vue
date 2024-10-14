@@ -17,7 +17,8 @@
                         </a>
                         <ul class="list-group list-group-flush" :id="`secondMenu_${index}`">
                             <li class="list-group-item" v-for="(subCategory, subIndex) in category.children" :key="subIndex">
-                                <router-link :to="`/product/${category.id}/${subCategory.id}`">
+                                <!-- <router-link :to="`/product/${category.id}/${subCategory.id}`"> -->
+                                <router-link to="#">
                                     {{ subCategory.name }}
                                 </router-link>
                             </li>
