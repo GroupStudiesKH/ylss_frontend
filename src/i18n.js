@@ -1,6 +1,7 @@
 import { createI18n } from 'vue-i18n'
 const userLanguage = navigator.language || navigator.userLanguage;
-const defaultLang = userLanguage == 'zh-TW' ? 'zh_TW' : userLanguage.includes('ja') ? 'jp' : 'eng';
+const defaultLang = 'zh_TW';
+
 
 function loadLocaleMessages() {
   const locales = import.meta.globEager('./locales/*.json')
