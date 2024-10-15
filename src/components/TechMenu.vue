@@ -11,10 +11,10 @@
                     技術設備
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
+                    <li class="list-group-item" :class="{ li_active: $route.name === 'tech' }">
                         <router-link to="tech">專業技術</router-link>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item" :class="{ li_active: $route.name === 'equip' }">
                         <router-link to="equip">核心設備</router-link>
                     </li>
                 </ul>

@@ -373,18 +373,33 @@ footer {
     .group_logo {
         margin-top: -80px;
         text-align: right;
+        z-index: 1;
 
         img {
             height: 40px;
             padding: 0 10px;
 
-            @media (max-width: 991px) {
-                height: 20px;
-            }
-
             @media (max-width: 1280px) {
-                height: 30px;
+                height: 25px;
 
+            }
+        }
+    }
+
+    .social_link{
+        text-align: right;
+        img{
+            width: 20px;
+            margin: 5px;
+        }
+
+        @media (max-width: 991px) {
+            margin-top: -120px;
+        }
+
+        &:first-child{
+            img{
+                width: 50px;
             }
         }
     }
@@ -772,6 +787,10 @@ main {
     &#equip,
     &#contact {
 
+        .container{
+            width: 1080px;
+        }
+
         #mid_right_shape {
             position: absolute;
             height: 250px;
@@ -815,7 +834,7 @@ main {
             z-index: -1;
             background-size: cover;
             background-position: top center;
-            height: 450px;
+            height: 530px;
 
             @media (max-width: 1280px) {
                 height: 350px;
@@ -947,6 +966,12 @@ main {
 
                 .list-group-item {
                     line-height: 25px;
+
+                    &.li_active a{
+                        background-color: transparent;
+                        color: #274e80 !important;
+                        font-weight: 600;
+                    }
 
                     a[data-bs-toggle=collapse] {
                         font-weight: 600;
@@ -1546,7 +1571,7 @@ main {
 
     &#company {
         #company_intro_bottom {
-            height: 1331px;
+            height: 1100px;
             width: 100%;
             background-image: url('../assets/img/company_intro_image.webp');
             background-repeat: no-repeat;
@@ -1606,7 +1631,7 @@ main {
         .contact_bottom {
             height: 660px;
             width: 100%;
-            background-image: url('../assets/img/contact_bottom.webp');
+            background-image: url('../assets/img/contact_building.webp');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: right bottom;

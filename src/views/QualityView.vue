@@ -52,8 +52,8 @@ export default {
 
 
                 <div class="col-12 mt-5">
-                  <h3>▎經營方針</h3>
                   <h5 class="my-2">ISO 9001品質管理系統/IATF 16949汽車認證系統品質政策</h5>
+                  <br>
                   <div class="row">
                     <div class="col-12 col-md-6 mb-3 mb-md-0">
                       <img class="w-100" src="/assets/img/quality_left.webp">

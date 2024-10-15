@@ -332,7 +332,7 @@ export default {
     </div>
 
     <div class="contact_bottom"></div>
-    
+
     <div id="mid_right_shape"></div>
     <div id="bottom_left_shape"></div>
   </main>

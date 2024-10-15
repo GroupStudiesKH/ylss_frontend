@@ -11,14 +11,14 @@
                     公司介紹
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <router-link to="company">關於遠龍</router-link>
+                    <li class="list-group-item" :class="{ li_active: $route.name === 'company' }">
+                        <router-link :to="{ name: 'company' }">關於遠龍</router-link>
                     </li>
-                    <li class="list-group-item">
-                        <router-link to="quality">品質政策</router-link>
+                    <li class="list-group-item" :class="{ li_active: $route.name === 'quality' }">
+                        <router-link :to="{ name: 'quality' }">品質政策</router-link>
                     </li>
-                    <li class="list-group-item">
-                        <router-link to="cert">標準認證</router-link>
+                    <li class="list-group-item" :class="{ li_active: $route.name === 'cert' }">
+                        <router-link :to="{ name: 'cert' }">標準認證</router-link>
                     </li>
                 </ul>
             </div>
