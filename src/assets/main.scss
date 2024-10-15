@@ -1610,6 +1610,8 @@ main {
             background-repeat: no-repeat;
             background-size: contain;
             background-position: right bottom;
+            z-index: 1;
+            position: relative;
 
             @media (min-width: 1650px) {
                 height: 700px;
