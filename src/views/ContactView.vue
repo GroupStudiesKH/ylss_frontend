@@ -331,7 +331,9 @@ export default {
       </div>
     </div>
 
-    <div class="contact_bottom"></div>
+    <div class="contact_bottom">
+      <img src="/assets/img/contact_info.webp">
+    </div>
 
     <div id="mid_right_shape"></div>
     <div id="bottom_left_shape"></div>

@@ -1637,10 +1637,23 @@ main {
             background-position: right bottom;
             z-index: 1;
             position: relative;
+            text-align: center;
+            img{
+                margin-top: 100px;
+                margin-left: -400px;
+            }
 
             @media (min-width: 1650px) {
                 height: 700px;
                 background-size: contain;
+            }
+
+            @media (max-width: 1650px) {
+                
+                img{
+                    margin-top: 0px !important;
+                    width: 400px !important;
+                }
             }
 
             @media (max-width: 991px) {
@@ -1650,6 +1663,10 @@ main {
                 margin-top: 0px;
                 background-size: contain;
                 background-position: center center;
+
+                img{
+                    display: none;
+                }
             }
 
             @media (max-width: 768px) {

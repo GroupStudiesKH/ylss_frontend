@@ -62,7 +62,7 @@ export default {
 
                 <section class="mt-5">
                     <h4>▎加入我們</h4>
-                    <p>如果您想成為這個充滿活力和多元化的團隊一員，現在就加入我們！請主動投履歷</p>
+                    <p>如果您想成為這個充滿活力和多元化的團隊一員，現在就加入我們！請主動投履歷。</p>
                 </section>
             </div>
 
@@ -87,7 +87,7 @@ export default {
                     <p class="text-center my-5">
                         <img class="w-100 d-block d-md-none" src="/assets/img/recurit_content.webp">
                         <img class="d-none d-md-block mx-auto" src="/assets/img/recurit_content.webp">
-                        <a href="/recurit/jobs" id="recurit-link-btn" class="btn btn-primary w-100 mt-5">
+                        <a href="https://www.104.com.tw/company/cq3ose8?jobsource=google" id="recurit-link-btn" class="btn btn-primary w-100 mt-5" target="_blank">
                             <span class="me-2">&gt;</span>檢視人力資源需求
                         </a>
                     </p>

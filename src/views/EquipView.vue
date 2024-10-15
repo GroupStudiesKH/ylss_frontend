@@ -77,7 +77,7 @@ export default {
 
                 </div>
                 <div class="col-6 col-lg-5">
-                    <h4>▎光輝退火線-(BA2)</h4>
+                    <h4>▎光輝退火線(BA)</h4>
                     <h5 class="sub-heading">Bright Annealing Line</h5>
                     <p><strong>主要功能:</strong><br/>為將經軋研後之硬質鋼捲退火,使其晶粒成長而軟化而具被加工性。</p>
                 </div>              
