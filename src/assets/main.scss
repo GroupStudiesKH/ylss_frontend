@@ -828,9 +828,10 @@ main {
             position: relative;
             max-width: 100%;
             z-index: -1;
+            background-color: #274e80;
             background-size: contain;
-            background-position: top center;
-            height: 530px;
+            background-position: center center;
+            height: 528px;
             background-repeat: no-repeat;
 
             @media (max-width: 1280px) {
