@@ -787,10 +787,6 @@ main {
     &#equip,
     &#contact {
 
-        .container{
-            width: 1080px;
-        }
-
         #mid_right_shape {
             position: absolute;
             height: 250px;
@@ -832,12 +828,17 @@ main {
             position: relative;
             max-width: 100%;
             z-index: -1;
-            background-size: cover;
+            background-size: contain;
             background-position: top center;
             height: 530px;
+            background-repeat: no-repeat;
 
             @media (max-width: 1280px) {
                 height: 350px;
+            }
+
+            @media (min-width: 1920px) {
+                background-size: contain;
             }
 
         }
@@ -1541,6 +1542,12 @@ main {
                 border-left: none;
                 padding-left: 0;
             }
+        }
+    }
+
+    &#contact {
+        .container{
+            width: 1080px;
         }
     }
 

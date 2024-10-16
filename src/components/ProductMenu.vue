@@ -39,29 +39,38 @@ export default {
     setup() {
         const { locale } = useI18n();
         const categories = ref([
+            // {
+            //     id: 1,
+            //     name: "430不銹鋼系列",
+            //     children: [
+            //         { id: 11, name: "BA/A表面" },
+            //         { id: 12, name: "BA/B表面" }
+            //     ]
+            // },
+            // {
+            //     id: 2,
+            //     name: "304不銹鋼系列",
+            //     children: [
+            //         { id: 21, name: "BA/A表面" },
+            //         { id: 22, name: "BA/B表面" }
+            //     ]
+            // },
+            // {
+            //     id: 3,
+            //     name: "不銹鋼卷包裝",
+            //     children: [
+            //         { id: 31, name: "不銹鋼捲外銷包裝" },
+            //         { id: 32, name: "不銹鋼捲內銷包裝" }
+            //     ]
+            // }
+
             {
                 id: 1,
-                name: "430不銹鋼系列",
-                children: [
-                    { id: 11, name: "BA/A表面" },
-                    { id: 12, name: "BA/B表面" }
-                ]
+                name: "主要銷售規格"
             },
             {
                 id: 2,
-                name: "304不銹鋼系列",
-                children: [
-                    { id: 21, name: "BA/A表面" },
-                    { id: 22, name: "BA/B表面" }
-                ]
-            },
-            {
-                id: 3,
-                name: "不銹鋼卷包裝",
-                children: [
-                    { id: 31, name: "不銹鋼捲外銷包裝" },
-                    { id: 32, name: "不銹鋼捲內銷包裝" }
-                ]
+                name: "不銹鋼應用"
             }
         ]);
 
