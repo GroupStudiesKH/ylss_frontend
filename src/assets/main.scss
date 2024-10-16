@@ -1547,8 +1547,10 @@ main {
     }
 
     &#contact {
-        .container{
-            width: 1080px;
+        @media (min-width: 1200px) {
+            .container{
+                width: 1080px;
+            }
         }
     }
 
