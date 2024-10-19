@@ -117,8 +117,8 @@ const objectToQueryString = (obj) => {
   return queryParams.join('&');
 }
 
-const getProducts = async (params) => {
-  const requestConfig = scGet(`${apiUrl}products?${objectToQueryString(params)}`);
+const getProducts = async () => {
+  const requestConfig = scGet(`${apiUrl}products`);
   try {
     const response = await axios(requestConfig);
     return checkServerResponse(response);

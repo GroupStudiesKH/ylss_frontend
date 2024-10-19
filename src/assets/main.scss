@@ -1558,7 +1558,12 @@ main {
         }
     }
 
-    &#com
+    &#product{
+        .container{
+            z-index: 1;
+            position: relative;
+        }   
+    }
 
     &#product_detail{
 
