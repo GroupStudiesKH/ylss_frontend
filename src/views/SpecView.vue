@@ -1,9 +1,12 @@
 <script>
-import { ref } from "vue";
+import { ref, onMounted, watch } from "vue";
+import { useRouter, useRoute } from "vue-router";
+
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import SpecMenu from "@/components/SpecMenu.vue";
 import { useI18n } from "vue-i18n";
+import apiService from "@/service/api-service";
 
 export default {
   components: {
@@ -13,9 +16,33 @@ export default {
   },
   setup() {
     const { locale } = useI18n();
+    const route = useRoute();
+    const articleId = ref(route.params.id);
+    const article = ref({
+      id: '',
+      get_content_attribute: [],
+      get_title_attribute: []
+    });
+
+    const getArticle = async () => {
+        try {
+            const params = { type: 'spec' };
+            if (articleId.value) {
+                params.id = articleId.value;
+            }
+            article.value = await apiService.getArticleContent(params);
+        } catch (error) {
+            console.error("Error fetching article content:", error);
+        }
+    }
+
+    onMounted(() => {
+      getArticle();
+    });
 
     return {
-      locale
+      locale,
+      article
     };
   },
 };
@@ -38,8 +65,8 @@ export default {
               首頁 / 產品規格
             </div>
             <div class="col-12">
-                <h4>▎主要銷售規格</h4>
-                <a href="/assets/img/spec_content.webp" target="_blank"><img class="w-100 mt-3" src="/assets/img/spec_content.webp"></a>
+                <h4>▎{{ article.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}</h4>
+                <div v-html="article.get_content_attribute.find(attr => attr.language === locale)?.meta_value || ''"></div>
             </div>
           </div>
         </div>
