@@ -1,9 +1,13 @@
 <script>
-import { ref } from "vue";
+import { ref, onMounted, watch } from "vue";
+import { useRouter, useRoute } from "vue-router";
+
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import ProductMenu from "@/components/ProductMenu.vue";
 import { useI18n } from "vue-i18n";
+import apiService from "@/service/api-service";
+import cartService from "@/service/cart-service.js";
 
 export default {
   components: {
@@ -13,9 +17,84 @@ export default {
   },
   setup() {
     const { locale } = useI18n();
+    const products = ref({});
+    const product = ref({});
+    const route = useRoute();
+    const productID = ref(route.params.id);
+    const checkCart = ref(false);
+    const categoryPath = ref([]);
+
+    const getProducts = async () => {
+      try {
+        products.value = await apiService.getProducts();
+      } catch (error) {
+        console.error("Error fetching products content:", error);
+      }
+    };
+
+    const getProduct = async () => {
+      try {
+        product.value = await apiService.getProduct(productID.value);
+        if(product.value.category_id) getCategoryPath(product.value.category_id);
+      } catch (error) {
+        console.error("Error fetching product content:", error);
+      }
+    };
+
+    const getCategoryPath = async (categoryID) => {
+      try {
+        const results = await apiService.getCategoryPath(categoryID);
+        categoryPath.value = results;
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    const getInfo = (data, dataKey) => {
+      let defaultVal =
+        dataKey == "feature_image"
+          ? "/assets/img/product_image.png?t=202403031739"
+          : "";
+      return data.product_detail.find(
+        (attr) => attr.language == locale.value && attr.meta_key == dataKey
+      ).meta_value != null &&
+        data.product_detail.find(
+          (attr) => attr.language == locale.value && attr.meta_key == dataKey
+        ).meta_value != ""
+        ? data.product_detail.find(
+            (attr) => attr.language == locale.value && attr.meta_key == dataKey
+          ).meta_value
+        : defaultVal;
+    };
+
+    const addCartItem = () => {
+      cartService.addCart({
+        product: product.value,
+        category: categoryPath.value,
+      });
+      checkCart.value = true;
+    };
+
+    const removeCartItem = () => {
+      cartService.removeCart(productID);
+      checkCart.value = false;
+    };
+
+    onMounted(async () => {
+      getProducts();
+      getProduct();
+    });
 
     return {
       locale,
+      products,
+      product,
+      addCartItem,
+      removeCartItem,
+      checkCart,
+      getInfo,
+      getCategoryPath,
+      categoryPath
     };
   },
 };
@@ -31,41 +110,73 @@ export default {
 
     <div class="container">
       <div class="row">
-        <ProductMenu />
+        <ProductMenu :categories="products" />
 
         <div class="col-12 col-lg-10 list" id="product_detail_content">
-          <div class="row mb-5">
+          <div class="row mb-5" v-if="Object.keys(product).length > 0">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              首頁 / 產品介紹 / 304不銹鋼系列 / BA/B表面
+              <router-link :to="{ name: 'home' }">{{
+                $t("header.index")
+              }}</router-link>
+              /
+              <router-link :to="{ name: 'product' }">{{
+                $t("header.product")
+              }}</router-link>
+              <span v-if="product.category_id">
+                <span
+                  v-for="(path, pathIndex) in categoryPath"
+                  :key="pathIndex"
+                >
+                  /
+                  <router-link :to="`/product/category/${path.id}`">{{
+                    path.get_title_attribute.find((attr) => {
+                      return attr.language == locale;
+                    }).meta_value
+                  }}</router-link>
+                </span>
+              </span>
             </div>
             <div class="col-4 col-md-6">
               <img
-                src="/assets/img/product_unpackage.webp"
+                :src="getInfo(product, 'feature_image')"
                 class="img-fluid w-100"
               />
             </div>
-            <div class="col-8 col-md-6 justify-content-between" style="display: grid;">
+            <div
+              class="col-8 col-md-6 justify-content-between"
+              style="display: grid"
+            >
               <div>
-                <h3 class="title">BA/A表面</h3>
-                <hr style="border-top: 5px solid #666;">
-                <p class="subtitle">304不銹鋼BA/A表面。鉻系不銹鋼經冷軋後施以光輝處理，經特殊製程後具高亮度表面。用於餐廚用具、醫療器材、電子零組件、汽車材料、建築用材料、家用電器、化學器材等。
-                </p>
+                <h3 class="title">{{ getInfo(product, "title") }}</h3>
+                <hr style="border-top: 5px solid #666" />
+                <p class="subtitle" v-html="getInfo(product, 'content')"></p>
               </div>
 
+              <div
+                class="askPrice"
+                role="button"
+                @click="addCartItem()"
+                v-if="!checkCart"
+              >
+                {{ $t("product.addAskPrice") }}
+                <span class="material-icons">&#xEA20;</span>
+              </div>
 
               <div
-                class="askPrice mt-auto"
+                class="askPrice remove"
                 role="button"
+                @click="removeCartItem()"
+                v-else
               >
-                加入詢價表單
+                {{ $t("product.removeAskPrice") }}
                 <span class="material-icons">&#xEA20;</span>
               </div>
             </div>
           </div>
 
           <h4>相關規格/</h4>
-          <hr/>
+          <hr />
           <div class="spec_tag_1">300系-化學成份及機械性質</div>
           <div class="spec_tag_2">不銹鋼應用</div>
         </div>

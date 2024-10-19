@@ -3,7 +3,6 @@ import { ref, onMounted } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import AppliedMenu from "@/components/AppliedMenu.vue";
 import cartService from "@/service/cart-service.js";
 import apiService from "@/service/api-service.js";
 import { useI18n } from "vue-i18n";
@@ -13,7 +12,6 @@ export default {
   components: {
     Header,
     Footer,
-    AppliedMenu,
   },
   setup() {
     const router = useRouter();
