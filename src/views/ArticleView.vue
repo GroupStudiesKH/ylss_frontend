@@ -17,7 +17,11 @@ export default {
   },
   setup() {
     const { locale } = useI18n();
-    const article = ref([]);
+    const article = ref({
+      id: '',
+      get_content_attribute: [],
+      get_title_attribute: []
+    });
     const route = useRoute();
     const articleId = ref(route.params.id);
 
@@ -28,7 +32,6 @@ export default {
                 params.id = articleId.value;
             }
             article.value = await apiService.getArticleContent(params);
-            console.log(article.value);
         } catch (error) {
             console.error("Error fetching article content:", error);
         }
@@ -37,7 +40,6 @@ export default {
     onMounted(() => {
       getArticle();
     });
-
 
     return {
       locale,
@@ -64,9 +66,8 @@ export default {
               首頁 / 循環永續
             </div>
             <div class="col-12">
-                <h4>▎循環永續</h4>
-                <p>遠龍透過各項能源管理措施實踐節能減碳，確保資源有效利用，持續精進生產技術，優化綠色製程及產品，遵循聯合國「2030永續發展目標」（Sustainable Development Goals, SDGs），以邁向低碳綠色企業，為地球永續盡一份心力為己任。</p>
-                <a href="/assets/img/article_content.webp" target="_blank"><img class="w-100 mt-3" src="/assets/img/article_content.webp"></a>
+                <h4>▎{{ article.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}</h4>
+                <div v-html="article.get_content_attribute.find(attr => attr.language === locale)?.meta_value || ''"></div>
             </div>
           </div>
         </div>

@@ -12,9 +12,9 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" v-for="(item, itemIndex) in articleLists" :key="itemIndex">
-                        <router-link :to="`/article/${ item.id }`">
+                        <a :href="`/article/${ item.id }`">
                             {{ item.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}
-                        </router-link>
+                        </a>
                     </li>
                 </ul>
             </div>
