@@ -49,7 +49,7 @@ export default {
 
     <div class="container" id="product_container">
       <div class="row">
-        <ProductMenu />
+        <ProductMenu :categories="products" />
 
         <div class="col-12 col-lg-10 list" id="product_content">
           <div class="row">

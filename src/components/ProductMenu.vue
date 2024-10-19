@@ -13,13 +13,12 @@
                     <li class="list-group-item" v-for="(category, index) in categories" :key="index">
                         <a data-bs-toggle="collapse" :href="`#secondMenu_${index}`" role="button" 
                            aria-expanded="true" :aria-controls="`secondMenu_${index}`">
-                            {{ category.name }}
+                            {{ category.title[locale] || category.title.zh_TW }}
                         </a>
                         <ul class="list-group list-group-flush" :id="`secondMenu_${index}`">
-                            <li class="list-group-item" v-for="(subCategory, subIndex) in category.children" :key="subIndex">
-                                <!-- <router-link :to="`/product/${category.id}/${subCategory.id}`"> -->
-                                <router-link to="#">
-                                    {{ subCategory.name }}
+                            <li class="list-group-item" v-for="(product, subIndex) in category.products" :key="subIndex">
+                                <router-link :to="{ path: `/product/${product.id}` }">
+                                    {{ product.title[locale] || product.title.zh_TW }}
                                 </router-link>
                             </li>
                         </ul>
@@ -31,51 +30,20 @@
 </template>
 
 <script>
-import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 export default {
     name: "ProductMenu",
+    props: {
+        categories: {
+            type: Array,
+            required: true
+        }
+    },
     setup() {
         const { locale } = useI18n();
-        const categories = ref([
-            // {
-            //     id: 1,
-            //     name: "430不銹鋼系列",
-            //     children: [
-            //         { id: 11, name: "BA/A表面" },
-            //         { id: 12, name: "BA/B表面" }
-            //     ]
-            // },
-            // {
-            //     id: 2,
-            //     name: "304不銹鋼系列",
-            //     children: [
-            //         { id: 21, name: "BA/A表面" },
-            //         { id: 22, name: "BA/B表面" }
-            //     ]
-            // },
-            // {
-            //     id: 3,
-            //     name: "不銹鋼卷包裝",
-            //     children: [
-            //         { id: 31, name: "不銹鋼捲外銷包裝" },
-            //         { id: 32, name: "不銹鋼捲內銷包裝" }
-            //     ]
-            // }
-
-            {
-                id: 1,
-                name: "主要銷售規格"
-            },
-            {
-                id: 2,
-                name: "不銹鋼應用"
-            }
-        ]);
 
         return {
-            categories,
             locale
         };
     },
