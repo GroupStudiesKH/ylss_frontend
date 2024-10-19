@@ -167,28 +167,18 @@ const getCategoryPath = async (id) => {
   }
 }
 
-const getAppliedCategory = async () => {
-  const requestConfig = scGet(`${apiUrl}applied/category/list`);
+const getArticle = async (type = 'spec') => {
+  const requestConfig = scGet(`${apiUrl}article?type=${type}`);
   try {
     const response = await axios(requestConfig);
     return checkServerResponse(response);
   } catch (error) {
     throw error;
   }
-}
+};
 
-const getAppliedCategoryPath = async (id) => {
-  const requestConfig = scGet(`${apiUrl}applied/category/path/${id}`);
-  try {
-    const response = await axios(requestConfig);
-    return checkServerResponse(response);
-  } catch (error) {
-    throw error;
-  }
-}
-
-const getApplicationContent = async (params) => {
-  const requestConfig = scGet(`${apiUrl}applied?${objectToQueryString(params)}`);
+const getArticleContent = async (params) => {
+  const requestConfig = scGet(`${apiUrl}article/detail?${objectToQueryString(params)}`);
   try {
     const response = await axios(requestConfig);
     return checkServerResponse(response);
@@ -214,8 +204,7 @@ export default {
   getAllCategory,
   getCategoryPath,
   getBanner,
-  getAppliedCategory,
-  getApplicationContent,
-  getAppliedCategoryPath,
+  getArticle,
+  getArticleContent,
   sendContact
 };

@@ -11,32 +11,10 @@
                     企業永續
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <router-link to="#">循環永續</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">勞工關係</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">人權保障</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">節能減碳</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">幸福職場</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">綠色採購</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">企業社會責任</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">國際認證</router-link>
-                    </li>
-                    <li class="list-group-item">
-                        <router-link to="#">人才發展</router-link>
+                    <li class="list-group-item" v-for="(item, itemIndex) in articleLists" :key="itemIndex">
+                        <router-link :to="`/article/${ item.id }`">
+                            {{ item.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}
+                        </router-link>
                     </li>
                 </ul>
             </div>
@@ -49,22 +27,36 @@
 </template>
 
 <script>
+import { ref, onMounted } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
+import apiService from "@/service/api-service";
 
 export default {
     name: "articleMenu",
     setup() {
         const { t, locale } = useI18n();
         const currentCategory = useRoute().query.category;
+        const articleLists = ref([]);
+
+        const getArticleLists = async () => {
+            try {
+                articleLists.value = await apiService.getArticle('csr');
+            } catch (error) {
+                console.error("Error fetching article lists:", error);
+            }
+        }
+
+        onMounted(() => {
+            getArticleLists()
+        });
+
         return {
             currentCategory,
-            locale
+            locale,
+            articleLists
         };
     },
 };
 </script>
 
-<style scoped>
-/* Add any custom styles here */
-</style>

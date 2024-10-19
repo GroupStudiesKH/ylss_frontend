@@ -1,9 +1,13 @@
 <script>
-import { ref } from "vue";
+import { ref, onMounted, watch } from "vue";
+import { useRouter, useRoute } from "vue-router";
+
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import ArticleMenu from "@/components/ArticleMenu.vue";
 import { useI18n } from "vue-i18n";
+import apiService from "@/service/api-service";
+
 
 export default {
   components: {
@@ -13,9 +17,31 @@ export default {
   },
   setup() {
     const { locale } = useI18n();
+    const article = ref([]);
+    const route = useRoute();
+    const articleId = ref(route.params.id);
+
+    const getArticle = async () => {
+        try {
+            const params = { type: 'csr' };
+            if (articleId.value) {
+                params.id = articleId.value;
+            }
+            article.value = await apiService.getArticleContent(params);
+            console.log(article.value);
+        } catch (error) {
+            console.error("Error fetching article content:", error);
+        }
+    }
+
+    onMounted(() => {
+      getArticle();
+    });
+
 
     return {
-      locale
+      locale,
+      article
     };
   },
 };
@@ -35,7 +61,7 @@ export default {
           <div class="row">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              首頁 / 產品規格
+              首頁 / 循環永續
             </div>
             <div class="col-12">
                 <h4>▎循環永續</h4>
