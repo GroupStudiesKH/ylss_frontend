@@ -3,12 +3,12 @@
 
         <a class="btn btn-primary" id="articleMenuBtn" data-bs-toggle="collapse" href="#articleMenu" role="button"
             aria-expanded="false" aria-controls="articleMenu">
-            開啟分類選單
+            {{ t('common.openMenu') }}
         </a>
         <div class="collapse col-12 category" id="articleMenu">
             <div>
                 <div class="title">
-                    企業永續
+                    {{ t('header.sustainability') }}
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" v-for="(item, itemIndex) in articleLists" :key="itemIndex">
@@ -52,6 +52,7 @@ export default {
         });
 
         return {
+            t,
             currentCategory,
             locale,
             articleLists

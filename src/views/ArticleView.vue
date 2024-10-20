@@ -16,7 +16,7 @@ export default {
     ArticleMenu,
   },
   setup() {
-    const { locale } = useI18n();
+    const { t, locale } = useI18n();
     const article = ref({
       id: '',
       get_content_attribute: [],
@@ -42,6 +42,7 @@ export default {
     });
 
     return {
+      t,
       locale,
       article
     };
@@ -63,7 +64,7 @@ export default {
           <div class="row">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              首頁 / 循環永續
+              {{ t('header.index') }} / {{ article.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}
             </div>
             <div class="col-12">
                 <h4>▎{{ article.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}</h4>
