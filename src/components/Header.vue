@@ -1,7 +1,7 @@
 <template>
   <header class="navbar navbar-expand-lg" :class="{ 'home': isHome }">
     <div class="container">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" :href="'/' + locale">
         <img src="/assets/img/logo.png" alt="" />
       </a>
       <button
@@ -18,34 +18,30 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'company'}">{{ t("header.companyIntro") }}</router-link>
+            <router-link class="nav-link" :to="{name: 'company', params: { locale }}">{{ t("header.companyIntro") }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'product'}">{{ t("header.product") }}</router-link>
+            <router-link class="nav-link" :to="{name: 'product', params: { locale }}">{{ t("header.product") }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'spec'}">{{ t("header.productSpec") }}</router-link>
+            <router-link class="nav-link" :to="{name: 'spec', params: { locale }}">{{ t("header.productSpec") }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'equip'}">{{ t("header.techEquipment") }}</router-link>
+            <router-link class="nav-link" :to="{name: 'equip', params: { locale }}">{{ t("header.techEquipment") }}</router-link>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">{{ t("header.news") }}</a>
-          </li> -->
+
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'article'}">{{ t("header.sustainability") }}</router-link>
+            <router-link class="nav-link" :to="{name: 'article', params: { locale }}">{{ t("header.sustainability") }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'contact'}">{{ t("header.contact") }}</router-link>
+            <router-link class="nav-link" :to="{name: 'contact', params: { locale }}">{{ t("header.contact") }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'recurit'}">{{ t("header.recruitment") }}</router-link>
+            <router-link class="nav-link" :to="{name: 'recurit', params: { locale }}">{{ t("header.recruitment") }}</router-link>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">{{ t("header.tradeService") }}</a>
-          </li> -->
+
           <li class="nav-item ask_price">
-            <router-link class="nav-link" :to="{name: 'contact'}">
+            <router-link class="nav-link" :to="{name: 'contact', params: { locale }}">
               <span class="material-icons">&#xea20;</span>
 
               <span>詢價</span>
@@ -127,9 +123,6 @@ export default {
 
     onMounted(() => {
 
-      const storedLocale = localStorage.getItem('locale');
-      const currentPath = window.location.pathname;
-
       setInterval(() => {
         getCart()
       }, 500);
@@ -147,6 +140,3 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Add any custom styles here */
-</style>

@@ -6,12 +6,13 @@ import Footer from "@/components/Footer.vue";
 import cartService from "@/service/cart-service.js";
 import apiService from "@/service/api-service.js";
 import { useI18n } from "vue-i18n";
-import { useReCaptcha } from "vue-recaptcha-v3";
+import vueRecaptcha from 'vue3-recaptcha2';
 
 export default {
   components: {
     Header,
     Footer,
+    vueRecaptcha,
   },
   setup() {
     const router = useRouter();
@@ -24,7 +25,7 @@ export default {
     const cartItem = ref([]);
     const isSending = ref(false);
     const isModalOpen = ref(false);
-    const { executeRecaptcha, recaptchaLoaded } = useReCaptcha();
+    const recaptchaToken = ref("");
     const removeCartItem = async (productID) => {
       await cartService.removeCart(productID);
       cartItem.value = cartService.getCart();
@@ -40,10 +41,18 @@ export default {
       cartItem.value = cartService.getCart();
     };
 
+    const onVerify = (token) => {
+      recaptchaToken.value = token;
+    };
+
     const submitContact = async () => {
+      if (!recaptchaToken.value) {
+        // Handle case where reCAPTCHA hasn't been completed
+        console.error("Please complete the reCAPTCHA");
+        return;
+      }
+
       isSending.value = true;
-      await recaptchaLoaded();
-      const token = await executeRecaptcha("submit");
 
       let cartProducts = [];
       for (let i in cartItem.value) {
@@ -71,7 +80,7 @@ export default {
         contact_email: contact_email.value,
         contact_content: contact_content.value,
         cart: JSON.stringify(cartProducts),
-        recaptcha_token: token,
+        recaptcha_token: recaptchaToken.value,
       });
 
       errorMsg.value = {
@@ -117,6 +126,7 @@ export default {
       isModalOpen,
       goHome,
       isSending,
+      onVerify,
     };
   },
 };
@@ -307,6 +317,18 @@ export default {
                     </div>
                   </div>
                   <hr />
+                  <div class="row mt-3">
+                    <div class="col-12">
+                      <vue-recaptcha
+                        sitekey="6Ldml2YqAAAAAC4kqgtZmD6cJa6tNi_m0fkovXdw"
+                        size="normal"
+                        theme="light"
+                        hl="zh-TW"
+                        @verify="onVerify"
+                        ref="vueRecaptcha">
+                      </vue-recaptcha>
+                    </div>
+                  </div>
                   <div class="row mt-3">
                     <div class="col-12">
                       <div

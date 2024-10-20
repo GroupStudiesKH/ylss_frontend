@@ -84,9 +84,9 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  const locale = to.params.locale;
+  const locale = to.params.locale || localStorage.getItem('locale');
   if (!locale) {
-    const defaultLocale = 'eng'; // 或者您想要的默認語言
+    const defaultLocale = 'zh_TW'; // 或者您想要的默認語言
     return next(`/${defaultLocale}${to.path}`);
   }
   next();

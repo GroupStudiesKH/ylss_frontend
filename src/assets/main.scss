@@ -342,10 +342,14 @@ footer {
 
     .address {
         margin-top: 20px;
-        line-height: 15px;
+        line-height: 18px;
         padding-left: 10px;
         font-size: 16px;
         height: 150px;
+
+        p{
+            margin-bottom: 10px;
+        }
 
         .material-icons {
             font-size: 14px;
