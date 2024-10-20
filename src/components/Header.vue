@@ -122,12 +122,17 @@ export default {
       let newPath = `/${lang}`;
       
       if (currentName) {
-        newPath += `/${currentName}`;
+        // Use the current route's matched path instead of the route name
+        const matchedRoute = route.matched[route.matched.length - 1];
+        if (matchedRoute) {
+          newPath += matchedRoute.path.replace(/^\/[^\/]+/, '');
+        }
         
+        // Add dynamic segments from params
         if (Object.keys(currentParams).length > 0) {
           for (const [key, value] of Object.entries(currentParams)) {
             if (key !== 'locale') {
-              newPath += `/${value}`;
+              newPath = newPath.replace(`:${key}`, value);
             }
           }
         }
