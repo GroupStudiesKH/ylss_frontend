@@ -113,7 +113,7 @@ export default {
       locale.value = lang;
       localStorage.setItem('locale', lang);
       const currentPath = window.location.pathname;
-      const newPath = `/${lang}${currentPath.substring(currentPath.indexOf('/', 1))}`;
+      const newPath = `/${lang === 'eng' ? 'eng' : lang}/${currentPath.split('/').slice(2).join('/')}`;
       window.location.href = newPath;
     }
 
