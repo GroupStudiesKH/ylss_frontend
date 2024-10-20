@@ -58,10 +58,10 @@ export default {
               <span class="material-icons">&#xE88A;</span>
               {{ t("header.index") }} / {{ t("product.title") }} 
             </div>
-            <div class="col-12">
-                <p>遠龍以冷軋亮面不銹鋼捲為主要生產產品，並提供各式拋砂的表面加工服務。所提供的主要鋼種為430不銹鋼系列，及各式不銹鋼鋼捲之買賣，滿足客戶更多元、更客製化的選擇，因應不同產業與下游產品之所需。 Development Goals, SDGs），以邁向低碳綠色企業，為地球永續盡一份心力為己任。</p>
-                
+            <div class="col-12">                
                 <div v-for="category in products" :key="category.id">
+                    <p>{{ category.description[locale] || category.description.zh_TW }}</p>
+
                     <div class="product_badge">
                         {{ category.title[locale] || category.title.zh_TW }}
                     </div>
