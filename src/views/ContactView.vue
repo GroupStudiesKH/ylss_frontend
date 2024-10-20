@@ -257,9 +257,9 @@ export default {
                         <div class="col-10">
                           ・<router-link
                             :to="{
-                              name: 'category-product',
+                              name: 'product-detail',
                               params: {
-                                categoryID: cart.product.category_id,
+                                id: cart.product.id,
                               },
                             }"
                             class="category"
