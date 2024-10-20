@@ -45,12 +45,12 @@
             <a class="nav-link" href="#">{{ t("header.tradeService") }}</a>
           </li> -->
           <li class="nav-item ask_price">
-            <a class="nav-link" href="#">
+            <router-link class="nav-link" :to="{name: 'contact'}">
               <span class="material-icons">&#xea20;</span>
 
               <span>詢價</span>
               <div class="bg-danger header-notify">{{ cartItem.length }}</div>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item language_switch dropdown">
             <div

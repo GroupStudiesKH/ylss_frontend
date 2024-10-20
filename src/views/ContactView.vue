@@ -266,7 +266,7 @@ export default {
                           >
                             {{
                               cart.category.length > 0
-                                ? cart.category[0].get_title_attribute.find(
+                                ? cart.category[1].get_title_attribute.find(
                                     (attr) => {
                                       return attr.language == locale;
                                     }
