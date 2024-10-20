@@ -148,6 +148,11 @@ export default {
 
     onMounted(() => {
 
+      if (localStorage.getItem('locale') !== route.params.locale) {
+        localStorage.setItem('locale', route.params.locale);
+        locale.value = route.params.locale;
+      }
+
       setInterval(() => {
         getCart()
       }, 500);
