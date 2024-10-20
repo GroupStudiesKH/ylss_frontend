@@ -82,7 +82,8 @@
 import { useI18n } from "vue-i18n";
 import cartService from "@/service/cart-service.js";
 import { ref, onMounted, computed } from "vue";
-import { useRoute } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
+
 
 export default {
   name: "Header",
@@ -90,6 +91,7 @@ export default {
     const { t, locale } = useI18n();
     const cartItem = ref([]);
     const route = useRoute();
+    const router = useRouter();
     const localeOptions = ref([
       {
         lang: 'eng',
@@ -112,9 +114,28 @@ export default {
     const setLocale = (lang) => {
       locale.value = lang;
       localStorage.setItem('locale', lang);
-      const currentPath = window.location.pathname;
-      const newPath = `/${lang === 'eng' ? 'eng' : lang}/${currentPath.split('/').slice(2).join('/')}`;
-      window.location.href = newPath;
+
+      const currentPath = route.path;
+      const currentName = route.name;
+      const currentParams = route.params;
+
+      let newPath = `/${lang}`;
+      
+      if (currentName) {
+        newPath += `/${currentName}`;
+        
+        if (Object.keys(currentParams).length > 0) {
+          for (const [key, value] of Object.entries(currentParams)) {
+            if (key !== 'locale') {
+              newPath += `/${value}`;
+            }
+          }
+        }
+      } else {
+        newPath = currentPath.replace(/^\/[^\/]+/, `/${lang}`);
+      }
+
+      router.push(newPath);
     }
 
     const getCart = () => {
