@@ -12,7 +12,7 @@ export default {
     CompanyMenu,
   },
   setup() {
-    const { locale } = useI18n();
+    const { t, locale } = useI18n();
     const selectedImage = ref(null);
     const showModal = ref(false);
 
@@ -26,6 +26,7 @@ export default {
     };
 
     return {
+      t,
       locale,
       selectedImage,
       showModal,
@@ -51,13 +52,13 @@ export default {
           <div class="row">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              首頁 / 公司介紹 / 標準認證
+              {{ t("header.index") }} / {{ t("header.companyIntro") }} / {{ t("cert.title") }}
             </div>
             <div class="col-12">
               <div class="row">
                 <div class="col-12 mt-3">
-                  <h3>▎國際標準品質認證</h3>
-                  <p>遠龍在產品品質上展現堅持，製造符合 ISO、JIS、EN、ASTM 及 CNS 等國際標準製程產品。遠龍更擁有專屬的品檢實驗室，定期接受 TAF 認證合格，透過產品自檢確保一致性的品質水準。</p>
+                  <h3>{{ t("cert.lists.title") }}</h3>
+                  <p v-html="t('cert.lists.phase1')"></p>
                 </div>
 
                 <div class="col-12 mt-3" id="quality-lab">
@@ -66,97 +67,97 @@ export default {
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-9001.webp">
                         </div>
-                        <p>ISO 9001  2015版(20240426-20270425)_品質管理系統</p>
+                        <p>{{ t("cert.lists.iso9001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-50001-2018.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-50001-2018.webp">
                         </div>
-                        <p>ISO 50001 2018版(20201118-20231118)_能源管理系統</p>
+                        <p>{{ t("cert.lists.iso5001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-45001-2018.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-45001-2018.webp">
                         </div>
-                        <p>ISO 45001  2018版(20220729-20250708)_職業安全衛生管理系統</p>
+                        <p>{{ t("cert.lists.iso45001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/cns-45001-en.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/cns-45001-en.webp">
                         </div>
-                        <p>TOSHMS   CNS 45001：2018(1110729-1140707)_台灣職業衛生管理系統</p>
+                        <p>{{ t("cert.lists.cns45001_1") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/cns-45001-zhtw.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/cns-45001-zhtw.webp">
                         </div>
-                        <p>TOSHMS   CNS 45001：2018(1110729-1140707)_台灣職業衛生管理系統</p>
+                        <p>{{ t("cert.lists.cns45001_2") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14001-2015.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-14001-2015.webp">
                         </div>
-                        <p>ISO 14001  2015版(20220729-20250721)_環境管理系統</p>
+                        <p>{{ t("cert.lists.iso14001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14064.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-14064.webp">
                         </div>
-                        <p>ISO 14064-1 2018版(20220810)溫室氣體查驗聲明書</p>
+                        <p>{{ t("cert.lists.iso14064") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14067-zhtw.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-14067-zhtw.webp">
                         </div>
-                        <p>ISO 14067 2018版(20230306-20250305)碳足跡查證聲明書</p>
+                        <p>{{ t("cert.lists.iso14067") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-17025-zhtw.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-17025-zhtw.webp">
                         </div>
-                        <p>ISO/IEC 17025：2017；CNS17025：2018 實驗室認證證書</p>
+                        <p>{{ t("cert.lists.iso17025") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iatf-16949.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iatf-16949.webp">
                         </div>
-                        <p>IATF 16949 2016版(20240426-20270425)_汽車品質管理系統驗證</p>
+                        <p>{{ t("cert.lists.iatf16949") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/bis-6911.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/bis-6911.webp">
                         </div>
-                        <p>BIS IS 6911</p>
+                        <p>{{ t("cert.lists.bis-is-6911") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/cns-8499.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/cns-8499.webp">
                         </div>
-                        <p>CNS 8499</p>
+                        <p>{{ t("cert.lists.cns8499") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/jis.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/jis.webp">
                         </div>
-                        <p>JQA JIS G 4305</p>
+                        <p>{{ t("cert.lists.jis4305") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-17025_en.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-17025_en.webp">
                         </div>
-                        <p>ISO/IEC 17025：2017；CNS17025：2018 實驗室認證證書</p>
+                        <p>{{ t("cert.lists.cns17025") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14046-zhtw.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-14046-zhtw.webp">
                         </div>
-                        <p>ISO 14046(2014版)-中文</p>
+                        <p>{{ t("cert.lists.iso14046_ch") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14046-en.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-14046-en.webp">
                         </div>
-                        <p>ISO 14046(2014版)-英文</p>
+                        <p>{{ t("cert.lists.iso14046_en") }}</p>
                     </div>
                   </div>
                 </div>

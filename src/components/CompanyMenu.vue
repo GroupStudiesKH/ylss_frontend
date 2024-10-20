@@ -8,17 +8,17 @@
         <div class="collapse col-12 category" id="companyMenu">
             <div>
                 <div class="title">
-                    公司介紹
+                    {{ t('header.companyIntro') }}
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" :class="{ li_active: $route.name === 'company' }">
-                        <router-link :to="{ name: 'company' }">關於遠龍</router-link>
+                        <router-link :to="{ name: 'company' }">{{ t('company.title') }}</router-link>
                     </li>
                     <li class="list-group-item" :class="{ li_active: $route.name === 'quality' }">
-                        <router-link :to="{ name: 'quality' }">品質政策</router-link>
+                        <router-link :to="{ name: 'quality' }">{{ t('quality.title') }}</router-link>
                     </li>
                     <li class="list-group-item" :class="{ li_active: $route.name === 'cert' }">
-                        <router-link :to="{ name: 'cert' }">標準認證</router-link>
+                        <router-link :to="{ name: 'cert' }">{{ t('cert.title') }}</router-link>
                     </li>
                 </ul>
             </div>
