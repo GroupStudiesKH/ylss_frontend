@@ -2,12 +2,12 @@
     <div class="col-12 col-lg-2 category">
         <a class="btn btn-primary" id="productMenuBtn" data-bs-toggle="collapse" href="#productMenu" role="button"
             aria-expanded="false" aria-controls="productMenu">
-            開啟分類選單
+            {{ t('common.openMenu') }}
         </a>
         <div class="collapse col-12 category" id="productMenu">
             <div>
                 <div class="title">
-                    產品介紹
+                    {{ t('product.title') }}
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" v-for="(category, index) in categories" :key="index">
@@ -41,9 +41,10 @@ export default {
         }
     },
     setup() {
-        const { locale } = useI18n();
+        const { t, locale } = useI18n();
 
         return {
+            t,
             locale
         };
     },

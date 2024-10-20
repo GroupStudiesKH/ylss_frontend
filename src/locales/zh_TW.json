@@ -43,6 +43,7 @@
     }
   },
   "product":{
+    "title": "產品介紹",
     "addAskPrice": "加入詢價清單",
     "removeAskPrice": "移除詢價清單"
   },
