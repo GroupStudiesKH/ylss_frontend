@@ -177,8 +177,13 @@ export default {
 
           <h4>相關規格/</h4>
           <hr />
-          <div class="spec_tag_1">300系-化學成份及機械性質</div>
-          <div class="spec_tag_2">不銹鋼應用</div>
+          <template v-if="product && product.spec_articles">
+            <div v-for="(article, index) in product.spec_articles" :key="article.id" :class="index % 2 === 0 ? 'spec_tag_1' : 'spec_tag_2'">
+              <router-link :to="`/spec/${article.id}`">
+                {{ article.article_detail.find(detail => detail.language === locale)?.meta_value || article.article_detail.find(detail => detail.language === 'zh_TW')?.meta_value }}
+              </router-link>
+            </div>
+          </template>
         </div>
       </div>
     </div>
