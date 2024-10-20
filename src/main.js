@@ -8,7 +8,7 @@ import router from "./router";
 import i18n from './i18n'
 
 const app = createApp(App).use(i18n);
-app.use(VueReCaptcha, { siteKey: '6Lf1wpopAAAAAEzS5fkvCEzFHKoP2kmlIijzOKR3' });
+app.use(VueReCaptcha, { siteKey: '6Ldml2YqAAAAAC4kqgtZmD6cJa6tNi_m0fkovXdw' });
 app.use(router);
 
 app.mount("#app");

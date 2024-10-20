@@ -152,23 +152,23 @@ export default {
         <div class="row">
           <div class="col-12 pt-lg-5">
             <img src="/assets/img/euro_logo.webp">
-            <h3>遠龍在乎綠色使命</h3>
+            <h3>{{ t('index.feature5.title') }}</h3>
             <ul class="mt-lg-4">
               <li>
                 <img src="/assets/img/check.webp">
-                遠龍致力打造由內而外的綠色體質
+                {{ t('index.feature5.content_1') }}
               </li>
               <li>
                 <img src="/assets/img/check.webp">
-                採用ISO 50001能源管理系統及歐盟認證再生能源
+                {{ t('index.feature5.content_2') }}
               </li>
               <li>
                 <img src="/assets/img/check.webp">
-                優先採購綠色環保標章原物料，選用再生材料製作包裝
+                {{ t('index.feature5.content_3') }}
               </li>
               <li>
                 <img src="/assets/img/check.webp">
-                目標2050年實現淨零排放，實踐企業永續發展願景
+                {{ t('index.feature5.content_4') }}
               </li>
             </ul>
           </div>
@@ -180,11 +180,11 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3>ISO 9001、JIS mark及IATF 16949 品質政策</h3>
-            <p>我們全面執行ISO 9001、JIS Q1001、及IATF 16949等相關作業標準來架構品質管理系統，以提升不銹鋼專業能力及服務品質，並落實持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會依據品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。</p>
+            <h3>{{ t('index.feature6.title') }}</h3>
+            <p>{{ t('index.feature6.content_1') }}</p>
             <router-link :to="{ name: 'quality' }" class="pill_button mt-5">
-            Learn More
-          </router-link>
+              {{ t('index.feature6.btn') }}
+            </router-link>
           </div>
         </div>
       </div>

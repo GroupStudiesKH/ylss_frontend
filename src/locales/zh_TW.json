@@ -29,16 +29,17 @@
     "feature3_subtitle": "Manufacturing <br/> excellence",
     "feature4": "綠色使命",
     "feature4_subtitle": "Energy and <br/>  environmental protection",
-    "application":{
-      "intro": "俐元不斷地創新技術並積極研發，生產高品質的絕緣材料、導電布、導電布泡棉、泡棉、防火膠帶、吸波材及導電銅箔…等， 並增添最新科技的生產設備，生產一系列規格精確、超高品質、使用便利的產品，於業界建立良好信譽。",
-      "product1": "電子通訊",
-      "product2": "電池",
-      "product3": "醫療",
-      "product4": "網通",
-      "product5": "車載",
-      "product6": "半導體",
-      "product7": "電腦",
-      "product8": "POS"
+    "feature5": {
+      "title": "遠龍在乎綠色使命",
+      "content_1": "遠龍致力打造由內而外的綠色體質",
+      "content_2": "採用ISO 50001能源管理系統及歐盟認證再生能源",
+      "content_3": "優先採購綠色環保標章原物料，選用再生材料製作包裝",
+      "content_4": "目標2050年實現淨零排放，實踐企業永續發展願景"
+    },
+    "feature6": {
+      "title": "ISO 9001、JIS mark及IATF 16949 品質政策",
+      "content_1": "我們全面執行ISO 9001、JIS Q1001、及IATF 16949等相關作業標準來架構品質管理系統，以提升不銹鋼專業能力及服務品質，並落實持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會依據品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。",
+      "btn": "Learn More"
     }
   },
   "product":{

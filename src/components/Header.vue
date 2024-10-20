@@ -116,6 +116,9 @@ export default {
     const setLocale = (lang) => {
       locale.value = lang;
       localStorage.setItem('locale', lang);
+      const currentPath = window.location.pathname;
+      const newPath = `/${lang}${currentPath.substring(currentPath.indexOf('/', 1))}`;
+      window.location.href = newPath;
     }
 
     const getCart = () => {
@@ -123,6 +126,10 @@ export default {
     };
 
     onMounted(() => {
+
+      const storedLocale = localStorage.getItem('locale');
+      const currentPath = window.location.pathname;
+
       setInterval(() => {
         getCart()
       }, 500);
