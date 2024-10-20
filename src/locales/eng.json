@@ -9,7 +9,8 @@
     "sustainability": "Sustainability",
     "contact": "Contact Us",
     "recruitment": "Recruitment",
-    "tradeService": "Trade Services"
+    "tradeService": "Trade Services",
+    "askingPrice": "Inquiry"
   },
   "footer": {
     "address": "No. 28, Daye S. Rd., Xiaogang Dist., Kaohsiung City 812, Taiwan (R.O.C.)",
@@ -56,171 +57,171 @@
     "phase2": "/assets/img/tech_content.webp"
   },
   "equip":{
-    "title": "核心設備",
+    "title": "Core Equipment",
     "zm1": {
-      "title": "二十重式冷軋機(ZM1)",
+      "title": "20-High Cold Rolling Mill (ZM1)",
       "phase1": "20-High Cold Rolling Mill",
-      "phase2": "為將熱軋鋼捲利用冷軋技術軋延至厚度0.25~1.5mm， 並提高平坦度及亮度。"
+      "phase2": "Rolls hot-rolled steel coils to a thickness of 0.25~1.5mm, improving flatness and brightness."
     },
     "ba": {
-      "title": "光輝退火線(BA)",
+      "title": "Bright Annealing Line (BA)",
       "phase1": "Bright Annealing Line",
-      "phase2": "為將經軋研後之硬質鋼捲退火,使其晶粒成長而軟化而具被加工性。"
+      "phase2": "Anneals hardened steel coils post-rolling, growing and softening the grain for workability."
     },
     "spl": {
-      "title": "調質精軋機(SPL)",
+      "title": "Skin Pass Mill (SPL)",
       "phase1": "Skin Pass Mill",
-      "phase2": "為進行鋼捲調質作業,提昇產品亮度與加工性。"
+      "phase2": "Carries out tempering to enhance the product's brightness and workability."
     },
     "tll": {
-      "title": "張力整平線(TLL)",
+      "title": "Tension Levelling Line (TLL)",
       "phase1": "Tension Levelling Line",
-      "phase2": "為將鋼板表面整平，獲得更好的表面平坦度及調整機械性質。"
+      "phase2": "Levels the surface of steel sheets, achieving better flatness and mechanical properties."
     },
     "sl": {
-      "title": "鋼捲分條線(SL)",
+      "title": "Slitting Line (SL)",
       "phase1": "Slitting Line",
-      "phase2": "主要功能為依訂單需求將鋼捲分條為各種不同寬度尺寸之窄幅鋼捲"
+      "phase2": "Slits coils into narrower strips according to customer order requirements."
     }
   },
   "company": {
-    "title": "關於遠龍",
+    "title": "About YLSS",
     "managePolicy": {
-      "title": "經營方針",
+      "title": "Management Principles",
       "phase1": "/assets/img/company_intro_left.webp",
       "phase2": "/assets/img/company_intro_right.webp"
     },
     "companyIntro": {
-      "title": "關於遠龍",
-      "phase1": "遠龍不銹鋼股份有限公司成立於2005年，座落於台灣高雄，隸屬遠東集團所有，為冷軋不銹鋼供應商，年產能13萬噸，產品銷售世界四十餘國。<br/>遠龍不銹鋼全面執行品質管理系統，落實持續改善的精神，不斷提升品質與生產力，產品深獲顧客信賴與肯定。<br/>遠龍不銹鋼以2050年達到淨零排放為目標，透過各項能源管理措施，以實際行動做好節約減碳，讓公司逐步邁向成為低碳的綠色企業，為地球永續盡一份心力。"
+      "title": "About YLSS",
+      "phase1": "Yuan Long Stainless Steel Corp. was established in 2005, located in Kaohsiung, Taiwan. As a subsidiary of the Far Eastern Group, we are a cold-rolled stainless steel supplier with an annual production capacity of 130,000 tons, selling products to over 40 countries worldwide.<br/>Yuan Long Stainless Steel fully implements a quality management system, embodying the spirit of continuous improvement to enhance quality and productivity. Our products have gained customer trust and recognition.<br/>Yuan Long Stainless Steel aims to achieve net-zero emissions by 2050. Through various energy management measures, we take practical actions to conserve energy and reduce carbon emissions, gradually transforming into a low-carbon green enterprise and contributing to global sustainability."
     },
     "coreValue":{
-      "title": "核心價值",
-      "phase1": "始終秉持集團價值觀「誠、勤、樸、慎、創新」，以精湛技藝與態度在企業永續的道路上不懈努力，展現人本、信賴、務實、創新的核心價值。<br/>1.人本-重視員工需求與發展,善盡企業社會責任。<br/>2.信賴-成為客戶值得信賴的夥伴,成就彼此的成功。<br/>3.務實-腳踏實地,堅持到底,專注過程,做好每件事。<br/>4.創新-跨領域學習,勇於突破,持續改善,提升品質。"
+      "title": "Core Values",
+      "phase1": "We always adhere to our group values of \"Integrity, Diligence, Simplicity, Prudence, Innovation,\" striving tirelessly for corporate sustainability, embodying our core values of \"People-Centered, Trust, Pragmatism, Innovation.\"<br/>1. People-Centered – Focus on employee needs and development, fulfilling corporate social responsibility.<br/>2. Trust – Become a trusted partner for clients, ensuring mutual success.<br/>3. Pragmatism – Stay grounded, persevere, and focus on doing every task well.<br/>4. Innovation – Embrace cross-disciplinary learning, breakthrough challenges, continuously improve, and enhance quality."
     },
     "view":{
-      "title": "使命願景",
-      "phase1": "<p>以「製造高品質低碳排的冷軋不銹鋼」為使命，「成為業界首選，綠色低碳冷軋不銹鋼供應商」為願景。</p>"
+      "title": "Mission and Vision",
+      "phase1": "<p>Mission: \"Manufacture high-quality, low-carbon cold-rolled stainless steel.\"<br/>Vision: \"To become the industry's best option, a green low-carbon cold-rolled stainless steel supplier.\"</p>"
     },
     "contact": {
-      "title": "遠龍不銹鋼股份有限公司",
-      "phase1": "業務類型：OEM製造商出口商/代理批發商增值經銷商",
-      "phase2": "主要產品: 300 及 400系列不銹鋼",
-      "phase3": "ISO和/或其他安全/質量認證：ISO 9001、ISO 50001、ISO 45001、ISO 14001、ISO 14064、ISO 14067、CNS 45001、ISO/IEC 17025、IATF 16949、JQA JIS G4305、BIS IS 6911"
+      "title": "Yuan Long Stainless Steel Corp.",
+      "phase1": "Business Types: OEM Manufacturer/Exporter, Agency & Wholesale, Value-Added Distributor",
+      "phase2": "Main Products: 300 and 400 series stainless steel",
+      "phase3": "ISO and/or other safety/quality certifications: ISO 9001, ISO 50001, ISO 45001, ISO 14001, ISO 14064, ISO 14067, CNS 45001, ISO/IEC 17025, IATF 16949, JQA JIS G4305, BIS IS 6911"
     }
   },
   "quality":{
-    "title": "品質政策",
+    "title": "Quality Policy",
     "cert": {
-      "title": "ISO 9001、JIS mark及IATF 16949 品質政策",
-      "phase1": "在秉持品質政策的意念下，我們全面執行ISO 9001品質管理系統、JIS Q1001符合性評估 - 符合日本產業標準的認證 – 一般認證指引及IATF 16949汽車業品質管理系統等相關作業標準來架構品質管理系統。提升不銹鋼專業能力及服務品質，並秉持持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會依據品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。"
+      "title": "ISO 9001, JIS mark, and IATF 16949 Quality Policy",
+      "phase1": "Adhering to our quality policy, we fully implement the ISO 9001 Quality Management System, JIS Q1001 Conformity Assessment - Certification to Japanese Industrial Standards - General Requirements for Certification Bodies, and IATF 16949 Automotive Quality Management System standards to structure our quality management system. We aim to enhance our stainless steel expertise and service quality, and uphold the spirit of continuous improvement to enhance quality and productivity, achieving customer satisfaction. We commit to establishing quality objectives based on our quality policy and implementing various improvement measures to continuously enhance our quality management system while meeting customer and legal requirements."
     },
     "policy": {
-      "title": "ISO 9001品質管理系統/IATF 16949汽車認證系統品質政策",
+      "title": "ISO 9001 Quality Management System/IATF 16949 International Standard for Automotive Quality Management Systems",
       "phase1": "/assets/img/quality_left.webp",
       "phase2": "/assets/img/quality_right.webp"
     },
     "lab": {
-      "title": "實驗室品質政策",
-      "phase1": "在秉持品質政策的意念下，我們全面執行ISO 9001及ISO/IEC 17025 品質管理系統。提升不銹鋼專業能力及服務品質，並秉持持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會建立品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。",
-      "phase2": "ISO/IEC 17025 遠龍實驗室(編號：3537) 品質政策：以公正、獨立、透明的原則，提供有效率及信賴的測試服務。"
+      "title": "Laboratory Quality Policy",
+      "phase1": "Following the guideline of our quality policy, we fully implement ISO 9001 and ISO/IEC 17025 quality management systems. We aim to enhance our stainless steel expertise and service quality, and uphold the spirit of continuous improvement to enhance quality and productivity, achieving customer satisfaction. We commit to establishing quality objectives based on our quality policy and implementing various improvement measures to continuously enhance our quality management system while meeting customer and legal requirements.",
+      "phase2": "ISO/IEC 17025 YLSS Laboratory (No. 3537) Quality Policy: Providing efficient and reliable testing services under the principles of fairness, independence, and transparency."
     }
   },
   "cert":{
-    "title": "標準認證",
+    "title": "Standard Certifications",
     "lists": {
-      "title": "國際標準品質認證",
-      "phase1": "遠龍在產品品質上展現堅持，製造符合 ISO、JIS、EN、ASTM 及 CNS 等國際標準製程產品。遠龍更擁有專屬的品檢實驗室，定期接受 TAF 認證合格，透過產品自檢確保一致性的品質水準。",
-      "iso9001": "ISO 9001  2015版(20240426-20270425)_品質管理系統",
-      "iso5001": "ISO 50001 2018版(20201118-20231118)_能源管理系統",
-      "iso45001": "ISO 45001  2018版(20220729-20250708)_職業安全衛生管理系統",
-      "cns45001_1": "TOSHMS   CNS 45001：2018(1110729-1140707)_台灣職業衛生管理系統",
-      "cns45001_2": "TOSHMS   CNS 45001：2018(1110729-1140707)_台灣職業衛生管理系統",
-      "iso14001": "ISO 14001  2015版(20220729-20250721)_環境管理系統",
-      "iso14064": "ISO 14064-1 2018版(20220810)溫室氣體查驗聲明書",
-      "iso14067": "ISO 14067 2018版(20230306-20250305)碳足跡查證聲明書",
-      "iso17025": "ISO/IEC 17025：2017；CNS17025：2018 實驗室認證證書",
-      "iatf16949": "IATF 16949 2016版(20240426-20270425)_汽車品質管理系統驗證",
+      "title": "International Quality Standards Certification",
+      "phase1": "YLSS demonstrates a commitment to quality by achieving international certifications such as ISO, JIS, BIS, IATF, TAF, and CNS.",
+      "iso9001": "ISO 9001 2015 version (20240426-20270425) Quality Management System",
+      "iso5001": "ISO 50001 2018 version (20201118-20231118) Energy Management System",
+      "iso45001": "ISO 45001 2018 version (20220729-20250708) Occupational Health and Safety Management System",
+      "cns45001_1": "TOSHMS CNS 45001: 2018 (1110729-1140707) Taiwan Occupational Health Management System",
+      "cns45001_2": "TOSHMS CNS 45001: 2018 (1110729-1140707) Taiwan Occupational Health Management System",
+      "iso14001": "ISO 14001 2015 version (20220729-20250721) Environmental Management System",
+      "iso14064": "ISO 14064-1 2018 version (20220810) Greenhouse Gas Verification Statement",
+      "iso14067": "ISO 14067 2018 version (20230306-20250305) Carbon Footprint Verification Statement",
+      "iso17025": "ISO/IEC 17025: 2017; CNS17025: 2018 Laboratory Accreditation Certificate",
+      "iatf16949": "IATF 16949 2016 version (20240426-20270425) Automotive Quality Management System Certification",
       "bis-is-6911": "BIS IS 6911",
       "cns8499": "CNS 8499",
       "jis4305": "JQA JIS G 4305",
-      "cns17025": "ISO/IEC 17025：2017；CNS17025：2018 實驗室認證證書",
-      "iso14046_ch": "ISO 14046(2014版)-中文",
-      "iso14046_en": "ISO 14046(2014版)-英文"
+      "cns17025": "ISO/IEC 17025: 2017; CNS17025: 2018 Laboratory Accreditation Certificate",
+      "iso14046_ch": "ISO 14046 (2014 version) - Chinese",
+      "iso14046_en": "ISO 14046 (2014 version) - English"
     }
   },
-  "recurit": {
-    "title": "人才招募",
+  "recruit": {
+    "title": "Talent Recruitment",
     "coreValues": {
-      "title": "公司核心價值",
-      "content": "我們秉持合作、誠信、專業、當責的核心價值，致力於在每一個環節中提供卓越的服務。"
+      "title": "Core Values",
+      "content": "We uphold core values of Collaboration, Integrity, Professionalism, Accountability, and are committed to providing excellent service in every aspect."
     },
     "teamwork": {
-      "title": "團隊合作",
-      "content": "在我們的公司，每位成員都是團隊的一部分。我們鼓勵相互支持與交流，共同面對挑戰"
+      "title": "Teamwork",
+      "content": "Every member is part of the team. We encourage mutual support and communication to face challenges together."
     },
     "inclusiveEnvironment": {
-      "title": "包容性環境",
-      "content": "我們重視多樣性，努力營造一個包容的工作環境。歡迎不同背景與觀點的人才來到我們的團隊。"
+      "title": "Cultural diversity in the workplace",
+      "content": "We value diversity and strive to create an inclusive workplace. We welcome talents from different backgrounds and perspectives."
     },
     "personalGrowth": {
-      "title": "個人成長",
-      "content": "我們相信優秀的人才是公司最重要的資產。提供多樣的培訓課程與明確的晉升管道，幫助每位成員在職業上不斷成長。"
+      "title": "Career development",
+      "content": "We believe outstanding talents are the company's most valuable asset. We provide diverse training courses and clear promotion paths to help every member grow in their career."
     },
     "workLifeBalance": {
-      "title": "工作生活平衡",
-      "content": "彈性工作時間，支持工作與生活的平衡。"
+      "title": "Work & Life Balance",
+      "content": "Flexible working hours to support balance between work and personal life."
     },
     "joinUs": {
-      "title": "加入我們",
-      "content": "如果您想成為這個充滿活力和多元化的團隊一員，現在就加入我們！請主動投履歷。"
+      "title": "Join Us",
+      "content": "If you want to be part of this vibrant and diverse team, apply now! Please submit your resume proactively."
     },
     "benefits": {
-      "title": "員工福利",
+      "title": "Employee Benefits",
       "salary": {
-        "title": "薪資獎金制度",
-        "content1": "保障年薪約14.5個月(全薪計算)：中秋節獎金(半薪)、端午獎金(半薪)、年終加考勤獎金(約1.5個月)。",
-        "content2": "非固定獎金：產銷獎金、產銷保留獎金。",
-        "content3": "考核獎金：每年考核一次，提供完善的升遷考核制度。"
+        "title": "Salary and Bonus System",
+        "content1": "Guaranteed annual salary of around 14.5 months (based on full pay): Mid-Autumn Festival bonus (half salary), Dragon Boat Festival bonus (half salary), year-end bonus plus attendance bonus (about 1.5 months).",
+        "content2": "Non-fixed bonuses: Production and sales bonus, production and sales retention bonus.",
+        "content3": "Assessment bonuses: Annual assessments with a comprehensive promotion system."
       },
       "welfare": {
-        "title": "職工福利委員會",
-        "content1": "禮券發放：四節禮券(春節、勞動節、端午、中秋)、生日禮券、每年結餘禮券發放回饋。",
-        "content2": "補助費用：婚喪喜慶補助、子女教育補助、旅遊補助、急難救助補助。"
+        "title": "Employee Welfare Committee",
+        "content1": "Voucher distribution: Festival vouchers (Chinese New Year, Labor Day, Dragon Boat Festival, Mid-Autumn Festival), birthday vouchers, annual surplus voucher distribution.",
+        "content2": "Subsidies: Wedding and funeral subsidies, children's education subsidies, travel subsidies, emergency subsidies."
       },
       "companyBenefits": {
-        "title": "公司福利項目",
-        "content": "員工健康檢查、提供員工制服、提供員工廠內停車位(免費)、親子旅遊活動、員工旅遊、讀書會、社團活動、聖誕活動(移工同樂會)、尾牙活動、員工榮退歡送會。"
+        "title": "Employee Benefits",
+        "content": "Employee health check-ups, Provision of employee uniforms, Free on-site parking for employees, Family day activity, Company trip, Book club, Club activities, Christmas party (migrant worker events), Year-end banquet, Employee retirement farewell party."
       },
       "insurance": {
-        "title": "員工保險",
-        "content": "勞健保、職保、團保、勞退提撥。"
+        "title": "Employee Insurance",
+        "content": "Labor insurance, Health insurance, Occupational insurance, Group insurance, Labor pension contributions."
       },
       "training": {
-        "title": "教育訓練",
-        "content": "新進人員訓練、職能訓練、通識教育、OJT教育訓練。"
+        "title": "Training and Development",
+        "content": "New employee training, Skills training, General education, On-the-job training (OJT)."
       }
     },
-    "viewJobs": "檢視人力資源需求"
+    "viewJobs": "Review of Human Resource Needs"
   },
   "contact": {
-    "heading": "如果您有任何問題或建議，歡迎填寫以下表格聯繫我們。",
-    "title": "聯絡詢價",
-    "name": "姓名",
-    "company": "公司/單位",
-    "phone": "聯絡電話",
+    "heading": "Dear Customers, Should you have any inquiries or interests, please fill out the form below or call our service hotline at +886-7-757-988. We will do our best to assist you!",
+    "title": "Contact and Inquiry",
+    "name": "Name",
+    "company": "Company/Organization",
+    "phone": "Contact Number",
     "email": "E-mail",
-    "content": "訊息內容",
-    "askingPrice": "您的詢價產品",
-    "submit": "確認送出",
-    "success": "您的訊息已成功送出，我們將盡快與您聯繫，謝謝！",
-    "successTitle": "訊息送出成功",
-    "close": "關閉",
-    "isSending": "訊息送出中",
-    "askingPriceEmpty": "您可以在產品介紹頁面裡找到你想詢價的產品，並且加入詢價表單與我們聯絡。"
+    "content": "Message Content",
+    "askingPrice": "Product Inquiry",
+    "submit": "Submit",
+    "success": "Your message has been successfully sent. We will contact you as soon as possible. Thank you!",
+    "successTitle": "Message Sent Successfully",
+    "close": "Close",
+    "isSending": "Sending message",
+    "askingPriceEmpty": "You can find the products you want to inquire about on the product introduction page and add them to the inquiry form to contact us."
   },
   "common": {
-    "openMenu": "開啟分類選單",
-    "mainFunc": "主要功能"
+    "openMenu": "Open Category Menu",
+    "mainFunc": "Main Functions"
   }
 }

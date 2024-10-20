@@ -16,7 +16,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" :class="locale">
           <li class="nav-item">
             <router-link class="nav-link" :to="{name: 'company', params: { locale }}">{{ t("header.companyIntro") }}</router-link>
           </li>
@@ -44,7 +44,7 @@
             <router-link class="nav-link" :to="{name: 'contact', params: { locale }}">
               <span class="material-icons">&#xea20;</span>
 
-              <span>詢價</span>
+              <span>{{ t("header.askingPrice") }}</span>
               <div class="bg-danger header-notify">{{ cartItem.length }}</div>
             </router-link>
           </li>

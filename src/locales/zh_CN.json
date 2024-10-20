@@ -9,7 +9,8 @@
     "sustainability": "企业永续",
     "contact": "联系我们",
     "recruitment": "人才招聘",
-    "tradeService": "贸易服务"
+    "tradeService": "贸易服务",
+    "askingPrice": "询价"
   },
   "footer": {
     "address": "高雄市812小港区大业南路28号",
@@ -204,7 +205,7 @@
     "viewJobs": "检视人力资源需求"
   },
   "contact": {
-    "heading": "如果您有任何问题或建议，欢迎填写以下表格联系我们。",
+    "heading": "亲爱的顾客您好，若您有任何需求或兴趣，我们诚挚地邀请您填写以下表单，或拨打服务专线:+886-7-757-988 我们将尽力为您解答!",
     "title": "联系询价",
     "name": "姓名",
     "company": "公司/单位",

@@ -150,7 +150,7 @@ export default {
     <div id="csr_green">
       <div class="container">
         <div class="row">
-          <div class="col-12 pt-lg-5">
+          <div class="col-12 col-xl-6 pt-lg-5">
             <img src="/assets/img/euro_logo.webp">
             <h3>{{ t('index.feature5.title') }}</h3>
             <ul class="mt-lg-4">

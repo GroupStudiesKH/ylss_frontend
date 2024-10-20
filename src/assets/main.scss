@@ -131,6 +131,26 @@ header {
 
             .navbar-nav {
 
+                &.eng{
+                    @media (min-width: 991px) {
+                        font-size: 10pt;
+                        .nav-item.ask_price {
+                            font-size: 10pt;
+                            width: 115px !important;
+                        }
+                    }
+                }
+
+                @media (max-width: 1440px) and (min-width: 991px) {
+                    &.eng{
+                        .nav-item{
+                            .nav-link{
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+
                 .nav-item {
                     border-bottom: 1.5px solid transparent;
 
@@ -162,6 +182,31 @@ header {
                         display: inline-block;
                         text-align: center;
                         margin-left: 5px;
+
+                        @media (max-width: 1366px) {
+                            position: absolute;
+                        }
+                    }
+
+                    &.ask_price {
+                        border: 1px solid #fff !important;
+                        border-radius: 10px;
+                        font-size: 12pt;
+                        line-height: 12pt;
+                        width: 115px !important;
+            
+                        .material-icons {
+                            font-size: 20px;
+                            vertical-align: text-top;
+                            margin-right: 5px;
+                        }
+            
+                        @media (max-width: 992px) {
+                            border: none;
+                            font-size: 14pt;
+                            line-height: 16px;
+                            margin: 10px 0px;
+                        }
                     }
                 }
 
@@ -190,28 +235,6 @@ header {
                     }
                 }
 
-            }
-
-
-        }
-
-        .ask_price {
-            border: 1px solid #fff !important;
-            border-radius: 10px;
-            font-size: 12pt;
-            line-height: 16px;
-
-            .material-icons {
-                font-size: 20px;
-                vertical-align: text-top;
-                margin-right: 5px;
-            }
-
-            @media (max-width: 992px) {
-                border: none;
-                font-size: 14pt;
-                line-height: 16px;
-                margin: 10px 0px;
             }
         }
 
