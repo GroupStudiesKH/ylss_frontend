@@ -15,7 +15,7 @@ export default {
     SpecMenu,
   },
   setup() {
-    const { locale } = useI18n();
+    const { t, locale } = useI18n();
     const route = useRoute();
     const articleId = ref(route.params.id);
     const article = ref({
@@ -41,6 +41,7 @@ export default {
     });
 
     return {
+      t,
       locale,
       article
     };
@@ -62,7 +63,7 @@ export default {
           <div class="row">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              首頁 / 產品規格
+              {{ t("header.index") }} / {{ t("header.productSpec") }}
             </div>
             <div class="col-12">
                 <h4>▎{{ article.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}</h4>

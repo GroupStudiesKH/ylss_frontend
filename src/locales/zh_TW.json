@@ -47,6 +47,42 @@
     "addAskPrice": "加入詢價清單",
     "removeAskPrice": "移除詢價清單"
   },
+  "spec": {
+    "title": "產品規格"
+  },
+  "tech":{
+    "title": "專業技術",
+    "phase1": "遠龍擁有不銹鋼冷軋製程核心設備，更具備重捲、分切、裁剪、檢驗等專業能力，並設有分條機滿足客戶不同寬度訂單需求。",
+    "phase2": "/assets/img/tech_content.webp"
+  },
+  "equip":{
+    "title": "核心設備",
+    "zm1": {
+      "title": "二十重式冷軋機(ZM1)",
+      "phase1": "20-High Cold Rolling Mill",
+      "phase2": "為將熱軋鋼捲利用冷軋技術軋延至厚度0.25~1.5mm， 並提高平坦度及亮度。"
+    },
+    "ba": {
+      "title": "光輝退火線(BA)",
+      "phase1": "Bright Annealing Line",
+      "phase2": "為將經軋研後之硬質鋼捲退火,使其晶粒成長而軟化而具被加工性。"
+    },
+    "spl": {
+      "title": "調質精軋機(SPL)",
+      "phase1": "Skin Pass Mill",
+      "phase2": "為進行鋼捲調質作業,提昇產品亮度與加工性。"
+    },
+    "tll": {
+      "title": "張力整平線(TLL)",
+      "phase1": "Tension Levelling Line",
+      "phase2": "為將鋼板表面整平，獲得更好的表面平坦度及調整機械性質。"
+    },
+    "sl": {
+      "title": "鋼捲分條線(SL)",
+      "phase1": "Slitting Line",
+      "phase2": "主要功能為依訂單需求將鋼捲分條為各種不同寬度尺寸之窄幅鋼捲"
+    }
+  },
   "company": {
     "title": "關於遠龍",
     "managePolicy": {
@@ -130,6 +166,7 @@
     "askingPriceEmpty": "您可以在產品介紹頁面裡找到你想詢價的產品，並且加入詢價表單與我們聯絡。"
   },
   "common": {
-    "openMenu": "開啟分類選單"
+    "openMenu": "開啟分類選單",
+    "mainFunc": "主要功能"
   }
 }

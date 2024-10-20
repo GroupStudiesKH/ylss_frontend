@@ -3,12 +3,12 @@
 
         <a class="btn btn-primary" id="specMenuBtn" data-bs-toggle="collapse" href="#specMenu" role="button"
             aria-expanded="false" aria-controls="specMenu">
-            開啟分類選單
+            {{ t('common.openMenu') }}
         </a>
         <div class="collapse col-12 category" id="specMenu">
             <div>
                 <div class="title">
-                    產品規格
+                    {{ t('spec.title') }}
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" v-for="(item, itemIndex) in articleLists" :key="itemIndex">
@@ -53,6 +53,7 @@ export default {
         });
 
         return {
+            t,
             currentCategory,
             locale,
             articleLists

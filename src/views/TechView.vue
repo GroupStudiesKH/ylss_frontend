@@ -12,9 +12,10 @@ export default {
     TechMenu,
   },
   setup() {
-    const { locale } = useI18n();
+    const { t, locale } = useI18n();
 
     return {
+      t,
       locale
     };
   },
@@ -35,12 +36,12 @@ export default {
           <div class="row">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              首頁 / 技術設備 / 核心技術
+              {{ t("header.index") }} / {{ t("header.techEquipment") }} / {{ t("tech.title") }}
             </div>
             <div class="col-12">
-                <h4>▎專業技術</h4>
-                <p>遠龍擁有不銹鋼冷軋製程核心設備，更具備重捲、分切、裁剪、檢驗等專業能力，並設有分條機滿足客戶不同寬度訂單需求。</p>
-                <img class="w-100 mt-3" src="/assets/img/tech_content.webp">
+                <h4>▎{{ t('tech.title') }}</h4>
+                <p>{{ t('tech.phase1') }}</p>
+                <img class="w-100 mt-3" :src="t('tech.phase2')">
             </div>
           </div>
         </div>

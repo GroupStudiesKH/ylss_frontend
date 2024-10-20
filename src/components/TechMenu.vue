@@ -3,19 +3,19 @@
 
         <a class="btn btn-primary" id="techMenuBtn" data-bs-toggle="collapse" href="#techMenu" role="button"
             aria-expanded="false" aria-controls="techMenu">
-            開啟分類選單
+            {{ t('common.openMenu') }}
         </a>
         <div class="collapse col-12 category" id="techMenu">
             <div>
                 <div class="title">
-                    技術設備
+                    {{ t('header.techEquipment') }}
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" :class="{ li_active: $route.name === 'tech' }">
-                        <router-link to="tech">專業技術</router-link>
+                        <router-link to="tech">{{ t('tech.title') }}</router-link>
                     </li>
                     <li class="list-group-item" :class="{ li_active: $route.name === 'equip' }">
-                        <router-link to="equip">核心設備</router-link>
+                        <router-link to="equip">{{ t('equip.title') }}</router-link>
                     </li>
                 </ul>
             </div>
@@ -37,6 +37,7 @@ export default {
         const { t, locale } = useI18n();
         const currentCategory = useRoute().query.category;
         return {
+            t,
             currentCategory,
             locale
         };
