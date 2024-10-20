@@ -18,26 +18,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto" :class="locale">
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'company', params: { locale }}">{{ t("header.companyIntro") }}</router-link>
+            <a class="nav-link" :href="`/${locale}/company`">{{ t("header.companyIntro") }}</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'product', params: { locale }}">{{ t("header.product") }}</router-link>
+            <a class="nav-link" :href="`/${locale}/product`">{{ t("header.product") }}</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'spec', params: { locale }}">{{ t("header.productSpec") }}</router-link>
+            <a class="nav-link" :href="`/${locale}/spec`">{{ t("header.productSpec") }}</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'equip', params: { locale }}">{{ t("header.techEquipment") }}</router-link>
-          </li>
-
-          <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'article', params: { locale }}">{{ t("header.sustainability") }}</router-link>
+            <a class="nav-link" :href="`/${locale}/equip`">{{ t("header.techEquipment") }}</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'contact', params: { locale }}">{{ t("header.contact") }}</router-link>
+            <a class="nav-link" :href="`/${locale}/article`">{{ t("header.sustainability") }}</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name: 'recurit', params: { locale }}">{{ t("header.recruitment") }}</router-link>
+            <a class="nav-link" :href="`/${locale}/contact`">{{ t("header.contact") }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" :href="`/${locale}/recurit`">{{ t("header.recruitment") }}</a>
           </li>
 
           <li class="nav-item ask_price">
@@ -140,7 +139,7 @@ export default {
         newPath = currentPath.replace(/^\/[^\/]+/, `/${lang}`);
       }
 
-      router.push(newPath);
+      window.location.href = newPath;
     }
 
     const getCart = () => {
