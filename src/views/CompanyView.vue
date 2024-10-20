@@ -12,10 +12,11 @@ export default {
     CompanyMenu,
   },
   setup() {
-    const { locale } = useI18n();
+    const { t, locale } = useI18n();
 
     return {
-      locale,
+      t,
+      locale
     };
   },
 };
@@ -36,7 +37,7 @@ export default {
           <div class="row">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              首頁 / 公司介紹 / 關於遠龍
+              {{ t("header.index") }} / {{ t("header.companyIntro") }} / {{ t("company.title") }}
             </div>
             <div class="col-12">
               <div class="row">
@@ -44,37 +45,30 @@ export default {
                   <img class="heading_image" src="/assets/img/company_intro_heading.webp">
                 </div>
                 <div class="col-12 mt-3">
-                  <h3>▎公司背景</h3>
-                  <p>遠龍不銹鋼股份有限公司成立於2005年，座落於台灣高雄，隸屬遠東集團所有，為冷軋不銹鋼供應商，年產能13萬噸，產品銷售世界四十餘國。<br/>
-                  遠龍不銹鋼全面執行品質管理系統，落實持續改善的精神，不斷提升品質與生產力，產品深獲顧客信賴與肯定。<br/>
-                  遠龍不銹鋼以2050年達到淨零排放為目標，透過各項能源管理措施，以實際行動做好節約減碳，讓公司逐步邁向成為低碳的綠色企業，為地球永續盡一份心力。</p>
+                  <h3>▎{{ t("company.companyIntro.title") }}</h3>
+                  <p v-html="t('company.companyIntro.phase1')"></p>
                 </div>
 
                 <div class="col-12 mt-3">
-                  <h3>▎核心價值</h3>
-                  <p>始終秉持集團價值觀「誠、勤、樸、慎、創新」，以精湛技藝與態度在企業永續的道路上不懈努力，展現人本、信賴、務實、創新的核心價值。<br/>
-                    1.人本-重視員工需求與發展,善盡企業社會責任。<br/>
-                    2.信賴-成為客戶值得信賴的夥伴,成就彼此的成功。<br/>
-                    3.務實-腳踏實地,堅持到底,專注過程,做好每件事。<br/>
-                    4.創新-跨領域學習,勇於突破,持續改善,提升品質。
-                  </p>
+                  <h3>▎{{ t("company.coreValue.title") }}</h3>
+                  <p v-html="t('company.coreValue.phase1')"></p>
                 </div>
                 
                 <div class="col-12 mt-3">
-                  <h3>▎經營方針</h3>
+                  <h3>▎{{ t("company.managePolicy.title") }}</h3>
                   <div class="row">
                     <div class="col-12 col-md-6 mb-3 mb-md-0">
-                      <img class="w-100" src="/assets/img/company_intro_left.webp">
+                      <img class="w-100" :src="t('company.managePolicy.phase1')">
                     </div>
                     <div class="col-12 col-md-6">
-                      <img class="w-100" src="/assets/img/company_intro_right.webp">
+                      <img class="w-100" :src="t('company.managePolicy.phase2')">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 mt-3">
-                  <h3>▎使命願景</h3>
-                  <p>以「製造高品質低碳排的冷軋不銹鋼」為使命，「成為業界首選，綠色低碳冷軋不銹鋼供應商」為願景。</p>
+                  <h3>▎{{ t("company.view.title") }}</h3>
+                  <p v-html="t('company.view.phase1')"></p>
                 </div>
               </div>
             </div>
@@ -87,10 +81,10 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-5 offset-lg-7" id="company_intro_bottom_text">
-            <h3>▎遠龍不銹鋼股份有限公司</h3>
-            <p>業務類型：OEM製造商出口商/代理批發商增值經銷商</p>
-            <p>主要產品: 300 及 400系列不銹鋼</p>
-            <p>ISO和/或其他安全/質量認證：ISO 9001、ISO 50001、ISO 45001、ISO 14001、ISO 14064、ISO 14067、CNS 45001、ISO/IEC 17025、IATF 16949、JQA JIS G4305、BIS IS 6911</p>
+            <h3>▎{{ t("company.contact.title") }}</h3>
+            <p v-html="t('company.contact.phase1')"></p>
+            <p v-html="t('company.contact.phase2')"></p>
+            <p v-html="t('company.contact.phase3')"></p>
           </div>
         </div>
       </div>

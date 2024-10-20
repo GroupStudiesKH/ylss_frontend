@@ -3,7 +3,7 @@
 
         <a class="btn btn-primary" id="companyMenuBtn" data-bs-toggle="collapse" href="#companyMenu" role="button"
             aria-expanded="false" aria-controls="companyMenu">
-            開啟分類選單
+            {{ t('common.openMenu') }}
         </a>
         <div class="collapse col-12 category" id="companyMenu">
             <div>
@@ -40,6 +40,7 @@ export default {
         const { t, locale } = useI18n();
         const currentCategory = useRoute().query.category;
         return {
+            t,
             currentCategory,
             locale
         };
