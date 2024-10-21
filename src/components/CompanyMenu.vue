@@ -12,13 +12,13 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" :class="{ li_active: $route.name === 'company' }">
-                        <router-link :to="{ name: 'company' }">{{ t('company.title') }}</router-link>
+                        <a :href="`/${locale}/company`">{{ t('company.title') }}</a>
                     </li>
                     <li class="list-group-item" :class="{ li_active: $route.name === 'quality' }">
-                        <router-link :to="{ name: 'quality' }">{{ t('quality.title') }}</router-link>
+                        <a :href="`/${locale}/quality`">{{ t('quality.title') }}</a>
                     </li>
                     <li class="list-group-item" :class="{ li_active: $route.name === 'cert' }">
-                        <router-link :to="{ name: 'cert' }">{{ t('cert.title') }}</router-link>
+                        <a :href="`/${locale}/cert`">{{ t('cert.title') }}</a>
                     </li>
                 </ul>
             </div>
