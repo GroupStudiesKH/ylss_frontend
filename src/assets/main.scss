@@ -1,7 +1,7 @@
 @import "./base.css";
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
 
 html,
 body {
@@ -852,20 +852,13 @@ main {
             max-width: 100%;
             z-index: -1;
             background-color: #274e80;
-            background-size: contain;
+            background-size: auto 100%;
             background-position: center center;
             height: 528px;
             background-repeat: no-repeat;
 
             @media (max-width: 1280px) {
                 height: 350px;
-            }
-
-            @media (max-width: 1600px) {
-                background-size: cover;
-            }
-            @media (min-width: 1920px) {
-                background-size: contain;
             }
 
         }
