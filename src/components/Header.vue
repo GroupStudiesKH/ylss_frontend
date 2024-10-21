@@ -67,7 +67,7 @@
                 </a>
               </li>
               <li v-for="(lOption, lOptionIndex) in localeOptions" :key="lOptionIndex">
-                <a class="dropdown-item" role="button" @click="setLocale(lOption.lang)">{{ lOption.name }}</a>
+                <a class="dropdown-item" role="button" @click="urlSetLocale(lOption.lang)">{{ lOption.name }}</a>
               </li>
             </ul>
           </li>
@@ -110,6 +110,35 @@ export default {
       return route.name === 'home';
     });
 
+    const urlSetLocale = (lang) => {
+      const currentPath = route.path;
+      const currentName = route.name;
+      const currentParams = route.params;
+
+      let newPath = `/${lang}`;
+      
+      if (currentName) {
+        // Use the current route's matched path instead of the route name
+        const matchedRoute = route.matched[route.matched.length - 1];
+        if (matchedRoute) {
+          newPath += matchedRoute.path.replace(/^\/[^\/]+/, '');
+        }
+        
+        // Add dynamic segments from params
+        if (Object.keys(currentParams).length > 0) {
+          for (const [key, value] of Object.entries(currentParams)) {
+            if (key !== 'locale') {
+              newPath = newPath.replace(`:${key}`, value);
+            }
+          }
+        }
+      } else {
+        newPath = currentPath.replace(/^\/[^\/]+/, `/${lang}`);
+      }
+
+      window.location.href = newPath;
+    }
+
     const setLocale = (lang) => {
       locale.value = lang;
       localStorage.setItem('locale', lang);
@@ -148,9 +177,18 @@ export default {
 
     onMounted(() => {
 
-      if (localStorage.getItem('locale') !== route.params.locale) {
-        localStorage.setItem('locale', route.params.locale);
-        locale.value = route.params.locale;
+      const urlLocale = route.params.locale;
+      const storedLocale = localStorage.getItem('locale');
+      
+      if (!urlLocale && !storedLocale) {
+        // If both URL and localStorage don't have a locale, set default to 'zh_TW'
+        setLocale('zh_TW');
+      } else if (urlLocale && urlLocale !== storedLocale) {
+        // If URL has a locale different from localStorage, update localStorage and locale
+        setLocale(urlLocale);
+      } else if (!urlLocale && storedLocale) {
+        // If URL doesn't have a locale but localStorage does, use the stored locale
+        locale.value = storedLocale;
       }
 
       setInterval(() => {
@@ -162,6 +200,7 @@ export default {
       t, 
       locale,
       setLocale,
+      urlSetLocale,
       localeOptions,
       cartItem,
       isHome
