@@ -1153,6 +1153,33 @@ main {
         #article_content {
             z-index: 1;
 
+            figure.image {
+                clear: both;
+                text-align: center;
+                margin: 1em 0;
+            }
+            
+            figure.image > img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            figure.image-style-side {
+                float: right;
+                margin-left: 1.5em;
+                max-width: 50%;
+            }
+            
+            figure.image-style-align-left {
+                float: left;
+                margin-right: 1.5em;
+            }
+            
+            figure.image-style-align-center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
 
             h4 {
                 color: #274e80;
