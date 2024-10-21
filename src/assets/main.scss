@@ -239,17 +239,13 @@ header {
         }
 
         .language_switch {
+            border-bottom: none !important;
             .dropdown-toggle {
                 border-radius: 10px;
                 font-size: 13pt;
                 line-height: 13px;
                 margin: 0 10px;
                 text-decoration: none;
-            }
-
-
-            &:hover {
-                border-bottom: none !important;
             }
 
             @media (max-width: 992px) {
