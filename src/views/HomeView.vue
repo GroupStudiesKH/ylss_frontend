@@ -113,9 +113,9 @@ export default {
         </div>
         <div class="col-md-6 col-lg-6 col-12" id="company_intro">
           <p v-html="$t('index.intro')"></p>
-          <router-link :to="{ name: 'company' }" class="pill_button">
-            Learn More </router-link
-          ><br /><br />
+          <a :href="`/${locale}/company`" class="pill_button">
+            Learn More
+          </a><br /><br />
         </div>
       </div>
 
@@ -182,9 +182,9 @@ export default {
           <div class="col-12">
             <h3>{{ t('index.feature6.title') }}</h3>
             <p>{{ t('index.feature6.content_1') }}</p>
-            <router-link :to="{ name: 'quality' }" class="pill_button mt-5">
+            <a :href="`/${locale}/quality`" class="pill_button mt-5">
               {{ t('index.feature6.btn') }}
-            </router-link>
+            </a>
           </div>
         </div>
       </div>

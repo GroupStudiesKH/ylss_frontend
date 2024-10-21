@@ -40,12 +40,12 @@
           </li>
 
           <li class="nav-item ask_price">
-            <router-link class="nav-link" :to="{name: 'contact', params: { locale }}">
+            <a class="nav-link" :href="`/${locale}/contact`">
               <span class="material-icons">&#xea20;</span>
 
               <span>{{ t("header.askingPrice") }}</span>
               <div class="bg-danger header-notify">{{ cartItem.length }}</div>
-            </router-link>
+            </a>
           </li>
           <li class="nav-item language_switch dropdown">
             <div

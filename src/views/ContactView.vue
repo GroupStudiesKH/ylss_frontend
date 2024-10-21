@@ -144,13 +144,13 @@ export default {
           <div class="row">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              <router-link :to="{ name: 'home' }">{{
+              <a :href="`/${locale}/`">{{
                 $t("header.index")
-              }}</router-link>
+              }}</a>
               /
-              <router-link :to="{ name: 'contact' }">{{
+              <a :href="`/${locale}/contact`">{{
                 $t("header.contact")
-              }}</router-link>
+              }}</a>
             </div>
             <form>
               <div class="col-12">
@@ -265,13 +265,8 @@ export default {
                     >
                       <div class="row">
                         <div class="col-10">
-                          ・<router-link
-                            :to="{
-                              name: 'product-detail',
-                              params: {
-                                id: cart.product.id,
-                              },
-                            }"
+                          ・<a
+                            :href="`/${locale}/product/${cart.product.id}`"
                             class="category"
                           >
                             {{
@@ -283,15 +278,11 @@ export default {
                                   ).meta_value
                                 : ``
                             }}
-                          </router-link>
-                          <router-link
+                          </a>
+                          <a
                             class="product"
-                            :to="{
-                              name: 'product-detail',
-                              params: { id: cart.product.id },
-                            }"
+                            :href="`/${locale}/product/${cart.product.id}`"
                           >
-                            >
                             {{
                               cart.product.product_detail.find((attr) => {
                                 return (
@@ -300,7 +291,7 @@ export default {
                                 );
                               }).meta_value ?? ``
                             }}
-                          </router-link>
+                          </a>
                         </div>
                         <div
                           class="col-2 remove"

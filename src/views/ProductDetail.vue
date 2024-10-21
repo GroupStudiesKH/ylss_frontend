@@ -116,24 +116,24 @@ export default {
           <div class="row mb-5" v-if="Object.keys(product).length > 0">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              <router-link :to="{ name: 'home' }">{{
+              <a :href="`/${locale}/`">{{
                 $t("header.index")
-              }}</router-link>
+              }}</a>
               /
-              <router-link :to="{ name: 'product' }">{{
+              <a :href="`/${locale}/product`">{{
                 $t("header.product")
-              }}</router-link>
+              }}</a>
               <span v-if="product.category_id">
                 <span
                   v-for="(path, pathIndex) in categoryPath"
                   :key="pathIndex"
                 >
                   /
-                  <router-link :to="`/product/category/${path.id}`">{{
+                  <a :href="`/${locale}/product/category/${path.id}`">{{
                     path.get_title_attribute.find((attr) => {
                       return attr.language == locale;
                     }).meta_value
-                  }}</router-link>
+                  }}</a>
                 </span>
               </span>
             </div>
@@ -179,9 +179,9 @@ export default {
           <hr />
           <template v-if="product && product.spec_articles">
             <div v-for="(article, index) in product.spec_articles" :key="article.id" :class="index % 2 === 0 ? 'spec_tag_1' : 'spec_tag_2'">
-              <router-link :to="`/spec/${article.id}`">
+              <a :href="`/${locale}/spec/${article.id}`">
                 {{ article.article_detail.find(detail => detail.language === locale)?.meta_value || article.article_detail.find(detail => detail.language === 'zh_TW')?.meta_value }}
-              </router-link>
+              </a>
             </div>
           </template>
         </div>

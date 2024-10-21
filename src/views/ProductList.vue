@@ -67,10 +67,10 @@ export default {
                     </div>
                     <div class="row mt-4">
                         <div v-for="product in category.products" :key="product.id" class="col-6 col-lg-3">
-                            <router-link :to="{ path: `/product/${product.id}` }">
+                            <a :href="`/${locale}/product/${product.id}`">
                                 <img :src="product.feature_image.find(img => img.language === locale)?.meta_value || product.feature_image.find(img => img.language === 'zh_TW')?.meta_value" :alt="product.title[locale] || product.title.zh_TW" class="img-fluid w-100">
                                 <p class="mt-2">{{ product.title[locale] || product.title.zh_TW }}</p>
-                            </router-link>
+                            </a>
                         </div>
                     </div>
                     <hr style="border: none; border-top: 3px dotted #000;">
