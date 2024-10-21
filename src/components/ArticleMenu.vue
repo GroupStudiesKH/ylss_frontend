@@ -12,7 +12,7 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" v-for="(item, itemIndex) in articleLists" :key="itemIndex">
-                        <a :href="`/article/${ item.id }`">
+                        <a :href="`/${locale}/article/${ item.id }`">
                             {{ item.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}
                         </a>
                     </li>

@@ -1365,10 +1365,9 @@ main {
 
             @media (max-width: 991px) {
                 padding: 0 10px;
-            }
-
+            }            
             img {
-                width: 100%;
+                max-width: 100%;
                 height: auto;
             }
 
@@ -1572,6 +1571,14 @@ main {
                 border-left: none;
                 padding-left: 0;
             }
+        }
+    }
+
+    &#article{
+        .container{
+            min-height: 900px;
+            position: relative;
+            z-index: 1;
         }
     }
 
