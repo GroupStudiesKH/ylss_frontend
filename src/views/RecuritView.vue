@@ -79,9 +79,7 @@ export default {
                     (2){{ t('recurit.benefits.welfare.content2') }}</p>
                     <h5 class="mt-3">3.{{ t('recurit.benefits.companyBenefits.title') }}：</h5>
                     <p>{{ t('recurit.benefits.companyBenefits.content') }}</p>
-                    <h5 class="mt-3">4.{{ t('recurit.benefits.insurance.title') }}：</h5>
-                    <p>{{ t('recurit.benefits.insurance.content') }}</p>
-                    <h5 class="mt-3">5.{{ t('recurit.benefits.training.title') }}：</h5>
+                    <h5 class="mt-3">4.{{ t('recurit.benefits.training.title') }}：</h5>
                     <p>{{ t('recurit.benefits.training.content') }}</p>
 
                     <p class="text-center my-5">

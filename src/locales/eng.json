@@ -59,27 +59,27 @@
   "equip":{
     "title": "Core Equipment",
     "zm1": {
-      "title": "20-High Cold Rolling Mill (ZM1)",
+      "title": "20-High Cold Rolling Mill",
       "phase1": "20-High Cold Rolling Mill",
       "phase2": "Rolls hot-rolled steel coils to a thickness of 0.25~1.5mm, improving flatness and brightness."
     },
     "ba": {
-      "title": "Bright Annealing Line (BA)",
+      "title": "Bright Annealing Line",
       "phase1": "Bright Annealing Line",
       "phase2": "Anneals hardened steel coils post-rolling, growing and softening the grain for workability."
     },
     "spl": {
-      "title": "Skin Pass Mill (SPL)",
+      "title": "Skin Pass Mill",
       "phase1": "Skin Pass Mill",
       "phase2": "Carries out tempering to enhance the product's brightness and workability."
     },
     "tll": {
-      "title": "Tension Levelling Line (TLL)",
+      "title": "Tension Levelling Line",
       "phase1": "Tension Levelling Line",
       "phase2": "Levels the surface of steel sheets, achieving better flatness and mechanical properties."
     },
     "sl": {
-      "title": "Slitting Line (SL)",
+      "title": "Slitting Line",
       "phase1": "Slitting Line",
       "phase2": "Slits coils into narrower strips according to customer order requirements."
     }
@@ -150,7 +150,7 @@
       "iso14046_en": "ISO 14046 (2014 version) - English"
     }
   },
-  "recruit": {
+  "recurit": {
     "title": "Talent Recruitment",
     "coreValues": {
       "title": "Core Values",
@@ -190,12 +190,8 @@
         "content2": "Subsidies: Wedding and funeral subsidies, children's education subsidies, travel subsidies, emergency subsidies."
       },
       "companyBenefits": {
-        "title": "Employee Benefits",
-        "content": "Employee health check-ups, Provision of employee uniforms, Free on-site parking for employees, Family day activity, Company trip, Book club, Club activities, Christmas party (migrant worker events), Year-end banquet, Employee retirement farewell party."
-      },
-      "insurance": {
-        "title": "Employee Insurance",
-        "content": "Labor insurance, Health insurance, Occupational insurance, Group insurance, Labor pension contributions."
+        "title": "Company Benefits:",
+        "content": "Labor and health insurance, occupational injury insurance, group insurance, labor pension contributions, employee health check-ups, employee uniforms, on-site parking for employees, family day trips, employee travel, book clubs, club activities, Christmas events (including migrant worker gatherings), year-end party, retirement farewell parties for employees."
       },
       "training": {
         "title": "Training and Development",

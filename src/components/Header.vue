@@ -27,7 +27,7 @@
             <a class="nav-link" :href="`/${locale}/spec`">{{ t("header.productSpec") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/equip`">{{ t("header.techEquipment") }}</a>
+            <a class="nav-link" :href="`/${locale}/tech`">{{ t("header.techEquipment") }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" :href="`/${locale}/article`">{{ t("header.sustainability") }}</a>
