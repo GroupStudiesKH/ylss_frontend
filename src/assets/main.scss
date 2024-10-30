@@ -733,11 +733,6 @@ main {
             margin-top: 50px;
             padding-top: 50px;
 
-            @media (max-width: 768px) {
-                background-position: center left;
-                height: 600px;
-            }
-
             h3 {
                 font-weight: 800;
                 font-size: 40px;
@@ -745,6 +740,17 @@ main {
                 letter-spacing: 2px;
                 margin-top: 20px;
             }
+
+            @media (max-width: 768px) {
+                background-position: center left;
+                height: 550px;
+
+                h3 {
+                    font-size: 30px;
+                }
+            }
+
+
 
             ul {
                 list-style-type: none;
@@ -759,6 +765,11 @@ main {
 
                     img{
                         width: 20px;
+                    }
+
+                    @media (max-width: 768px) {
+                        margin-left: 0px;
+                        font-size: 15px;
                     }
                 }
             }
@@ -797,7 +808,9 @@ main {
                 transform: translateY(-500px);
 
                 @media (max-width: 768px) {
-                    transform: translateY(-650px);
+                    transform: translateY(-543px);
+                    height: 600px;
+                    width: 200px;
                 }
             }
         }
