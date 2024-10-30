@@ -129,6 +129,11 @@
   },
   "cert":{
     "title": "Standard Certifications",
+    "heading1": "Environmental Certifications",
+    "heading2": "Occupational Safety and Health Certifications", 
+    "heading3": "Quality Certifications",
+    "heading4": "Product Certifications",
+    "heading5": "Energy Certifications",
     "lists": {
       "title": "International Quality Standards Certification",
       "phase1": "YLSS demonstrates a commitment to quality by achieving international certifications such as ISO, JIS, BIS, IATF, TAF, and CNS.",

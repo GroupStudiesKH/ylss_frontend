@@ -69,9 +69,9 @@ export default {
                         </div>
                         <p>{{ t("cert.lists.iso9001") }}</p>
                     </div>
-                    <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-50001-2018.webp')">
+                    <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-50001.webp')">
                         <div class="clickable-image">
-                          <img class="w-100" src="/assets/img/cert/iso-50001-2018.webp">
+                          <img class="w-100" src="/assets/img/cert/iso-50001.webp">
                         </div>
                         <p>{{ t("cert.lists.iso5001") }}</p>
                     </div>
@@ -141,18 +141,12 @@ export default {
                         </div>
                         <p>{{ t("cert.lists.jis4305") }}</p>
                     </div>
-                    <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-17025_en.webp')">
+                    <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-17025.webp')">
                         <div class="clickable-image">
-                          <img class="w-100" src="/assets/img/cert/iso-17025_en.webp">
+                          <img class="w-100" src="/assets/img/cert/iso-17025.webp">
                         </div>
                         <p>{{ t("cert.lists.cns17025") }}</p>
                     </div>
-                    <!-- <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14046-zhtw.webp')">
-                        <div class="clickable-image">
-                          <img class="w-100" src="/assets/img/cert/iso-14046-zhtw.webp">
-                        </div>
-                        <p>{{ t("cert.lists.iso14046_ch") }}</p>
-                    </div> -->
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14046-en.webp')">
                         <div class="clickable-image">
                           <img class="w-100" src="/assets/img/cert/iso-14046-en.webp">
