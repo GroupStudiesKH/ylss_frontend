@@ -65,90 +65,120 @@ export default {
                   <div class="row">
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-9001.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading3") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-9001.webp">
                         </div>
                         <p>{{ t("cert.lists.iso9001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-50001.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading5") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-50001.webp">
                         </div>
                         <p>{{ t("cert.lists.iso5001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-45001-2018.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading2") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-45001-2018.webp">
                         </div>
                         <p>{{ t("cert.lists.iso45001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/cns-45001-en.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading2") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/cns-45001-en.webp">
                         </div>
                         <p>{{ t("cert.lists.cns45001_1") }}</p>
                     </div>
                     <!-- <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/cns-45001-zhtw.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading2") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/cns-45001-zhtw.webp">
                         </div>
                         <p>{{ t("cert.lists.cns45001_2") }}</p>
                     </div> -->
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14001-2015.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading1") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-14001-2015.webp">
                         </div>
                         <p>{{ t("cert.lists.iso14001") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14064.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading1") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-14064.webp">
                         </div>
                         <p>{{ t("cert.lists.iso14064") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14067-zhtw.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading1") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-14067-zhtw.webp">
                         </div>
                         <p>{{ t("cert.lists.iso14067") }}</p>
                     </div>
                     <!-- <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-17025-zhtw.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading3") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-17025-zhtw.webp">
                         </div>
                         <p>{{ t("cert.lists.iso17025") }}</p>
                     </div> -->
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iatf-16949.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading3") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iatf-16949.webp">
                         </div>
                         <p>{{ t("cert.lists.iatf16949") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/bis-6911.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading4") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/bis-6911.webp">
                         </div>
                         <p>{{ t("cert.lists.bis-is-6911") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/cns-8499.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading4") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/cns-8499.webp">
                         </div>
                         <p>{{ t("cert.lists.cns8499") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/jis.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading4") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/jis.webp">
                         </div>
                         <p>{{ t("cert.lists.jis4305") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-17025.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading3") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-17025.webp">
                         </div>
                         <p>{{ t("cert.lists.cns17025") }}</p>
                     </div>
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14046-en.webp')">
                         <div class="clickable-image">
+                          <div class="class-text">{{ t("cert.heading1") }}</div>
+                          <div class="material-icons" >&#xe8ff;</div>
                           <img class="w-100" src="/assets/img/cert/iso-14046-en.webp">
                         </div>
                         <p>{{ t("cert.lists.iso14046_en") }}</p>

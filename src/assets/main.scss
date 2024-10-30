@@ -1036,6 +1036,37 @@ main {
                 margin-bottom: 100px;
                 .clickable-image{
                     border: 1px solid #000;
+
+                    .class-text{
+                        position: absolute; 
+                        top: 45%; 
+                        left: 50%; 
+                        transform: translate(-50%, -50%);
+                        width: 200px;
+                        text-align: center;
+                        color: white; 
+                        font-size: 20px; 
+                        z-index: 2;
+                        opacity: 0;
+                    }
+
+                    .material-icons{
+                        position: absolute; 
+                        top: 55%; 
+                        left: 50%; 
+                        transform: translate(-50%, -50%); 
+                        color: white; 
+                        font-size: 48px; 
+                        z-index: 2;
+                        opacity: 0;
+                    }
+
+                    &:hover{
+                        .class-text, .material-icons {
+                            opacity: 1;
+                            transition: opacity 0.3s ease;
+                        }
+                    }
                 }
             }
 
@@ -1895,6 +1926,10 @@ main {
                     opacity: 0;
                 }
 
+                .material-icons{
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
 
                 img {
                     transform: scale(1.1);
