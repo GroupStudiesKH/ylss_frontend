@@ -118,6 +118,8 @@ header {
             }
 
             @media (max-width: 576px) {
+                margin: 0 auto 0 auto;
+                transform: translateX(20px);
                 img {
                     height: 60px;
                 }
@@ -522,10 +524,15 @@ main {
 
                 .container {
 
-                    h1,
+                    h1{
+                        width: 100%;
+                        padding: 0 40px;
+                        font-size: 28px;
+                    }
                     p {
                         width: 100%;
-                        padding: 0 20px;
+                        padding: 0 40px;
+                        font-size: 22px;
                     }
                 }
             }

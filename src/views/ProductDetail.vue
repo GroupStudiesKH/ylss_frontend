@@ -137,14 +137,14 @@ export default {
                 </span>
               </span>
             </div>
-            <div class="col-4 col-md-6">
+            <div class="col-12 col-md-6">
               <img
                 :src="getInfo(product, 'feature_image')"
                 class="img-fluid w-100"
               />
             </div>
             <div
-              class="col-8 col-md-6 justify-content-between"
+              class="col-12 col-md-6 justify-content-between"
               style="display: grid"
             >
               <div>
