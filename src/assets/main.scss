@@ -1618,6 +1618,15 @@ main {
                 width: 1080px;
             }
         }
+
+        #contact_info_pc{
+            margin-left: 50px;
+
+            @media(max-width: 991px){
+                margin-left: 0px;
+                width: 100%;
+            }
+        }
     }
 
     &#product{
@@ -1826,10 +1835,7 @@ main {
             z-index: 1;
             position: relative;
             text-align: center;
-            img{
-                margin-top: 100px;
-                margin-left: -400px;
-            }
+            margin-top: -200px;
 
             @media (min-width: 1650px) {
                 height: 700px;
@@ -1846,26 +1852,7 @@ main {
                 }
             }
 
-            @media (max-width: 991px) {
-                background-image: url('../assets/img/contact_bottom_mobile.webp');
-                height: 400px;
-                width: 100%;
-                margin-top: 0px;
-                background-size: contain;
-                background-position: center center;
 
-                img{
-                    display: none;
-                }
-            }
-
-            @media (max-width: 768px) {
-                height: 290px;
-                width: 100%;
-                margin-top: 0px;
-                background-size: contain;
-                background-position: center center;
-            }
         }
     }
 

@@ -340,10 +340,11 @@ export default {
           </div>
         </div>
       </div>
+
+      <img id="contact_info_pc" src="/assets/img/contact_info.webp">
     </div>
 
     <div class="contact_bottom">
-      <img src="/assets/img/contact_info.webp">
     </div>
 
     <div id="mid_right_shape"></div>
