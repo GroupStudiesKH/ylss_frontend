@@ -49,7 +49,6 @@
           <li class="nav-item dropdown d-lg-none show">
             <a
               class="nav-link dropdown-toggle"
-              href="#"
               data-bs-toggle="dropdown"
             >
               {{ t("header.product") }}
@@ -62,7 +61,6 @@
               >
                 <a
                   class="fw-bold px-4"
-                  :href="`/${locale}/product/category/${category.id}`"
                   v-if="category.products && category.products.length > 0"
                 >
                   {{ category.title[locale] || category.title.zh_TW }}

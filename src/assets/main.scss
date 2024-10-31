@@ -925,6 +925,10 @@ main {
                 height: 350px;
             }
 
+            @media (max-width: 991px) {
+                height: 150px;
+            }
+
         }
 
         .content {

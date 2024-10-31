@@ -129,7 +129,7 @@ export default {
                   :key="pathIndex"
                 >
                   /
-                  <a :href="`/${locale}/product/category/${path.id}`">{{
+                  <a>{{
                     path.get_title_attribute.find((attr) => {
                       return attr.language == locale;
                     }).meta_value
