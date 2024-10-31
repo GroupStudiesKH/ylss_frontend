@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar navbar-expand-lg" :class="{ 'home': isHome }">
+  <header class="navbar navbar-expand-lg" :class="{ home: isHome }">
     <div class="container">
       <a class="navbar-brand" :href="'/' + locale">
         <img src="/assets/img/logo.png" alt="" />
@@ -17,32 +17,116 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto" :class="locale">
-          <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/company`">{{ t("header.companyIntro") }}</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              {{ t("header.companyIntro") }}
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" :href="`/${locale}/company`">{{
+                  t("company.title")
+                }}</a>
+              </li>
+              <li>
+                <a class="dropdown-item" :href="`/${locale}/quality`">{{
+                  t("quality.title")
+                }}</a>
+              </li>
+              <li>
+                <a class="dropdown-item" :href="`/${locale}/cert`">{{
+                  t("cert.title")
+                }}</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              {{ t("header.product") }}
+            </a>
+            <ul class="dropdown-menu">
+              <li
+                class="list-group-item"
+                v-for="(category, index) in categories"
+                :key="index"
+              >
+                <a
+                  class="fw-bold px-2"
+                  :href="`/${locale}/product/category/${category.id}`"
+                  v-if="category.products && category.products.length > 0"
+
+                >
+                  {{ category.title[locale] || category.title.zh_TW }}
+                </a>
+                <ul
+                  v-if="category.products && category.products.length > 0"
+                  class="list-group list-group-flush ps-3"
+                  :id="`secondMenu_${index}`"
+                >
+                  <li
+                    class="list-group-item"
+                    v-for="(product, subIndex) in category.products"
+                    :key="subIndex"
+                  >
+                    <a :href="`/${locale}/product/${product.id}`">
+                      {{ product.title[locale] || product.title.zh_TW }}
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              {{ t("header.productSpec") }}
+            </a>
+            <ul class="dropdown-menu">
+              <li v-for="(item, itemIndex) in specLists" :key="itemIndex">
+                <a class="dropdown-item" :href="`/${locale}/spec/${item.id}`">
+                  {{
+                    item.get_title_attribute.find(
+                      (attr) => attr.language === locale
+                    )?.meta_value || ""
+                  }}
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/product`">{{ t("header.product") }}</a>
+            <a class="nav-link" :href="`/${locale}/tech`">{{
+              t("header.techEquipment")
+            }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/spec`">{{ t("header.productSpec") }}</a>
+            <a class="nav-link" :href="`/${locale}/article`">{{
+              t("header.sustainability")
+            }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/tech`">{{ t("header.techEquipment") }}</a>
+            <a class="nav-link" :href="`/${locale}/contact`">{{
+              t("header.contact")
+            }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/article`">{{ t("header.sustainability") }}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/contact`">{{ t("header.contact") }}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/recurit`">{{ t("header.recruitment") }}</a>
+            <a class="nav-link" :href="`/${locale}/recurit`">{{
+              t("header.recruitment")
+            }}</a>
           </li>
 
           <li class="nav-item ask_price">
             <a class="nav-link" :href="`/${locale}/contact`">
               <span class="material-icons">&#xea20;</span>
-
               <span>{{ t("header.askingPrice") }}</span>
               <div class="bg-danger header-notify">{{ cartItem.length }}</div>
             </a>
@@ -56,7 +140,6 @@
             >
               <span class="material-icons">&#xE894;</span>
               <span class="lang_switch_text">Language</span>
-
             </div>
 
             <ul class="dropdown-menu">
@@ -66,8 +149,16 @@
                   <span>Language</span>
                 </a>
               </li>
-              <li v-for="(lOption, lOptionIndex) in localeOptions" :key="lOptionIndex">
-                <a class="dropdown-item" role="button" @click="urlSetLocale(lOption.lang)">{{ lOption.name }}</a>
+              <li
+                v-for="(lOption, lOptionIndex) in localeOptions"
+                :key="lOptionIndex"
+              >
+                <a
+                  class="dropdown-item"
+                  role="button"
+                  @click="urlSetLocale(lOption.lang)"
+                  >{{ lOption.name }}</a
+                >
               </li>
             </ul>
           </li>
@@ -80,9 +171,9 @@
 <script>
 import { useI18n } from "vue-i18n";
 import cartService from "@/service/cart-service.js";
+import apiService from "@/service/api-service";
 import { ref, onMounted, computed } from "vue";
 import { useRouter, useRoute } from "vue-router";
-
 
 export default {
   name: "Header",
@@ -91,24 +182,43 @@ export default {
     const cartItem = ref([]);
     const route = useRoute();
     const router = useRouter();
+    const categories = ref([]);
+    const specLists = ref([]);
+
     const localeOptions = ref([
       {
-        lang: 'eng',
-        name: 'English'
+        lang: "eng",
+        name: "English",
       },
       {
-        lang: 'zh_TW',
-        name: '繁體中文'
+        lang: "zh_TW",
+        name: "繁體中文",
       },
       {
-        lang: 'zh_CN',
-        name: '簡體中文'
+        lang: "zh_CN",
+        name: "簡體中文",
       },
     ]);
 
     const isHome = computed(() => {
-      return route.name === 'home';
+      return route.name === "home";
     });
+
+    const getCategories = async () => {
+      try {
+        categories.value = await apiService.getProducts();
+      } catch (error) {
+        console.error("Error fetching categories:", error);
+      }
+    };
+
+    const getSpecLists = async () => {
+      try {
+        specLists.value = await apiService.getArticle("spec");
+      } catch (error) {
+        console.error("Error fetching spec lists:", error);
+      }
+    };
 
     const urlSetLocale = (lang) => {
       const currentPath = route.path;
@@ -116,18 +226,16 @@ export default {
       const currentParams = route.params;
 
       let newPath = `/${lang}`;
-      
+
       if (currentName) {
-        // Use the current route's matched path instead of the route name
         const matchedRoute = route.matched[route.matched.length - 1];
         if (matchedRoute) {
-          newPath += matchedRoute.path.replace(/^\/[^\/]+/, '');
+          newPath += matchedRoute.path.replace(/^\/[^\/]+/, "");
         }
-        
-        // Add dynamic segments from params
+
         if (Object.keys(currentParams).length > 0) {
           for (const [key, value] of Object.entries(currentParams)) {
-            if (key !== 'locale') {
+            if (key !== "locale") {
               newPath = newPath.replace(`:${key}`, value);
             }
           }
@@ -137,29 +245,27 @@ export default {
       }
 
       window.location.href = newPath;
-    }
+    };
 
     const setLocale = (lang) => {
       locale.value = lang;
-      localStorage.setItem('locale', lang);
+      localStorage.setItem("locale", lang);
 
       const currentPath = route.path;
       const currentName = route.name;
       const currentParams = route.params;
 
       let newPath = `/${lang}`;
-      
+
       if (currentName) {
-        // Use the current route's matched path instead of the route name
         const matchedRoute = route.matched[route.matched.length - 1];
         if (matchedRoute) {
-          newPath += matchedRoute.path.replace(/^\/[^\/]+/, '');
+          newPath += matchedRoute.path.replace(/^\/[^\/]+/, "");
         }
-        
-        // Add dynamic segments from params
+
         if (Object.keys(currentParams).length > 0) {
           for (const [key, value] of Object.entries(currentParams)) {
-            if (key !== 'locale') {
+            if (key !== "locale") {
               newPath = newPath.replace(`:${key}`, value);
             }
           }
@@ -169,43 +275,42 @@ export default {
       }
 
       window.location.href = newPath;
-    }
+    };
 
     const getCart = () => {
       cartItem.value = cartService.getCart();
     };
 
     onMounted(() => {
-
       const urlLocale = route.params.locale;
-      const storedLocale = localStorage.getItem('locale');
-      
+      const storedLocale = localStorage.getItem("locale");
+
       if (!urlLocale && !storedLocale) {
-        // If both URL and localStorage don't have a locale, set default to 'zh_TW'
-        setLocale('zh_TW');
+        setLocale("zh_TW");
       } else if (urlLocale && urlLocale !== storedLocale) {
-        // If URL has a locale different from localStorage, update localStorage and locale
         setLocale(urlLocale);
       } else if (!urlLocale && storedLocale) {
-        // If URL doesn't have a locale but localStorage does, use the stored locale
         locale.value = storedLocale;
       }
 
+      getCategories();
+      getSpecLists();
       setInterval(() => {
-        getCart()
+        getCart();
       }, 500);
     });
-    
-    return { 
-      t, 
+
+    return {
+      t,
       locale,
       setLocale,
       urlSetLocale,
       localeOptions,
       cartItem,
-      isHome
+      isHome,
+      categories,
+      specLists,
     };
   },
 };
 </script>
-
