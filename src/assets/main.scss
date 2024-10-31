@@ -94,10 +94,6 @@ header {
             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
         }
 
-        @media(min-height: 992px) {
-            height: 150px;
-        }
-
         .container {
             height: auto;
 
@@ -363,9 +359,7 @@ header {
 footer {
     background: rgb(189, 189, 189);
     background: linear-gradient(166deg, rgba(189, 189, 189, 1) 0%, rgba(211, 211, 211, 1) 100%);
-    max-height: 215px;
-    height: 215px;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 
     @media (max-width: 991px) {
         height: 600px;

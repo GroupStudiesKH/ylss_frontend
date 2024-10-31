@@ -17,7 +17,7 @@
                         <p><span class="material-icons">&#xEAD8;</span>{{ $t('footer.fax') }}</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 social_link">
+                <div class="col-10 col-md-4 social_link">
                     <a href="http://www.b2bmit.com/showroom-2000147.htm" target="_blank">
                         <img src="/assets/img/icon/b2bmit.webp" alt="B2BMit" class="social-icon">
                     </a>
@@ -31,7 +31,7 @@
                         <img src="/assets/img/icon/facebook.webp" alt="Facebook" class="social-icon">
                     </a>
                 </div>
-                <div class="col-12 group_logo">
+                <div class="col-10 col-md-12 group_logo">
                     <a href="https://www.feg.com.tw/tw/home/index.aspx" target="_blank">
                         <img src="/assets/img/fe_logo.png">
                     </a>
