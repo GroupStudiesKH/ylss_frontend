@@ -516,21 +516,22 @@ main {
             border: 2px solid #274e80;
         }
 
-        &:hover {
-            background-color: #274e80;
-            color: #fff !important;
-            animation: fadein 0.5s;
-            border: 2px solid #274e80;
-
-        }
-
-        @keyframes fadein {
-            from {
-                opacity: 0;
+        @media(min-width: 991px){
+            &:hover {
+                background-color: #274e80;
+                color: #fff !important;
+                animation: fadein 0.5s;
+                border: 2px solid #274e80;
             }
-
-            to {
-                opacity: 1;
+    
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+    
+                to {
+                    opacity: 1;
+                }
             }
         }
     }
