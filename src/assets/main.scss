@@ -340,12 +340,13 @@ footer {
     padding: 20px 0;
 
     @media (max-width: 991px) {
-        max-height: 270px;
-        height: 270px;
+        height: 600px;
+        max-height: fit-content;
     }
 
     img.logo {
-        width: 100%;
+        width: 85%;
+        float: right;
     }
 
     .company_info {
@@ -356,17 +357,25 @@ footer {
             font-weight: 700;
         }
 
+
+        .h6{
+            text-transform: uppercase;
+            color: #666;
+            font-size: 12.5px;
+            font-weight: 600;
+        }
+
         @media (max-width: 992px) {
             margin-top: 10px;
         }
     }
 
     .address {
-        margin-top: 20px;
+        margin: 10px 0 20px -80px;
         line-height: 18px;
         padding-left: 10px;
         font-size: 16px;
-        height: 150px;
+        border-left: 2px solid #666;
 
         p{
             margin-bottom: 10px;
@@ -377,8 +386,16 @@ footer {
             margin-right: 5px;
         }
 
+        @media (max-width: 1400px) {
+            margin: 10px 0 20px -20px;
+        }
+
         @media (max-width: 992px) {
             padding-left: 0px;
+            margin: 0 0 0 20px;
+            border-left: none;
+            height: 120px;
+            padding-top: 10px;
         }
 
     }
@@ -392,17 +409,21 @@ footer {
     }
 
     .group_logo {
-        margin-top: -80px;
+        margin-top: -60px;
         text-align: right;
         z-index: 1;
+
+        @media (max-width: 991px) {
+            margin: 0px 0 20px 10px;
+            text-align: left;
+        }
 
         img {
             height: 40px;
             padding: 0 10px;
 
-            @media (max-width: 1280px) {
+            @media (max-width: 991px) {
                 height: 25px;
-
             }
         }
     }
@@ -410,12 +431,14 @@ footer {
     .social_link{
         text-align: right;
         img{
-            width: 20px;
-            margin: 5px;
+            width: 30px;
+            margin: 5px 5px 20px 5px;
         }
 
         @media (max-width: 991px) {
-            margin-top: -120px;
+            margin-top: 0px;
+            margin-left: 15px;
+            text-align: left;
         }
 
         &:first-child{

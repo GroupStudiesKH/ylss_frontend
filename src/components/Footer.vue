@@ -2,10 +2,10 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 d-lg-block d-none">
-                    <img src="/assets/img/logo.png" class="mt-4 logo">
+                <div class="col-3 col-lg-2 d-lg-block">
+                    <img src="/assets/img/logo.png" class="mt-3 logo">
                 </div>
-                <div class="col-lg-3 col-md-6 company_info col-12" >
+                <div class="col-lg-3 col-md-6 company_info col-9" >
                     <p class="h5">{{ $t('footer.company') }}</p>
                     <p class="h6">{{ $t('footer.intro') }}</p>
                 </div>
@@ -17,7 +17,7 @@
                         <p><span class="material-icons">&#xEAD8;</span>{{ $t('footer.fax') }}</p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 social_link">
+                <div class="col-12 col-md-4 social_link">
                     <a href="http://www.b2bmit.com/showroom-2000147.htm" target="_blank">
                         <img src="/assets/img/icon/b2bmit.webp" alt="B2BMit" class="social-icon">
                     </a>
@@ -30,8 +30,8 @@
                     <a href="https://www.facebook.com/ylss2005?mibextid=LQQJ4d" target="_blank">
                         <img src="/assets/img/icon/facebook.webp" alt="Facebook" class="social-icon">
                     </a>
-                </div> -->
-                <div class="col-lg-12 group_logo">
+                </div>
+                <div class="col-12 group_logo">
                     <a href="https://www.feg.com.tw/tw/home/index.aspx" target="_blank">
                         <img src="/assets/img/fe_logo.png">
                     </a>
