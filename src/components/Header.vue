@@ -17,7 +17,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto" :class="locale">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown d-lg-none">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -43,7 +43,10 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" :href="`/${locale}/company`">{{ t("header.companyIntro") }}</a>
+          </li>
+          <li class="nav-item dropdown d-lg-none show">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -51,17 +54,16 @@
             >
               {{ t("header.product") }}
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu show">
               <li
                 class="list-group-item"
                 v-for="(category, index) in categories"
                 :key="index"
               >
                 <a
-                  class="fw-bold px-2"
+                  class="fw-bold px-4"
                   :href="`/${locale}/product/category/${category.id}`"
                   v-if="category.products && category.products.length > 0"
-
                 >
                   {{ category.title[locale] || category.title.zh_TW }}
                 </a>
@@ -83,7 +85,10 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" :href="`/${locale}/product`">{{ t("header.product") }}</a>
+          </li>
+          <li class="nav-item dropdown d-lg-none">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -102,6 +107,9 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" :href="`/${locale}/spec`">{{ t("header.productSpec") }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" :href="`/${locale}/tech`">{{

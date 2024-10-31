@@ -76,6 +76,12 @@ header {
 
     z-index: 10;
 
+    #navbarNav{
+        .dropdown-menu{
+            border: none;
+        }
+    }
+
     &.navbar {
 
         .navbar-toggler {
@@ -214,7 +220,7 @@ header {
                     }
                 }
 
-                .nav-item:nth-child(n+7) .nav-link,
+                .nav-item:nth-child(n+10) .nav-link,
                 .nav-item:last-child .nav-link {
                     border-right: none;
                 }
