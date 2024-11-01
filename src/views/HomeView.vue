@@ -5,7 +5,6 @@ import { onMounted, ref } from "vue";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import { useI18n } from "vue-i18n";
-import apiService from "@/service/api-service.js";
 
 export default {
   components: {
@@ -16,20 +15,9 @@ export default {
     const router = useRouter();
     const isIntroScolled = ref(false);
     const { t, locale } = useI18n();
-    const bannerLists = ref([]);
-
-    const fetchBanner = async () => {
-      try {
-        const results = await apiService.getBanner();
-        bannerLists.value = results;
-      } catch (error) {
-        console.log(error);
-      }
-    };
 
     const handleScroll = () => {
       // 獲取目標div的相對位置
-
       const targetDiv = document.getElementById("intro");
       const rect = targetDiv.getBoundingClientRect();
 
@@ -51,14 +39,12 @@ export default {
 
     onMounted(() => {
       window.addEventListener("scroll", handleScroll);
-      fetchBanner();
     });
 
     return {
       isIntroScolled,
       t,
       locale,
-      bannerLists,
     };
   },
 };
@@ -70,20 +56,19 @@ export default {
     <div class="banner"></div>
     <div id="bannerCarousel" class="carousel slide">
       <div class="carousel-inner banner">
-        <div
-          class="carousel-item"
-          :class="bannerIndex == 0 ? `active` : ``"
-          v-for="(banner, bannerIndex) in bannerLists"
-          :key="bannerIndex"
-        >
-          <a :href="banner.link">
-            <div :style="{ backgroundImage: `url(${banner.img_url})` }" class="banner-content">
-              <div class="container">
-                <h1>We embrace the world and engage into life.</h1>
-                <p>To Value Relationship and Sustainability</p>
-              </div>
+        <div class="carousel-item active">
+          <div class="banner-content d-none d-md-block" style="background-image: url('/assets/img/home_banner.png');">
+            <div class="container">
+              <h1>We embrace the world and engage into life.</h1>
+              <p>To Value Relationship and Sustainability</p>
             </div>
-          </a>
+          </div>
+          <div class="banner-content d-md-none" style="background-image: url('/assets/img/home_banner_mobile.jpg');">
+            <div class="container">
+              <h1>We embrace the world and engage into life.</h1>
+              <p>To Value Relationship and Sustainability</p>
+            </div>
+          </div>
         </div>
       </div>
       <button
