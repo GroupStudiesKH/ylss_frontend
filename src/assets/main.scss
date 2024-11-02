@@ -116,7 +116,6 @@ header {
 
             img {
                 height: 89px;
-                padding: 10px 0;
             }
 
             @media (max-width: 576px) {
@@ -124,7 +123,7 @@ header {
                 transform: translateX(20px);
 
                 img {
-                    height: 60px;
+                    height: 70px;
                 }
             }
         }
@@ -566,21 +565,22 @@ main {
 
             @media (max-width: 991px) {
 
-                height: 700px;
+                height: 500px;
 
 
                 .container {
+                    padding: 150px 0 0 0;
 
                     h1 {
                         width: 100%;
                         padding: 0 40px;
-                        font-size: 28px;
+                        font-size: 25px;
                     }
 
                     p {
                         width: 100%;
                         padding: 0 40px;
-                        font-size: 22px;
+                        font-size: 18px;
                     }
                 }
             }
