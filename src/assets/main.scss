@@ -123,7 +123,7 @@ header {
                 transform: translateX(20px);
 
                 img {
-                    height: 70px;
+                    height: 60px;
                 }
             }
         }
@@ -158,8 +158,9 @@ header {
                 }
 
                 .nav-item {
-                    border-bottom: 1.5px solid transparent;
+                    border-bottom: 5px solid transparent;
                     transition: border-bottom 0.2s ease;
+                    padding-bottom: 5px;
 
                     .nav-link {
                         border-right: 1.5px solid #fff;
@@ -176,7 +177,7 @@ header {
                     }
 
                     &:hover {
-                        border-bottom: 1.5px solid #274e80;
+                        border-bottom: 5px solid #90caf9;
                     }
 
                     .header-notify {
@@ -204,6 +205,10 @@ header {
                         line-height: 12pt;
                         width: 115px !important;
                         transition: all 0.2s ease;
+                        transform: translateY(-5px);
+                        a{
+                            margin-top: 5px;
+                        }
 
                         .material-icons {
                             font-size: 20px;
@@ -1031,6 +1036,14 @@ main {
         .category {
             margin-top: 20px;
 
+            .btn-primary{
+                background-color: #274e80  !important;
+                color: #fff;
+                &:hover{
+                    color: #fff !important
+                }
+            }
+
             .title {
                 font-size: 14pt;
                 font-weight: 600;
@@ -1490,6 +1503,10 @@ main {
                 display: flex;
                 align-items: flex-end;
                 line-height: 50px;
+
+                @media (max-width: 991px) {
+                    margin-top: 10px;
+                }
             }
 
             hr {
@@ -1814,6 +1831,7 @@ main {
             padding: 0 0 0 50px;
 
             @media (max-width: 991px) {
+                margin: 10px 0;
                 padding: 0 10px;
             }
 
