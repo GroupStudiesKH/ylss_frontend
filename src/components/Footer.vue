@@ -2,12 +2,12 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3 col-lg-2 d-lg-block">
+                <div class="col-3 col-md-2 col-lg-2 d-lg-block">
                     <img src="/assets/img/logo.png" class="mt-3 logo">
                 </div>
                 <div class="col-lg-3 col-md-6 company_info col-9" >
-                    <p class="h5">{{ $t('footer.company') }}</p>
-                    <p class="h6">{{ $t('footer.intro') }}</p>
+                    <p class="h5" v-html="$t('footer.company')"></p>
+                    <p class="h6" v-html="$t('footer.intro')"></p>
                 </div>
                 <div class="col-lg-3">
                     <div class="address">

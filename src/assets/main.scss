@@ -382,6 +382,10 @@ footer {
 
         .h5 {
             font-weight: 700;
+            width: 230px;
+            @media (max-width: 991px) {
+                width: 100%;
+            }
         }
 
 
