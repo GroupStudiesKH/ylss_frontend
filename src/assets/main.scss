@@ -239,9 +239,9 @@ header {
                         border-radius: 10px;
                         font-size: 12pt;
                         line-height: 12pt;
-                        width: 115px !important;
                         transition: all 0.2s ease;
                         transform: translateY(-5px);
+                        margin-right: 10px;
                         a{
                             margin-top: 5px;
                         }
@@ -316,8 +316,8 @@ header {
 
             @media (max-width: 992px) {
                 border: none;
-                font-size: 16pt;
-                line-height: 16px;
+                font-size: 13pt;
+                line-height: 13px;
                 padding: 5px;
                 margin: 10px 5px;
 
@@ -329,21 +329,30 @@ header {
                         display: none;
                     }
                 }
+
+                &.show {
+                    .material-icons,
+                    .lang_switch_text {
+                        transform: translateX(10px);
+                    }
+                }
             }
 
             .material-icons {
                 font-size: 18pt;
                 vertical-align: middle;
+                transition: transform 0.3s ease;
 
                 @media(max-width: 991px) {
                     color: #333;
-                    margin-left: 5px;
+                    margin-left: 0px;
                 }
             }
 
             .lang_switch_text {
                 display: none;
                 color: #333;
+                transition: transform 0.3s ease;
 
                 @media (max-width: 991px) {
                     display: inline-block;
@@ -355,8 +364,7 @@ header {
             }
 
             .dropdown-menu {
-                margin-top: -45px;
-                margin-left: 8px;
+                margin-top: -35px;
                 min-width: 118px !important;
                 border-top: none;
                 color: #696969;
@@ -367,7 +375,6 @@ header {
                 }
 
                 li {
-                    border-top: 1px solid #696969;
                     text-align: center;
                     color: #696969;
                     padding: 10px 0;
@@ -380,6 +387,10 @@ header {
                     a:active {
                         background-color: #fff;
                         color: #696969;
+                    }
+
+                    &:nth-child(n+3){
+                        border-top: 1px solid #696969;
                     }
                 }
 
