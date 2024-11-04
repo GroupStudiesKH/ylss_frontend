@@ -322,7 +322,7 @@ header {
                 margin: 10px 5px;
 
                 .dropdown-menu {
-                    background-color: #ddd;
+                    background-color: #ededed;
                     padding-top: 50px;
 
                     li:first-child {
@@ -330,7 +330,7 @@ header {
                     }
                 }
 
-                &.show {
+                .show {
                     .material-icons,
                     .lang_switch_text {
                         transform: translateX(10px);
