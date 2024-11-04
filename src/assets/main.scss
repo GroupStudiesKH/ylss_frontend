@@ -167,6 +167,9 @@ header {
                         border-right: 1.5px solid #fff;
                         padding: 0px 8px;
                         transition: color 0.2s ease;
+                        display: inline-block;
+                        background-color: transparent !important;
+
 
                         @media (min-width: 991px) {
                             color: #fff !important;
@@ -175,11 +178,43 @@ header {
                         &:hover {
                             color: #274e80;
                         }
+
+                    }
+
+                    @media (max-width: 991px) {
+                        .dropdown-toggle {
+                            color: #333;
+                            float: right;
+                            position: relative;
+                            display: inline;
+                            padding: 5px 20px;
+                            cursor: pointer;
+                            
+                            &::after {
+                                content: '+';
+                                border: none;
+                                display: inline-block;
+                                font-size: 20px;
+                                transition: transform 0.3s ease;
+                            }
+    
+                            &[aria-expanded="true"]::after {
+                                content: '-';
+                                padding: 2px 0;
+                                transform: rotate(180deg);
+                            }
+                        }
+    
                     }
 
                     &:hover {
                         border-bottom: 5px solid #90caf9;
+
+                        @media (max-width: 991px) {
+                            border-bottom: 5px solid transparent;
+                        }
                     }
+
 
                     .header-notify {
                         border-radius: 50%;
@@ -231,7 +266,7 @@ header {
                     }
                 }
 
-                .nav-item:nth-child(n+10) .nav-link,
+                .nav-item:nth-child(n+9) .nav-link,
                 .nav-item:last-child .nav-link {
                     border-right: none;
                 }
