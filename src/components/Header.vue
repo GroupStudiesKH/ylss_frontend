@@ -29,7 +29,7 @@
               data-bs-toggle="dropdown"
             >
             </span>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mb-3" style="border-bottom: 1px solid #eee">
               <li>
                 <a class="dropdown-item" :href="`/${locale}/company`">{{
                   t("company.title")
@@ -63,7 +63,7 @@
             >
             </span>
 
-            <ul class="dropdown-menu show">
+            <ul class="dropdown-menu mb-3 show" style="border-bottom: 1px solid #eee">
               <li
                 class="list-group-item"
                 v-for="(category, index) in categories"
@@ -109,7 +109,7 @@
             >
             </span>
             
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mb-3" style="border-bottom: 1px solid #eee">
               <li v-for="(item, itemIndex) in specLists" :key="itemIndex">
                 <a class="dropdown-item" :href="`/${locale}/spec/${item.id}`">
                   {{
