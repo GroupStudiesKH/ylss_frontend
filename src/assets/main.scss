@@ -2446,16 +2446,19 @@ main {
             right: 10px;
             width: 50px;
             height: 50px;
+            // margin: 0 auto;
+            // display: inline-block;
             background: none;
             border: none;
             color: #fff;
             border: 2px solid #fff;
-            border-radius: 180%;
+            border-radius: 50px;
             transform: translateX(100px);
             font-size: 30px;
             cursor: pointer;
+            text-align: center;
 
-            @media (max-width: 991px) {
+            @media (max-width: 768px) {
                 transform: translateX(0) translateY(-100px);
             }
         }
