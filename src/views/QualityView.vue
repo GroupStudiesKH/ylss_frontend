@@ -66,11 +66,11 @@ export default {
                 <div class="col-12 mt-5" id="quality-lab">
                   <h3>▎{{ t('quality.lab.title') }}</h3>
                   <p>{{ t('quality.lab.phase1') }}</p>
-                  <h5 class="my-2">{{ t('quality.lab.phase2') }}</h5>
+                  <h5 class="mt-2 mb-4">{{ t('quality.lab.phase2') }}</h5>
                   <div class="row">
-                    <div class="col-12 col-md-4"><img class="w-100" src="/assets/img/quality_lab_1.png"></div>
-                    <div class="col-12 col-md-4"><img class="w-100" src="/assets/img/quality_lab_2.png"></div>
-                    <div class="col-12 col-md-4"><img class="w-100" src="/assets/img/quality_lab_3.png"></div>
+                    <div class="col-12 col-md-4 mb-4"><img class="w-100" src="/assets/img/quality_lab_1.png"></div>
+                    <div class="col-12 col-md-4 mb-4"><img class="w-100" src="/assets/img/quality_lab_2.png"></div>
+                    <div class="col-12 col-md-4 mb-4"><img class="w-100" src="/assets/img/quality_lab_3.png"></div>
                   </div>
                 </div>
               </div>

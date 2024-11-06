@@ -15,14 +15,17 @@ export default {
     const { t, locale } = useI18n();
     const selectedImage = ref(null);
     const showModal = ref(false);
+    const isFullscreen = ref(false);
 
-    const openModal = (imageSrc) => {
+    const openModal = (imageSrc, fullscreen = false) => {
       selectedImage.value = imageSrc;
       showModal.value = true;
+      isFullscreen.value = fullscreen;
     };
 
     const closeModal = () => {
       showModal.value = false;
+      isFullscreen.value = false;
     };
 
     return {
@@ -30,6 +33,7 @@ export default {
       locale,
       selectedImage,
       showModal,
+      isFullscreen,
       openModal,
       closeModal,
     };
@@ -100,7 +104,7 @@ export default {
                 <div class="col-6 col-lg-7">
                   <div class="clickable-image">
                     <div class="material-icons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; z-index: 2;">&#xe8ff;</div>
-                    <img class="w-100" src="/assets/img/tll.webp" @click="openModal('/assets/img/tll.webp')">
+                    <img class="w-100" src="/assets/img/tll.webp" @click="openModal('/assets/img/tll.webp', true)">
                   </div>
                 </div>
                 <div class="col-6 col-lg-5">
@@ -135,7 +139,7 @@ export default {
     <!-- Image Modal -->
     <transition name="fade">
       <div v-if="showModal" class="modal-overlay" @click="closeModal">
-        <div class="modal-content" @click.stop>
+        <div class="modal-content" :class="{ 'w-90': isFullscreen }" @click.stop>
           <img :src="selectedImage" alt="Enlarged image" class="modal-image">
           <div class="close-button" @click="closeModal">&times;</div>
         </div>
