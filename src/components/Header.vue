@@ -96,30 +96,8 @@
           <li class="nav-item d-none d-lg-block">
             <a class="nav-link" :href="`/${locale}/product`">{{ t("header.product") }}</a>
           </li>
-          <li class="nav-item dropdown d-lg-none">
-            <a
-              class="nav-link"
-              :href="`/${locale}/spec`"
-            >
-            {{ t("header.productSpec") }}
-          </a>
-            <span
-              class="dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-            </span>
-            
-            <ul class="dropdown-menu mb-3" style="border-bottom: 1px solid #eee">
-              <li v-for="(item, itemIndex) in specLists" :key="itemIndex">
-                <a class="dropdown-item" :href="`/${locale}/spec/${item.id}`">
-                  {{
-                    item.get_title_attribute.find(
-                      (attr) => attr.language === locale
-                    )?.meta_value || ""
-                  }}
-                </a>
-              </li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" :href="`/${locale}/spec`">{{ t("header.productSpec") }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" :href="`/${locale}/tech`">{{
