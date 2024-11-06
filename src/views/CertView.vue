@@ -200,7 +200,7 @@ export default {
       <div v-if="showModal" class="modal-overlay" @click="closeModal">
         <div class="modal-content" @click.stop>
           <img :src="selectedImage" alt="Enlarged image" class="modal-image">
-          <button class="close-button" @click="closeModal">&times;</button>
+          <div class="close-button" @click="closeModal">&times;</div>
         </div>
       </div>
     </transition>
