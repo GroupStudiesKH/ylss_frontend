@@ -25,9 +25,7 @@ export default {
 <template>
   <Header />
   <main id="company">
-    <div class="banner d-none d-md-block" style="background-image: url('/assets/img/company_banner.webp');">
-    </div>
-    <div class="banner d-md-none" style="background-image: url('/assets/img/company_banner_mobile.jpg');">
+    <div class="banner" style="background-image: url('/assets/img/company_banner.webp');">
     </div>
 
     <div class="container">
