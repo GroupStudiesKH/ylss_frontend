@@ -78,8 +78,8 @@ header {
 
     z-index: 10;
 
-    #navbarNav{
-        .dropdown-menu{
+    #navbarNav {
+        .dropdown-menu {
             border: none;
         }
     }
@@ -138,7 +138,7 @@ header {
             transition: all 0.3s ease;
 
             .navbar-nav {
-                
+
                 &.eng {
                     @media (min-width: 991px) {
                         font-size: 10pt;
@@ -191,7 +191,7 @@ header {
                             display: inline;
                             padding: 5px 20px;
                             cursor: pointer;
-                            
+
                             &::after {
                                 content: '+';
                                 border: none;
@@ -199,14 +199,14 @@ header {
                                 font-size: 20px;
                                 transition: transform 0.3s ease;
                             }
-    
+
                             &[aria-expanded="true"]::after {
                                 content: '-';
                                 padding: 2px 0;
                                 transform: rotate(180deg);
                             }
                         }
-    
+
                     }
 
                     &:hover {
@@ -244,7 +244,8 @@ header {
                         transition: all 0.2s ease;
                         transform: translateY(-5px);
                         margin-right: 10px;
-                        a{
+
+                        a {
                             margin-top: 5px;
                         }
 
@@ -333,6 +334,7 @@ header {
                 }
 
                 .show {
+
                     .material-icons,
                     .lang_switch_text {
                         transform: translateX(10px);
@@ -391,7 +393,7 @@ header {
                         color: #696969;
                     }
 
-                    &:nth-child(n+3){
+                    &:nth-child(n+3) {
                         border-top: 1px solid #696969;
                     }
                 }
@@ -433,6 +435,7 @@ footer {
         .h5 {
             font-weight: 700;
             width: 230px;
+
             @media (max-width: 991px) {
                 width: 100%;
             }
@@ -512,6 +515,7 @@ footer {
     .social_link {
         text-align: right;
         z-index: 1;
+
         img {
             width: 30px;
             margin: 5px 5px 20px 5px;
@@ -569,19 +573,19 @@ main {
             border: 2px solid #274e80;
         }
 
-        @media(min-width: 991px){
+        @media(min-width: 991px) {
             &:hover {
                 background-color: #274e80;
                 color: #fff !important;
                 animation: fadein 0.5s;
                 border: 2px solid #274e80;
             }
-    
+
             @keyframes fadein {
                 from {
                     opacity: 0;
                 }
-    
+
                 to {
                     opacity: 1;
                 }
@@ -1091,10 +1095,11 @@ main {
         .category {
             margin-top: 20px;
 
-            .btn-primary{
-                background-color: #274e80  !important;
+            .btn-primary {
+                background-color: #274e80 !important;
                 color: #fff;
-                &:hover{
+
+                &:hover {
                     color: #fff !important
                 }
             }
@@ -1160,11 +1165,14 @@ main {
             }
         }
 
-        [class$="_content"] {
+        #company_content,
+        #tech_content,
+        #recurit_content,
+        #article_content,
+        #product_content,
+        #product_detail_content,
+        #contact_content {
 
-            a {
-                text-decoration: underline !important;
-            }
 
             /* 字体大小样式 */
             .text-big {
@@ -1299,6 +1307,8 @@ main {
                 background-color: yellow;
                 font-weight: bold;
             }
+
+
         }
 
         #company_content {
@@ -1615,178 +1625,6 @@ main {
             }
         }
 
-        #product_detail_content, #tech_content, #article_content {
-            /* Links should have underline */
-            a {
-                text-decoration: underline !important;
-            }
-
-            blockquote{
-                border-left: 5px solid #274e80;
-                padding: 10px 20px;
-                margin: 20px 0;
-                background-color: #f5f5f5;
-                font-style: italic;
-                color: #666;
-            }
-
-            /* Lists should have proper markers */
-            ul {
-                list-style-type: disc;
-                padding-left: 40px;
-                
-                li {
-                    display: list-item;
-                    color: #000 !important;
-                    list-style: inherit;
-                }
-            }
-
-            ol {
-                list-style-type: decimal; 
-                padding-left: 40px;
-
-                li {
-                    display: list-item;
-                    color: #000 !important;
-                    list-style: inherit;
-                }
-            }
-
-            /* 字体大小样式 */
-            .text-big {
-                font-size: 1.5em;
-            }
-
-            .text-huge {
-                font-size: 2em;
-            }
-
-            .text-small {
-                font-size: 0.8em;
-            }
-
-            /* 对齐样式 */
-            .align-left {
-                text-align: left;
-            }
-
-            .align-center {
-                text-align: center;
-            }
-
-            .align-right {
-                text-align: right;
-            }
-
-            .align-justify {
-                text-align: justify;
-            }
-
-            /* 图像对齐样式 */
-            .image-align-left {
-                float: left;
-                margin-right: 10px;
-            }
-
-            .image-align-right {
-                float: right;
-                margin-left: 10px;
-            }
-
-            .image-align-center {
-                display: block;
-                margin: 0 auto;
-            }
-
-            /* 表格样式 */
-            .table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-
-            .table-bordered {
-                border: 1px solid #ddd;
-            }
-
-            .table-bordered th,
-            .table-bordered td {
-                border: 1px solid #ddd;
-                padding: 8px;
-            }
-
-            .table-striped tbody tr:nth-child(odd) {
-                background-color: #f9f9f9;
-            }
-
-            /* 列表样式 */
-            .list-item-bullet {
-                list-style-type: disc;
-                margin-left: 20px;
-            }
-
-            .list-item-numbered {
-                list-style-type: decimal;
-                margin-left: 20px;
-            }
-
-            /* 文本颜色样式 */
-            .text-primary {
-                color: #007bff;
-            }
-
-            .text-success {
-                color: #28a745;
-            }
-
-            .text-info {
-                color: #17a2b8;
-            }
-
-            .text-warning {
-                color: #ffc107;
-            }
-
-            .text-danger {
-                color: #dc3545;
-            }
-
-            /* 背景颜色样式 */
-            .bg-primary {
-                background-color: #007bff;
-                color: #fff;
-                padding: 5px;
-            }
-
-            .bg-secondary {
-                background-color: #6c757d;
-                color: #fff;
-                padding: 5px;
-            }
-
-            /* 自定义标题样式 */
-            .custom-heading {
-                font-size: 2em;
-                font-weight: bold;
-                color: #333;
-                margin-bottom: 15px;
-            }
-
-            /* 字体大小样式 */
-            .font-size-lg {
-                font-size: 1.25em;
-            }
-
-            .font-size-sm {
-                font-size: 0.875em;
-            }
-
-            /* 高亮文本 */
-            .text-highlight {
-                background-color: yellow;
-                font-weight: bold;
-            }
-        }
 
         #contact_content {
             z-index: 1;
