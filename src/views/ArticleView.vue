@@ -41,15 +41,13 @@ export default {
     });
 
     onUpdated(() => {
-      document.addEventListener("DOMContentLoaded", function () {
-        const editors = document.querySelectorAll("#article_content");
+      const editors = document.querySelectorAll("#article_content");
 
-        editors.forEach((editor) => {
-          const links = editor.getElementsByTagName("a");
-          for (let link of links) {
-            link.setAttribute("target", "_blank");
-          }
-        });
+      editors.forEach((editor) => {
+        const links = editor.getElementsByTagName("a");
+        for (let link of links) {
+          link.setAttribute("target", "_blank");
+        }
       });
     });
 
