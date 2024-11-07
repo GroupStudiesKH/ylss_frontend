@@ -1,5 +1,5 @@
 <script>
-import { ref, onMounted, watch } from "vue";
+import { ref, onMounted, watch, onUpdated } from "vue";
 import { useRouter, useRoute } from "vue-router";
 
 import Header from "@/components/Header.vue";
@@ -35,20 +35,8 @@ export default {
     const getProduct = async () => {
       try {
         product.value = await apiService.getProduct(productID.value);
-        if(product.value.category_id) getCategoryPath(product.value.category_id);
-
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const editors = document.querySelectorAll('#product_detail_content');
-            
-            editors.forEach(editor => {
-                const links = editor.getElementsByTagName('a');
-                for(let link of links) {
-                    link.setAttribute('target', '_blank');
-                }
-            });
-        });
-
+        if (product.value.category_id)
+          getCategoryPath(product.value.category_id);
       } catch (error) {
         console.error("Error fetching product content:", error);
       }
@@ -98,6 +86,19 @@ export default {
       getProduct();
     });
 
+    onUpdated(() => {
+      document.addEventListener("DOMContentLoaded", function () {
+        const editors = document.querySelectorAll("#product_detail_content");
+
+        editors.forEach((editor) => {
+          const links = editor.getElementsByTagName("a");
+          for (let link of links) {
+            link.setAttribute("target", "_blank");
+          }
+        });
+      });
+    });
+
     return {
       locale,
       products,
@@ -107,7 +108,7 @@ export default {
       checkCart,
       getInfo,
       getCategoryPath,
-      categoryPath
+      categoryPath,
     };
   },
 };
@@ -129,13 +130,9 @@ export default {
           <div class="row mb-5" v-if="Object.keys(product).length > 0">
             <div class="col-12 route">
               <span class="material-icons">&#xE88A;</span>
-              <a :href="`/${locale}/`">{{
-                $t("header.index")
-              }}</a>
+              <a :href="`/${locale}/`">{{ $t("header.index") }}</a>
               /
-              <a :href="`/${locale}/product`">{{
-                $t("header.product")
-              }}</a>
+              <a :href="`/${locale}/product`">{{ $t("header.product") }}</a>
               <span v-if="product.category_id">
                 <span
                   v-for="(path, pathIndex) in categoryPath"
@@ -191,9 +188,20 @@ export default {
           <h4>相關規格/</h4>
           <hr />
           <template v-if="product && product.spec_articles">
-            <div v-for="(article, index) in product.spec_articles" :key="article.id" :class="index % 2 === 0 ? 'spec_tag_1' : 'spec_tag_2'">
+            <div
+              v-for="(article, index) in product.spec_articles"
+              :key="article.id"
+              :class="index % 2 === 0 ? 'spec_tag_1' : 'spec_tag_2'"
+            >
               <a :href="`/${locale}/spec/${article.id}`">
-                {{ article.article_detail.find(detail => detail.language === locale)?.meta_value || article.article_detail.find(detail => detail.language === 'zh_TW')?.meta_value }}
+                {{
+                  article.article_detail.find(
+                    (detail) => detail.language === locale
+                  )?.meta_value ||
+                  article.article_detail.find(
+                    (detail) => detail.language === "zh_TW"
+                  )?.meta_value
+                }}
               </a>
             </div>
           </template>
