@@ -1226,6 +1226,7 @@ main {
             /* 表格样式 */
             .table {
                 width: 100%;
+                border-collapse: separate;
             }
 
             .table-bordered {
