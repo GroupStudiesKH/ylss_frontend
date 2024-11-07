@@ -32,6 +32,18 @@ export default {
                 params.id = articleId.value;
             }
             article.value = await apiService.getArticleContent(params);
+
+            document.addEventListener('DOMContentLoaded', function() {
+              const editors = document.querySelectorAll('#article_content');
+              
+              editors.forEach(editor => {
+                  const links = editor.getElementsByTagName('a');
+                  for(let link of links) {
+                      link.setAttribute('target', '_blank');
+                  }
+              });
+            });
+
         } catch (error) {
             console.error("Error fetching article content:", error);
         }

@@ -36,6 +36,19 @@ export default {
       try {
         product.value = await apiService.getProduct(productID.value);
         if(product.value.category_id) getCategoryPath(product.value.category_id);
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const editors = document.querySelectorAll('#product_detail_content');
+            
+            editors.forEach(editor => {
+                const links = editor.getElementsByTagName('a');
+                for(let link of links) {
+                    link.setAttribute('target', '_blank');
+                }
+            });
+        });
+
       } catch (error) {
         console.error("Error fetching product content:", error);
       }
