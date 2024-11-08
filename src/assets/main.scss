@@ -1209,16 +1209,16 @@ main {
 
             p .image_resized {
                 float: left;
-                margin-left: 10px;
+                margin: 10px 0 10px 10px;
             }
 
             figure.image.image_resized{
                 display: block;
-                margin: 0 auto;
+                margin: 10px auto;
 
                 &.image-style-side {
                     float: right;
-                    margin-left: 10px;
+                    margin: 10px 0 10px 10px;
                 }
     
             }
