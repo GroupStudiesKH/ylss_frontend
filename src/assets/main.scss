@@ -1207,20 +1207,20 @@ main {
                 text-align: justify;
             }
 
-            /* 图像对齐样式 */
-            .image-align-left {
+            p .image_resized {
                 float: left;
-                margin-right: 10px;
-            }
-
-            .image-align-right {
-                float: right;
                 margin-left: 10px;
             }
 
-            img {
+            figure.image.image_resized{
                 display: block;
                 margin: 0 auto;
+
+                &.image-style-side {
+                    float: right;
+                    margin-left: 10px;
+                }
+    
             }
 
             /* 表格样式 */
