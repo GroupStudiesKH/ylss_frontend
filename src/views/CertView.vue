@@ -63,7 +63,7 @@ export default {
 
                 <div class="col-12 mt-3" id="quality-lab">
                   <!-- 環境認證 -->
-                  <h4>環境認證</h4>
+                  <h4>{{ t("cert.heading1") }}</h4>
                   <div class="row mb-4">
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14064.webp')">
                       <div class="clickable-image">
@@ -92,7 +92,7 @@ export default {
                   </div>
 
                   <!-- 職業安全衛生認證 -->
-                  <h4>職業安全衛生認證</h4>
+                  <h4>{{ t("cert.heading2") }}</h4>
                   <div class="row mb-4">
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-45001-2018.webp')">
                       <div class="clickable-image">
@@ -113,7 +113,7 @@ export default {
                   </div>
 
                   <!-- 品質認證 -->
-                  <h4>品質認證</h4>
+                  <h4>{{ t("cert.heading3") }}</h4>
                   <div class="row mb-4">
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-9001.webp')">
                       <div class="clickable-image">
@@ -142,7 +142,7 @@ export default {
                   </div>
 
                   <!-- 產品認證 -->
-                  <h4>產品認證</h4>
+                  <h4>{{ t("cert.heading4") }}</h4>
                   <div class="row mb-4">
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/jis.webp')">
                       <div class="clickable-image">
@@ -171,7 +171,7 @@ export default {
                   </div>
 
                   <!-- 能源認證 -->
-                  <h4>能源認證</h4>
+                  <h4>{{ t("cert.heading5") }}</h4>
                   <div class="row mb-4">
                     <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-50001.webp')">
                       <div class="clickable-image">
