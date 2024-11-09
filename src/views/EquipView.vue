@@ -67,7 +67,7 @@ export default {
                 </div>
                 <div class="col-6 col-lg-5">
                   <h4>▎{{ t('equip.zm1.title') }}</h4>
-                  <h5 class="sub-heading">{{ t('equip.zm1.phase1') }}</h5>
+                  <h5 class="sub-heading" v-if="locale != 'eng'">{{ t('equip.zm1.phase1') }}</h5>
                   <p><strong>{{ t('common.mainFunc') }}:</strong><br/>{{ t('equip.zm1.phase2') }}</p>
                 </div>              
               </div>
@@ -81,7 +81,7 @@ export default {
                 </div>
                 <div class="col-6 col-lg-5">
                   <h4>▎{{ t('equip.ba.title') }}</h4>
-                  <h5 class="sub-heading">{{ t('equip.ba.phase1') }}</h5>
+                  <h5 class="sub-heading" v-if="locale != 'eng'">{{ t('equip.ba.phase1') }}</h5>
                   <p><strong>{{ t('common.mainFunc') }}:</strong><br/>{{ t('equip.ba.phase2') }}</p>
                 </div>              
               </div>
@@ -95,7 +95,7 @@ export default {
                 </div>
                 <div class="col-6 col-lg-5">
                   <h4>▎{{ t('equip.spl.title') }}</h4>
-                  <h5 class="sub-heading">{{ t('equip.spl.phase1') }}</h5>
+                  <h5 class="sub-heading" v-if="locale != 'eng'">{{ t('equip.spl.phase1') }}</h5>
                   <p><strong>{{ t('common.mainFunc') }}:</strong><br/>{{ t('equip.spl.phase2') }}</p>
                 </div>              
               </div>
@@ -109,7 +109,7 @@ export default {
                 </div>
                 <div class="col-6 col-lg-5">
                   <h4>▎{{ t('equip.tll.title') }}</h4>
-                  <h5 class="sub-heading">{{ t('equip.tll.phase1') }}</h5>
+                  <h5 class="sub-heading" v-if="locale != 'eng'">{{ t('equip.tll.phase1') }}</h5>
                   <p><strong>{{ t('common.mainFunc') }}:</strong><br/>{{ t('equip.tll.phase2') }}</p>
                 </div>              
               </div>
@@ -123,7 +123,7 @@ export default {
                 </div>
                 <div class="col-6 col-lg-5">
                   <h4>▎{{ t('equip.sl.title') }}</h4>
-                  <h5 class="sub-heading">{{ t('equip.sl.phase1') }}</h5>
+                  <h5 class="sub-heading" v-if="locale != 'eng'">{{ t('equip.sl.phase1') }}</h5>
                   <p><strong>{{ t('common.mainFunc') }}:</strong><br/>{{ t('equip.sl.phase2') }}</p>
                 </div>              
               </div>

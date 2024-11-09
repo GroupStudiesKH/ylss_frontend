@@ -53,11 +53,11 @@
   },
   "tech":{
     "title": "Professional Technology",
-    "phase1": "Yuan Long possesses core equipment for the cold rolling process of stainless steel, as well as professional capabilities in rewinding, slitting, cutting, and inspection. We also have slitting machines to meet customer orders for different widths.",
+    "phase1": "YLSS is equipped with advanced facilities for stainless steel cold rolling processes in recoiling, slitting, cutting, and inspection. We also offer slitting machines to fulfill customer orders for different width specifications.",
     "phase2": "/assets/img/tech_content.webp"
   },
   "equip":{
-    "title": "Core Equipment",
+    "title": "Main Equipment",
     "zm1": {
       "title": "20-High Cold Rolling Mill",
       "phase1": "20-High Cold Rolling Mill",
@@ -114,7 +114,7 @@
     "title": "Quality Policy",
     "cert": {
       "title": "ISO 9001, JIS mark, and IATF 16949 Quality Policy",
-      "phase1": "Adhering to our quality policy, we fully implement the ISO 9001 Quality Management System, JIS Q1001 Conformity Assessment - Certification to Japanese Industrial Standards - General Requirements for Certification Bodies, and IATF 16949 Automotive Quality Management System standards to structure our quality management system. We aim to enhance our stainless steel expertise and service quality, and uphold the spirit of continuous improvement to enhance quality and productivity, achieving customer satisfaction. We commit to establishing quality objectives based on our quality policy and implementing various improvement measures to continuously enhance our quality management system while meeting customer and legal requirements."
+      "phase1": "We fully implement standards such as ISO 9001, JIS Q1001, and IATF 16949 to structure our quality management system, enhancing our expertise in stainless steel and improving service quality. We commit to continuous improvement, aiming to enhance product quality and achieve customer satisfaction. We pledge to set quality goals according to our quality policy and implement improvement measures based on customer and legal requirements to continuously enhance our quality management system."
     },
     "policy": {
       "title": "ISO 9001 Quality Management System/IATF 16949 International Standard for Automotive Quality Management Systems",
@@ -123,12 +123,12 @@
     },
     "lab": {
       "title": "Laboratory Quality Policy",
-      "phase1": "Following the guideline of our quality policy, we fully implement ISO 9001 and ISO/IEC 17025 quality management systems. We aim to enhance our stainless steel expertise and service quality, and uphold the spirit of continuous improvement to enhance quality and productivity, achieving customer satisfaction. We commit to establishing quality objectives based on our quality policy and implementing various improvement measures to continuously enhance our quality management system while meeting customer and legal requirements.",
+      "phase1": "Following the guideline of our quality policy, we are committed to enhance product quality and achieve customer satisfaction.",
       "phase2": "ISO/IEC 17025 YLSS Laboratory (No. 3537) Quality Policy: Providing efficient and reliable testing services under the principles of fairness, independence, and transparency."
     }
   },
   "cert":{
-    "title": "Standard Certifications",
+    "title": "Certifications",
     "heading1": "Environmental Certifications",
     "heading2": "Occupational Safety and Health Certifications", 
     "heading3": "Quality Certifications",
@@ -195,8 +195,8 @@
         "content2": "Subsidies: Wedding and funeral subsidies, children's education subsidies, travel subsidies, emergency subsidies."
       },
       "companyBenefits": {
-        "title": "Company Benefits:",
-        "content": "Labor and health insurance, occupational injury insurance, group insurance, labor pension contributions, employee health check-ups, employee uniforms, on-site parking for employees, family day trips, employee travel, book clubs, club activities, Christmas events (including migrant worker gatherings), year-end party, retirement farewell parties for employees."
+        "title": "Employee Benefits:",
+        "content": "Labor insurance, Health insurance, Occupational insurance, Group insurance, Labor pension contributions, Employee health check-ups, Provision of employee uniforms, Free on-site parking for employees, Family day activity, Company trip, Book club, Club activities, Christmas party (migrant worker events), Year-end banquet, Employee retirement farewell party."
       },
       "training": {
         "title": "Training and Development",
