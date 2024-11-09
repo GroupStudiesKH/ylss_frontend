@@ -21,15 +21,15 @@
     "intro": "Yuan long stainless steel corp."
   },
   "index": {
-    "intro": "<span class='h5'>远龙不锈钢</span>股份有限公司成立于2005年，隶属远东集团所有，为冷轧不锈钢供应商年产能13万吨，产品销售全球40余国。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 远龙以台湾为基地，于全球金属加工业市场中展现傲人实力。<br><img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 远龙全面执行质量管理系统，落实持续改善的精神，不断提升质量与生产力，产品深受顾客信赖与肯定。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 远龙2050年达到净零排放为目标，通过各项能源管理措施，以实际行动做好节约减碳，为地球永续尽一份心力。",
+    "intro": "<span class='h5'>远龙不锈钢</span>股份有限公司成立于2005年，隶属远东集团所有，为冷轧不锈钢供应商，年产能13万吨，产品销售全球40余国。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 远龙以台湾为基地，于全球金属加工业市场中展现傲人实力。<br><img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 远龙全面执行质量管理系统，落实持续改善的精神，不断提升质量与生产力，产品深获顾客信赖与肯定。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 远龙以2050年达到净零排放为目标，通过各项能源管理措施，以实际行动做好节约减碳，为地球永续尽一份心力。",
     "feature1": "价值传承",
-    "feature1_subtitle": "Value inheritance",
+    "feature1_subtitle": "Core Value",
     "feature2": "幸福职安",
-    "feature2_subtitle": "Occupational <br/> safety and health",
+    "feature2_subtitle": "Safe and Happy <br/> Workplace",
     "feature3": "卓越制造",
-    "feature3_subtitle": "Manufacturing <br/> excellence",
+    "feature3_subtitle": "Excellent<br/>Manufacturing",
     "feature4": "绿色使命",
-    "feature4_subtitle": "Energy and <br/>  environmental protection",
+    "feature4_subtitle": "Green<br/>Mission",
     "feature5": {
       "title": "远龙在乎绿色使命",
       "content_1": "远龙致力打造由内而外的绿色体质",
@@ -97,7 +97,7 @@
     },
     "coreValue":{
       "title": "核心价值",
-      "phase1": "始终秉持集团价值观「诚、勤、朴、慎、创新」，以精湛技艺与态度在企业永续的道路上不懈努力，展现人本、信赖、务实、创新的核心价值。<br/>1.人本-重视员工需求与发展,善尽企业社会责任。<br/>2.信赖-成为客户值得信赖的伙伴,成就彼此的成功。<br/>3.务实-脚踏实地,坚持到底,专注过程,做好每件事。<br/>4.创新-跨领域学习,勇于突破,持续改善,提升质量。"
+      "phase1": "始终秉持集团价值观「诚、勤、朴、慎、创新」，以精湛技艺与态度在企业永续的道路上不懈努力，展现人本、信赖、务实、创新的核心价值。<br/>1.人本-重视员工需求与发展，善尽企业社会责任。<br/>2.信赖-成为客户值得信赖的伙伴，成就彼此的成功。<br/>3.务实-脚踏实地、坚持到底、专注过程、做好每件事。<br/>4.创新-跨领域学习、勇于突破、持续改善、提升质量。"
     },
     "view":{
       "title": "使命愿景",
@@ -114,7 +114,7 @@
     "title": "质量政策",
     "cert": {
       "title": "ISO 9001、JIS mark及IATF 16949 质量政策",
-      "phase1": "在秉持质量政策的理念下，我们全面执行ISO 9001质量管理系统、JIS Q1001符合性评估 - 符合日本产业标准的认证 – 一般认证指引及IATF 16949汽车业质量管理系统等相关作业标准来架构质量管理系统。提升不锈钢专业能力及服务质量，并秉持持续改善精神提升质量与生产力，达到顾客满意的水平。我们承诺会依据质量政策建立质量目标，并在符合顾客及法令要求基础下，进行各项改善措施以持续改善质量管理系统。"
+      "phase1": "我们全面执行ISO 9001、JIS Q1001、及IATF 16949等相关作业标准来架构质量管理系统，以提升不锈钢专业能力及服务质量，并落实持续改善精神提升质量与生产力，达到顾客满意的水准。我们承诺会依据质量政策建立质量目标，并在符合顾客及法令要求基础下，进行各项改善措施以持续改善质量管理系统。"
     },
     "policy": {
       "title": "ISO 9001质量管理系统/IATF 16949汽车认证系统质量政策",
@@ -123,7 +123,7 @@
     },
     "lab": {
       "title": "实验室质量政策",
-      "phase1": "在秉持质量政策的理念下，我们全面执行ISO 9001及ISO/IEC 17025 质量管理系统。提升不锈钢专业能力及服务质量，并秉持持续改善精神提升质量与生产力，达到顾客满意的水平。我们承诺会建立质量政策建立质量目标，并在符合顾客及法令要求基础下，进行各项改善措施以持续改善质量管理系统。",
+      "phase1": "在秉持质量政策的意念下，落实持续改善精神，提升产品质量，达到顾客满意的水准。",
       "phase2": "ISO/IEC 17025 远龙实验室(编号：3537) 质量政策：以公正、独立、透明的原则，提供有效率及信赖的测试服务。"
     }
   },
@@ -136,7 +136,7 @@
     "heading5": "能源认证",
     "lists": {
       "title": "国际标准质量认证",
-      "phase1": "远龙在产品质量上展现坚持，制造符合 ISO、JIS、EN、ASTM 及 CNS 等国际标准制程产品。远龙更拥有专属的品检实验室，定期接受 TAF 认证合格，通过产品自检确保一致性的质量水平。",
+      "phase1": "远龙在产品质量上展现坚持，通过ISO、JIS、BIS、IATF、TAF及CNS等国际认证标准。",
       "iso9001": "ISO 9001：2015质量管理系统",
       "iso5001": "ISO 50001 2018版_能源管理系统",
       "iso45001": "ISO 45001：2018职业安全卫生管理系统",

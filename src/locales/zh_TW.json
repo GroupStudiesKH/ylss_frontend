@@ -21,15 +21,15 @@
     "intro": "Yuan long stainless steel corp."
   },
   "index": {
-    "intro": "<span class='h5'>遠龍不銹鋼</span>股份有限公司成立於2005年，隸屬遠東集團所有，為冷軋不銹鋼供應商年產能13萬噸，產品銷售全球40餘國。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 遠龍以台灣為基地，於全球金屬加工業市場中展現傲人實力。<br><img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 遠龍全面執行品質管理系統，落實持續改善的精神，不斷提升品質與生產力，產品深獲顧客信賴與肯定。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 遠龍2050年達到淨零排放為目標，透過各項能源管理措施，以實際行動做好節約減碳，為地球永續盡一份心力。",
+    "intro": "<span class='h5'>遠龍不銹鋼</span>股份有限公司成立於2005年，隸屬遠東集團所有，為冷軋不銹鋼供應商，年產能13萬噸，產品銷售全球40餘國。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 遠龍以台灣為基地，於全球金屬加工業市場中展現傲人實力。<br><img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 遠龍全面執行品質管理系統，落實持續改善的精神，不斷提升品質與生產力，產品深獲顧客信賴與肯定。<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> 遠龍以2050年達到淨零排放為目標，透過各項能源管理措施，以實際行動做好節約減碳，為地球永續盡一份心力。",
     "feature1": "價值傳承",
-    "feature1_subtitle": "Value inheritance",
+    "feature1_subtitle": "Core Value",
     "feature2": "幸福職安",
-    "feature2_subtitle": "Occupational <br/> safety and health",
+    "feature2_subtitle": "Safe and Happy <br/> Workplace",
     "feature3": "卓越製造",
-    "feature3_subtitle": "Manufacturing <br/> excellence",
+    "feature3_subtitle": "Excellent<br/>Manufacturing",
     "feature4": "綠色使命",
-    "feature4_subtitle": "Energy and <br/>  environmental protection",
+    "feature4_subtitle": "Green<br/>Mission",
     "feature5": {
       "title": "遠龍在乎綠色使命",
       "content_1": "遠龍致力打造由內而外的綠色體質",
@@ -97,7 +97,7 @@
     },
     "coreValue":{
       "title": "核心價值",
-      "phase1": "始終秉持集團價值觀「誠、勤、樸、慎、創新」，以精湛技藝與態度在企業永續的道路上不懈努力，展現人本、信賴、務實、創新的核心價值。<br/>1.人本-重視員工需求與發展,善盡企業社會責任。<br/>2.信賴-成為客戶值得信賴的夥伴,成就彼此的成功。<br/>3.務實-腳踏實地,堅持到底,專注過程,做好每件事。<br/>4.創新-跨領域學習,勇於突破,持續改善,提升品質。"
+      "phase1": "始終秉持集團價值觀「誠、勤、樸、慎、創新」，以精湛技藝與態度在企業永續的道路上不懈努力，展現人本、信賴、務實、創新的核心價值。<br/>1.人本-重視員工需求與發展，善盡企業社會責任。<br/>2.信賴-成為客戶值得信賴的夥伴，成就彼此的成功。<br/>3.務實-腳踏實地、堅持到底、專注過程、做好每件事。<br/>4.創新-跨領域學習、勇於突破、持續改善、提升品質。"
     },
     "view":{
       "title": "使命願景",
@@ -114,7 +114,7 @@
     "title": "品質政策",
     "cert": {
       "title": "ISO 9001、JIS mark及IATF 16949 品質政策",
-      "phase1": "在秉持品質政策的意念下，我們全面執行ISO 9001品質管理系統、JIS Q1001符合性評估 - 符合日本產業標準的認證 – 一般認證指引及IATF 16949汽車業品質管理系統等相關作業標準來架構品質管理系統。提升不銹鋼專業能力及服務品質，並秉持持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會依據品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。"
+      "phase1": "我們全面執行ISO 9001、JIS Q1001、及IATF 16949等相關作業標準來架構品質管理系統，以提升不銹鋼專業能力及服務品質，並落實持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會依據品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。"
     },
     "policy": {
       "title": "ISO 9001品質管理系統/IATF 16949汽車認證系統品質政策",
@@ -123,7 +123,7 @@
     },
     "lab": {
       "title": "實驗室品質政策",
-      "phase1": "在秉持品質政策的意念下，我們全面執行ISO 9001及ISO/IEC 17025 品質管理系統。提升不銹鋼專業能力及服務品質，並秉持持續改善精神提升品質與生產力，達到顧客滿意的水準。我們承諾會建立品質政策建立品質目標，並在符合顧客及法令要求基礎下，進行各項改善措施以持續改善品質管理系統。",
+      "phase1": "在秉持品質政策的意念下，落實持續改善精神，提升產品品質，達到顧客滿意的水準。",
       "phase2": "ISO/IEC 17025 遠龍實驗室(編號：3537) 品質政策：以公正、獨立、透明的原則，提供有效率及信賴的測試服務。"
     }
   },
@@ -136,7 +136,7 @@
     "heading5": "能源認證",
     "lists": {
       "title": "國際標準品質認證",
-      "phase1": "遠龍在產品品質上展現堅持，製造符合 ISO、JIS、EN、ASTM 及 CNS 等國際標準製程產品。遠龍更擁有專屬的品檢實驗室，定期接受 TAF 認證合格，透過產品自檢確保一致性的品質水準。",
+      "phase1": "遠龍在產品品質上展現堅持，通過ISO、JIS、BIS、IATF、TAF及CNS等國際認證標準。",
       "iso9001": "ISO 9001：2015品質管理系統",
       "iso5001": "ISO 50001 2018版_能源管理系統",
       "iso45001": "ISO 45001：2018職業安全衛生管理系統",
