@@ -15,35 +15,40 @@ export default {
   setup() {
     const { t, locale } = useI18n();
     const articles = ref([]);
+    const currentPage = ref(1);
+    const perPage = ref(10);
+    const totalPages = ref(0);
+    const total = ref(0);
 
     const getArticles = async () => {
       try {
-        articles.value = await apiService.getArticle('news');
-        console.log(articles.value)
+        const response = await apiService.getNews(currentPage.value, perPage.value);
+        articles.value = response.data;
+        total.value = response.total;
+        totalPages.value = response.last_page;
       } catch (error) {
         console.error("Error fetching news articles:", error);
       }
+    };
+
+    const changePage = async (page) => {
+      currentPage.value = page;
+      await getArticles();
+      window.scrollTo(0, 0);
     };
 
     onMounted(() => {
       getArticles();
     });
 
-    onUpdated(() => {
-      const editors = document.querySelectorAll("#article_content");
-
-      editors.forEach((editor) => {
-        const links = editor.getElementsByTagName("a");
-        for (let link of links) {
-          link.setAttribute("target", "_blank");
-        }
-      });
-    });
-
     return {
       t,
       locale,
-      articles
+      articles,
+      currentPage,
+      totalPages,
+      total,
+      changePage
     };
   },
 };
@@ -54,7 +59,7 @@ export default {
   <main id="article">
     <div
       class="banner"
-      style="background-image: url('/assets/img/article_banner.webp')"
+      style="background-image: url('/assets/img/news_banner.webp')"
     ></div>
 
     <div class="container">
@@ -65,7 +70,7 @@ export default {
               <span class="material-icons">&#xE88A;</span>
               {{ t("header.index") }} / {{ t("header.news") }}
             </div>
-            <div class="col-12" >
+            <div class="col-12">
               <div v-for="(article, index) in articles" :key="index" class="news-item">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <h4 class="mb-0">
@@ -78,6 +83,21 @@ export default {
                   <div class="news-date">{{ article.created_ts }}</div>
                 </div>
               </div>
+
+              <!-- Pagination -->
+              <nav v-if="totalPages > 1" aria-label="News pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item" :class="{ disabled: currentPage === 1 }">
+                    <a class="page-link" style="text-decoration: none !important;" href="#" @click.prevent="changePage(currentPage - 1)">◀</a>
+                  </li>
+                  <li v-for="page in totalPages" :key="page" class="page-item" :class="{ active: page === currentPage }">
+                    <a class="page-link" style="text-decoration: none !important;" href="#" @click.prevent="changePage(page)">{{ page }}</a>
+                  </li>
+                  <li class="page-item" :class="{ disabled: currentPage === totalPages }">
+                    <a class="page-link" style="text-decoration: none !important;" href="#" @click.prevent="changePage(currentPage + 1)">▶</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -104,5 +124,19 @@ export default {
 .news-date {
   color: #6c757d;
   font-size: 0.9rem;
+}
+
+.pagination {
+  margin-bottom: 2rem;
+}
+
+.page-link {
+  color: #333;
+  outline: none;
+}
+
+.page-item.active .page-link {
+  background-color: #333;
+  border-color: #333;
 }
 </style>

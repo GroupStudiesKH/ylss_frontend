@@ -177,6 +177,17 @@ const getArticle = async (type = 'spec') => {
   }
 };
 
+const getNews = async (page = 1, perPage = 10) => {
+  const requestConfig = scGet(`${apiUrl}news?page=${page}&per_page=${perPage}`);
+  try {
+    const response = await axios(requestConfig);
+    return checkServerResponse(response);
+  } catch (error) {
+    throw error;
+  }
+};
+
+
 const getArticleContent = async (params) => {
   const requestConfig = scGet(`${apiUrl}article/detail?${objectToQueryString(params)}`);
   try {
@@ -206,5 +217,6 @@ export default {
   getBanner,
   getArticle,
   getArticleContent,
-  sendContact
+  sendContact,
+  getNews
 };
