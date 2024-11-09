@@ -91,6 +91,9 @@ export default {
                   )?.meta_value || ""
                 }}
               </h4>
+              <div class="article-date mb-3">
+                {{ new Date(article.created_ts).toLocaleDateString() }}
+              </div>
               <div
                 v-html="
                   article.get_content_attribute.find(

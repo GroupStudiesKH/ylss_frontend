@@ -72,16 +72,18 @@ export default {
             </div>
             <div class="col-12">
               <div v-for="(article, index) in articles" :key="index" class="news-item">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h4 class="mb-0">
-                    ▎{{
-                      article.get_title_attribute.find(
-                        (attr) => attr.language === locale
-                      )?.meta_value || ""
-                    }}
-                  </h4>
-                  <div class="news-date">{{ article.created_ts }}</div>
-                </div>
+                <a :href="`/${locale}/news/${article.id}`" style="text-decoration: none !important;">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="mb-0">
+                      ▎{{
+                        article.get_title_attribute.find(
+                          (attr) => attr.language === locale
+                        )?.meta_value || ""
+                      }}
+                    </h4>
+                    <div class="news-date">{{ article.created_ts }}</div>
+                  </div>
+                </a>
               </div>
 
               <!-- Pagination -->

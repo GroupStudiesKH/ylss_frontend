@@ -223,6 +223,7 @@
   },
   "common": {
     "openMenu": "Open Category Menu",
-    "mainFunc": "Main Functions"
+    "mainFunc": "Main Functions",
+    "back": "Back"
   }
 }

@@ -223,6 +223,7 @@
   },
   "common": {
     "openMenu": "开启分类选单",
-    "mainFunc": "主要功能"
+    "mainFunc": "主要功能",
+    "back": "回上一页"
   }
 }
