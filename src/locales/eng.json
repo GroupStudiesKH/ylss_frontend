@@ -2,13 +2,13 @@
   "header": {
     "index": "Home",
     "companyIntro": "Company Introduction",
-    "product": "Products",
-    "productSpec": "Product Specifications",
-    "techEquipment": "Technology & Equipment",
-    "news": "News",
-    "sustainability": "Sustainability",
+    "product": "Product Catalog",
+    "productSpec": "Product Specification",
+    "techEquipment": "Technical Equipment",
+    "news": "Latest News",
+    "sustainability": "Corporate Sustainability",
     "contact": "Contact Us",
-    "recruitment": "Recruitment",
+    "recruitment": "Careers",
     "tradeService": "Trade Services",
     "askingPrice": "Inquiry"
   },
@@ -21,7 +21,7 @@
     "intro": "Yuan Long Stainless Steel Corp."
   },
   "index": {
-    "intro": "<span class='h5'>Yuan Long Stainless Steel</span> Corporation, established in 2005, is a subsidiary of the Far Eastern Group. As a cold-rolled stainless steel supplier with an annual production capacity of 130,000 tons, our products are sold to over 40 countries worldwide.<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> With Taiwan as its base, Yuan Long demonstrates impressive strength in the global metal processing industry market.<br><img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> Yuan Long fully implements a quality management system, embodying the spirit of continuous improvement, constantly enhancing quality and productivity. Our products have earned the trust and recognition of customers.<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> Yuan Long aims to achieve net-zero emissions by 2050. Through various energy management measures, we take practical actions to conserve energy and reduce carbon emissions, contributing to the sustainability of our planet.",
+    "intro": "<span class='h5'>Yuan Long Stainless Steel (YLSS)</span> As a subsidiary of Far Eastern Group, Yuan Long Stainless Steel (YLSS) was established in 2005. Our main product cold-rolled stainless-steel coils of YLSS are sold to more than 40 countries in the world.<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> YLSS, based in Taiwan, demonstrates remarkable strength in the global metal processing market.<br><img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> YLSS fully implements a quality management system, emphasizing continuous improvement, consistently enhancing quality and productivity, earning customer trust and recognition.<br> <img src='/assets/img/arrow.svg' alt='arrow' style='width: 12px; height: 12px;'> YLSS aims to achieve net-zero emissions by 2050 through various energy management measures, actively reducing carbon emissions to contribute to global sustainability.",
     "feature1": "Core Value",
     "feature1_subtitle": "Core Value",
     "feature2": "Safe and Happy Workplace",
@@ -31,15 +31,15 @@
     "feature4": "Green Mission",
     "feature4_subtitle": "Green<br/>Mission",
     "feature5": {
-      "title": "Yuan Long Cares About Green Mission",
-      "content_1": "Yuan Long is committed to building a green constitution from the inside out",
-      "content_2": "Adopting ISO 50001 energy management system and EU-certified renewable energy",
-      "content_3": "Prioritizing the procurement of green eco-labeled raw materials and using recycled materials for packaging",
-      "content_4": "Aiming to achieve net-zero emissions by 2050, realizing the vision of sustainable corporate development"
+      "title": "Environmental-friendly",
+      "content_1": "YLSS is committed to be a green enterprise",
+      "content_2": "Both ISO 50001 and EU-certified renewable energy are adapted",
+      "content_3": "Recycled and materials with environmental-friendly labels preferred for procurement",
+      "content_4": "Our goal is to achieve net-zero emissions by 2050 as CSR for sustainability"
     },
     "feature6": {
       "title": "ISO 9001, JIS mark and IATF 16949 Quality Policy",
-      "content_1": "We fully implement the relevant operational standards of ISO 9001, JIS Q1001, and IATF 16949 to structure our quality management system, enhancing our professional capabilities in stainless steel and service quality. We embody the spirit of continuous improvement to enhance quality and productivity, achieving customer satisfaction. We commit to establishing quality objectives based on our quality policy and, while meeting customer and legal requirements, implementing various improvement measures to continuously enhance our quality management system.",
+      "content_1": "We fully implement standards such as ISO 9001, JIS Q1001, and IATF 16949 to structure our quality management system, enhancing our expertise in stainless steel and improving service quality. We commit to continuous improvement, aiming to enhance product quality and achieve customer satisfaction. We pledge to set quality goals according to our quality policy and implement improvement measures based on customer and legal requirements to continuously enhance our quality management system.",
       "btn": "Learn More"
     }
   },
