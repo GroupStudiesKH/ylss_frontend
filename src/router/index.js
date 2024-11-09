@@ -73,6 +73,11 @@ const router = createRouter({
       name: "articleDetail",
       component: () => import("../views/ArticleView.vue"),
     },
+    {
+      path: "/:locale(eng|zh_TW|zh_CN)?/news",
+      name: "news",
+      component: () => import("../views/NewsView.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
