@@ -60,9 +60,9 @@ export default {
             <div class="col-12">
               <div class="row">
                 <div class="col-6 col-lg-7">
-                  <div class="clickable-image">
+                  <div class="clickable-image" @click="openModal('/assets/img/zm1.webp')">
                     <div class="material-icons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; z-index: 2;">&#xe8ff;</div>
-                    <img class="w-100" src="/assets/img/zm1.webp" @click="openModal('/assets/img/zm1.webp')">
+                    <img class="w-100" src="/assets/img/zm1.webp">
                   </div>
                 </div>
                 <div class="col-6 col-lg-5">
@@ -74,9 +74,9 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                  <div class="clickable-image">
+                  <div class="clickable-image" @click="openModal('/assets/img/ba2.webp')">
                     <div class="material-icons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; z-index: 2;">&#xe8ff;</div>
-                    <img class="w-100 " src="/assets/img/ba2.webp" @click="openModal('/assets/img/ba2.webp')">
+                    <img class="w-100 " src="/assets/img/ba2.webp">
                   </div>
                 </div>
                 <div class="col-6 col-lg-5">
@@ -88,9 +88,9 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                  <div class="clickable-image">
+                  <div class="clickable-image" @click="openModal('/assets/img/spl.webp')">
                     <div class="material-icons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; z-index: 2;">&#xe8ff;</div>
-                    <img class="w-100" src="/assets/img/spl.webp" @click="openModal('/assets/img/spl.webp')">
+                    <img class="w-100" src="/assets/img/spl.webp">
                   </div>
                 </div>
                 <div class="col-6 col-lg-5">
@@ -102,9 +102,9 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                  <div class="clickable-image">
+                  <div class="clickable-image" @click="openModal('/assets/img/tll.webp', true)">
                     <div class="material-icons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; z-index: 2;">&#xe8ff;</div>
-                    <img class="w-100" src="/assets/img/tll.webp" @click="openModal('/assets/img/tll.webp', true)">
+                    <img class="w-100" src="/assets/img/tll.webp">
                   </div>
                 </div>
                 <div class="col-6 col-lg-5">
@@ -116,9 +116,9 @@ export default {
 
               <div class="row mt-3">
                 <div class="col-6 col-lg-7">
-                  <div class="clickable-image">
+                  <div class="clickable-image" @click="openModal('/assets/img/sl.webp')">
                     <div class="material-icons" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; z-index: 2;">&#xe8ff;</div>
-                    <img class="w-100" src="/assets/img/sl.webp" @click="openModal('/assets/img/sl.webp')">
+                    <img class="w-100" src="/assets/img/sl.webp">
                   </div>
                 </div>
                 <div class="col-6 col-lg-5">
