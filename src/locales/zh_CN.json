@@ -88,8 +88,8 @@
     "title": "关于远龙",
     "managePolicy": {
       "title": "经营方针",
-      "phase1": "/assets/img/company_intro_left.webp",
-      "phase2": "/assets/img/company_intro_right.webp"
+      "phase1": "/assets/img/company_intro_left_cn.gif",
+      "phase2": "/assets/img/company_intro_right_cn.gif"
     },
     "companyIntro": {
       "title": "关于远龙",
@@ -118,8 +118,8 @@
     },
     "policy": {
       "title": "ISO 9001质量管理系统/IATF 16949汽车认证系统质量政策",
-      "phase1": "/assets/img/quality_left.webp",
-      "phase2": "/assets/img/quality_right.webp"
+      "phase1": "/assets/img/quality_left_cn.png",
+      "phase2": "/assets/img/quality_right_cn.png"
     },
     "lab": {
       "title": "实验室质量政策",

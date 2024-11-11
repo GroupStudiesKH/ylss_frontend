@@ -88,8 +88,8 @@
     "title": "About YLSS",
     "managePolicy": {
       "title": "Management Principles",
-      "phase1": "/assets/img/company_intro_left.webp",
-      "phase2": "/assets/img/company_intro_right.webp"
+      "phase1": "/assets/img/company_intro_left_eng.gif",
+      "phase2": "/assets/img/company_intro_right_eng.gif"
     },
     "companyIntro": {
       "title": "About YLSS",
@@ -118,8 +118,8 @@
     },
     "policy": {
       "title": "ISO 9001 Quality Management System/IATF 16949 International Standard for Automotive Quality Management Systems",
-      "phase1": "/assets/img/quality_left.webp",
-      "phase2": "/assets/img/quality_right.webp"
+      "phase1": "/assets/img/quality_left_eng.png",
+      "phase2": "/assets/img/quality_right_eng.png"
     },
     "lab": {
       "title": "Laboratory Quality Policy",
