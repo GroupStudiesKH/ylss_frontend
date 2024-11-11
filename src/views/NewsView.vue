@@ -81,7 +81,7 @@ export default {
                         )?.meta_value || ""
                       }}
                     </h4>
-                    <div class="news-date">{{ article.created_ts }}</div>
+                    <!-- <div class="news-date">{{ article.created_ts }}</div> -->
                   </div>
                 </a>
               </div>

@@ -78,7 +78,7 @@ export default {
                       )?.meta_value || ""
                     }}
                   </h4>
-                  <div class="news-date">{{ newsDetail.created_ts }}</div>
+                  <!-- <div class="news-date">{{ newsDetail.created_ts }}</div> -->
                 </div>
                 <div class="news-content mb-4" v-html="newsDetail.get_content_attribute?.find(
                   (attr) => attr.language === locale

@@ -105,11 +105,6 @@
             }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" :href="`/${locale}/news`">{{
-              t("header.news")
-            }}</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" :href="`/${locale}/article`">{{
               t("header.sustainability")
             }}</a>
@@ -124,7 +119,11 @@
               t("header.recruitment")
             }}</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" :href="`/${locale}/news`">{{
+              t("header.news")
+            }}</a>
+          </li>
           <li class="nav-item ask_price">
             <a class="nav-link" :href="`/${locale}/contact`">
               <span class="material-icons">&#xea20;</span>
