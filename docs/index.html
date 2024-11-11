@@ -16,10 +16,13 @@
       const metaDesc = document.getElementById('meta-description');
       
       if (path.includes('/eng')) {
+        document.title = "Yuan Long Stainless Steel";
         metaDesc.content = "Yuan Long Stainless Steel (YLSS) As a subsidiary of Far Eastern Group, Yuan Long Stainless Steel (YLSS) was established in 2005. Our main product cold-rolled stainless-steel coils of YLSS are sold to more than 40 countries in the world.";
       } else if (path.includes('/zh_CN')) {
+        document.title = "远龙不锈钢";
         metaDesc.content = "远龙不锈钢股份有限公司成立于2005年，隶属远东集团所有，为冷轧不锈钢供应商，年产能13万吨，产品销售全球40余国。";
       } else if (path.includes('/zh_TW')) {
+        document.title = "遠龍不銹鋼";
         metaDesc.content = "遠龍不銹鋼股份有限公司成立於2005年，隸屬遠東集團所有，為冷軋不銹鋼供應商，年產能13萬噸，產品銷售全球40餘國。";
       }
     }
