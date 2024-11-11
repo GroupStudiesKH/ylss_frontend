@@ -1322,6 +1322,14 @@ main {
                 color: rgb(33, 37, 41) !important;
             }
 
+            ol li {
+                list-style-type: decimal;
+            }
+
+            ul li {
+                list-style-type: disc;
+            }
+
         }
 
         #company_content {
