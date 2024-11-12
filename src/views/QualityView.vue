@@ -50,9 +50,9 @@ export default {
                 </div>
 
 
-                <div class="col-12 mt-5">
+                <div class="col-12">
                   <h5 class="my-2">{{ t("quality.policy.title") }}</h5>
-                  <br>
+                  <br><br>
                   <div class="row">
                     <div class="col-12 col-md-6 mb-3 mb-md-0">
                       <img class="w-100" :src="t('quality.policy.phase1')">
