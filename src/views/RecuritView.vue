@@ -37,15 +37,15 @@ export default {
               {{ t("header.index") }} / {{ t("header.recruitment") }}
             </div>
             <div class="col-12 col-lg-6 recurit-col px-lg-5">
-                <section class="mt-5">
+                <section class="mt-2">
                     <h4>▎{{ t('recurit.coreValues.title') }}</h4>
                     <p>{{ t('recurit.coreValues.content') }}</p>
                 </section>
-                <section class="mt-5">
+                <section class="mt-2">
                     <h4>▎{{ t('recurit.teamwork.title') }}</h4>
                     <p>{{ t('recurit.teamwork.content') }}</p>
                 </section>
-                <section class="mt-5">
+                <section class="mt-2">
                     <h4>▎{{ t('recurit.inclusiveEnvironment.title') }}</h4>
                     <p>{{ t('recurit.inclusiveEnvironment.content') }}</p>
                 </section>
