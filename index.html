@@ -7,14 +7,13 @@
 
   <title>遠龍不銹鋼</title>
   <meta name="description" id="meta-description" content="遠龍不銹鋼股份有限公司成立於2005年，隸屬遠東集團所有，為冷軋不銹鋼供應商，年產能13萬噸，產品銷售全球40餘國。">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script>
     function updateMetaDescription() {
       const path = window.location.pathname;
       const metaDesc = document.getElementById('meta-description');
-      
+
       if (path.includes('/eng')) {
         document.title = "Yuan Long Stainless Steel";
         metaDesc.content = "Yuan Long Stainless Steel (YLSS) As a subsidiary of Far Eastern Group, Yuan Long Stainless Steel (YLSS) was established in 2005. Our main product cold-rolled stainless-steel coils of YLSS are sold to more than 40 countries in the world.";
@@ -29,6 +28,16 @@
 
     window.addEventListener('load', updateMetaDescription);
     window.addEventListener('popstate', updateMetaDescription);
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQTD56F0K8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HQTD56F0K8');
   </script>
 </head>
 
