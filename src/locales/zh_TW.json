@@ -219,7 +219,8 @@
     "successTitle": "訊息送出成功",
     "close": "關閉",
     "isSending": "訊息送出中",
-    "askingPriceEmpty": "您可以在產品介紹頁面裡找到你想詢價的產品，並且加入詢價表單與我們聯絡。"
+    "askingPriceEmpty": "您可以在產品介紹頁面裡找到你想詢價的產品，並且加入詢價表單與我們聯絡。",
+    "infoImg": "/assets/img/contact_info.webp"
   },
   "common": {
     "openMenu": "開啟分類選單",

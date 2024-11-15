@@ -341,7 +341,7 @@ export default {
         </div>
       </div>
 
-      <img id="contact_info_pc" src="/assets/img/contact_info.webp">
+      <img id="contact_info_pc" :src="$t('contact.infoImg')">
     </div>
 
     <div class="contact_bottom">

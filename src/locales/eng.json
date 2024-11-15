@@ -54,7 +54,7 @@
   "tech":{
     "title": "Professional Technology",
     "phase1": "YLSS is equipped with advanced facilities for stainless steel cold rolling processes in recoiling, slitting, cutting, and inspection. We also offer slitting machines to fulfill customer orders for different width specifications.",
-    "phase2": "/assets/img/tech_content.webp"
+    "phase2": "/assets/img/tech_content_eng.jpg"
   },
   "equip":{
     "title": "Main Equipment",
@@ -219,7 +219,8 @@
     "successTitle": "Message Sent Successfully",
     "close": "Close",
     "isSending": "Sending message",
-    "askingPriceEmpty": "You can find the products you want to inquire about on the product introduction page and add them to the inquiry form to contact us."
+    "askingPriceEmpty": "You can find the products you want to inquire about on the product introduction page and add them to the inquiry form to contact us.",
+    "infoImg": "/assets/img/contact_info_eng.gif"
   },
   "common": {
     "openMenu": "Open Category Menu",
