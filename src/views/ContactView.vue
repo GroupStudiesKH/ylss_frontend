@@ -311,7 +311,7 @@ export default {
                   <div class="row mt-3">
                     <div class="col-12">
                       <vue-recaptcha
-                        sitekey="6Ldml2YqAAAAAC4kqgtZmD6cJa6tNi_m0fkovXdw"
+                        sitekey="6LetmYEqAAAAAKVnIvvlRI6V53qZKn_J1PY05Y9Q"
                         size="normal"
                         theme="light"
                         hl="zh-TW"
