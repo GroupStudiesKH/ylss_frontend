@@ -3,7 +3,7 @@ import axios from "axios";
 let devEnv = ["ylss.hanyuan.info", "ylss.com.tw"].indexOf(location.hostname) == -1 ? true : false;
 let apiUrl;
 if (location.hostname === "ylss.com.tw") {
-  apiUrl = "https://ylss.com.tw/backend/api/";
+  apiUrl = "https://backend.ylss.com.tw/api/";
 } else {
   apiUrl = devEnv ? "http://localhost:8000/api/" : "https://api.ylss.hanyuan.info/api/";
 }
