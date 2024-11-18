@@ -51,17 +51,17 @@ export default {
                 </section>
             </div>
             <div class="col-12 col-lg-6 recurit-col px-lg-5">
-                <section class="mt-5">
+                <section class="">
                     <h4>▎{{ t('recurit.personalGrowth.title') }}</h4>
                     <p>{{ t('recurit.personalGrowth.content') }}</p>
                 </section>
 
-                <section class="mt-5">
+                <section class="mt-4">
                     <h4>▎{{ t('recurit.workLifeBalance.title') }}</h4>
                     <p>{{ t('recurit.workLifeBalance.content') }}</p>
                 </section>
 
-                <section class="mt-5">
+                <section class="mt-4">
                     <h4>▎{{ t('recurit.joinUs.title') }}</h4>
                     <p>{{ t('recurit.joinUs.content') }}</p>
                 </section>
