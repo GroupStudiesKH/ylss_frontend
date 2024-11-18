@@ -27,6 +27,7 @@ const scGet = (url) => {
       "Content-type": "application/json",
       // Server_Token: getServerToken(),
     },
+    withCredentials: true
   };
 };
 
@@ -44,6 +45,7 @@ const scPost = (url, params, isJsonContent = true) => {
       // Server_Token: getServerToken(),
     },
     data: params,
+    withCredentials: true
   };
 };
 
@@ -57,6 +59,7 @@ const scPatch = (url, params) => {
       // Server_Token: getServerToken(),
     },
     data: params,
+    withCredentials: true
   };
 };
 
@@ -70,6 +73,7 @@ const scPut = (url, params) => {
       // Server_Token: getServerToken(),
     },
     data: params,
+    withCredentials: true
   };
 };
 
@@ -83,6 +87,7 @@ const scDelete = (url, params) => {
       // Server_Token: getServerToken(),
     },
     data: params,
+    withCredentials: true
   };
 };
 
@@ -96,6 +101,7 @@ const scOption = (url, params) => {
       // Server_Token: getServerToken(),
     },
     data: params,
+    withCredentials: true
   };
 };
 
