@@ -19,22 +19,22 @@ export default {
     const route = useRoute();
     const articleId = ref(route.params.id);
     const article = ref({
-      id: '',
+      id: "",
       get_content_attribute: [],
-      get_title_attribute: []
+      get_title_attribute: [],
     });
 
     const getArticle = async () => {
-        try {
-            const params = { type: 'spec' };
-            if (articleId.value) {
-                params.id = articleId.value;
-            }
-            article.value = await apiService.getArticleContent(params);
-        } catch (error) {
-            console.error("Error fetching article content:", error);
+      try {
+        const params = { type: "spec" };
+        if (articleId.value) {
+          params.id = articleId.value;
         }
-    }
+        article.value = await apiService.getArticleContent(params);
+      } catch (error) {
+        console.error("Error fetching article content:", error);
+      }
+    };
 
     onMounted(() => {
       getArticle();
@@ -43,7 +43,7 @@ export default {
     return {
       t,
       locale,
-      article
+      article,
     };
   },
 };
@@ -52,8 +52,10 @@ export default {
 <template>
   <Header />
   <main id="tech">
-    <div class="banner" style="background-image: url('/assets/img/spec_banner.webp');">
-    </div>
+    <div
+      class="banner"
+      style="background-image: url('/assets/img/spec_banner.webp')"
+    ></div>
 
     <div class="container">
       <div class="row">
@@ -66,18 +68,36 @@ export default {
               {{ t("header.index") }} / {{ t("header.productSpec") }}
             </div>
             <div class="col-12">
-                <h4>▎{{ article.get_title_attribute.find(attr => attr.language === locale)?.meta_value || '' }}</h4>
-                <div v-html="article.get_content_attribute.find(attr => attr.language === locale)?.meta_value || ''"></div>
+              <h4>
+                ▎{{
+                  article.get_title_attribute.find(
+                    (attr) => attr.language === locale
+                  )?.meta_value || ""
+                }}
+              </h4>
+              <div
+                v-html="
+                  article.get_content_attribute.find(
+                    (attr) => attr.language === locale
+                  )?.meta_value || ''
+                "
+              ></div>
             </div>
           </div>
+          <a
+            href="/assets/ylss_edm.pdf"
+            id="recurit-link-btn"
+            class="btn btn-primary w-100 mt-5"
+            target="_blank"
+          >
+            <span class="me-2">&gt;</span>YLSS EDM
+          </a>
         </div>
       </div>
     </div>
 
     <div id="mid_right_shape"></div>
     <div id="bottom_left_shape"></div>
-
-
   </main>
   <Footer />
 </template>
