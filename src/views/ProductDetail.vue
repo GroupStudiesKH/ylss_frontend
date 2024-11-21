@@ -16,7 +16,7 @@ export default {
     ProductMenu,
   },
   setup() {
-    const { locale } = useI18n();
+    const { t, locale } = useI18n();
     const products = ref({});
     const product = ref({});
     const route = useRoute();
@@ -98,6 +98,7 @@ export default {
     });
 
     return {
+      t,
       locale,
       products,
       product,
@@ -203,6 +204,15 @@ export default {
               </a>
             </div>
           </template>
+
+          <a
+            href="/assets/ylss_edm.pdf"
+            id="recurit-link-btn"
+            class="btn btn-primary w-100 mt-5"
+            target="_blank"
+          >
+            <span class="me-2">&gt;</span>{{ t("recurit.viewJobs") }}
+          </a>
         </div>
       </div>
     </div>
