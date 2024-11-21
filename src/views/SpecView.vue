@@ -86,7 +86,7 @@ export default {
           </div>
           <a
             href="/assets/ylss_edm.pdf"
-            id="recurit-link-btn"
+            id="link-btn"
             class="btn btn-primary w-100 mt-5"
             target="_blank"
           >

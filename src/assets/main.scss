@@ -1437,6 +1437,18 @@ main {
                 color: #666;
                 padding-bottom: 10px;
             }
+
+            #link-btn {
+                color: #fff;
+                background-color: #274e80;
+                padding: 15px 0;
+                font-size: 20px;
+
+                &:hover,
+                &:active {
+                    color: #fff !important;
+                }
+            }
         }
 
         #recurit_content {
