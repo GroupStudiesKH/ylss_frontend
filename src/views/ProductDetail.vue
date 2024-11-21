@@ -204,15 +204,6 @@ export default {
               </a>
             </div>
           </template>
-
-          <a
-            href="/assets/ylss_edm.pdf"
-            id="recurit-link-btn"
-            class="btn btn-primary w-100 mt-5"
-            target="_blank"
-          >
-            <span class="me-2">&gt;</span>YLSS EDM
-          </a>
         </div>
       </div>
     </div>
