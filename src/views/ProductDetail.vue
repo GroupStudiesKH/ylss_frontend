@@ -211,7 +211,7 @@ export default {
             class="btn btn-primary w-100 mt-5"
             target="_blank"
           >
-            <span class="me-2">&gt;</span>{{ t("recurit.viewJobs") }}
+            <span class="me-2">&gt;</span>YLSS EDM
           </a>
         </div>
       </div>
