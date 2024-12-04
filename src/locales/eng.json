@@ -105,15 +105,15 @@
     },
     "contact": {
       "title": "Yuan Long Stainless Steel Corp.",
-      "phase1": "Business Types: OEM Manufacturer/Exporter, Agency & Wholesale, Value-Added Distributor",
+      "phase1": "Business Types ： Manufacturer & Exporter",
       "phase2": "Main Products: 300 and 400 series stainless steel",
-      "phase3": "ISO and/or other safety/quality certifications: ISO 9001, ISO 50001, ISO 45001, ISO 14001, ISO 14064, ISO 14067, CNS 45001, ISO/IEC 17025, IATF 16949, JQA JIS G4305, BIS IS 6911"
+      "phase3": "ISO and/or other safety/quality certifications: ISO 9001, ISO 50001, ISO 45001, ISO 14001, ISO 14064, ISO 14067, CNS 45001, ISO/IEC 17025, IATF 16949, JIS MARK, BIS IS 6911, CNS MARK"
     }
   },
   "quality":{
     "title": "Quality Policy",
     "cert": {
-      "title": "ISO 9001, JIS mark, and IATF 16949 Quality Policy",
+      "title": "Quality Policy",
       "phase1": "We fully implement standards such as ISO 9001, JIS Q1001, and IATF 16949 to structure our quality management system, enhancing our expertise in stainless steel and improving service quality. We commit to continuous improvement, aiming to enhance product quality and achieve customer satisfaction. We pledge to set quality goals according to our quality policy and implement improvement measures based on customer and legal requirements to continuously enhance our quality management system."
     },
     "policy": {
@@ -142,14 +142,14 @@
       "iso45001": "ISO 45001 2018 version (20220729-20250708) Occupational Health and Safety Management System",
       "cns45001_1": "TOSHMS CNS 45001: 2018 (1110729-1140707) Taiwan Occupational Health Management System",
       "cns45001_2": "TOSHMS CNS 45001: 2018 (1110729-1140707) Taiwan Occupational Health Management System",
-      "iso14001": "ISO 14001 2015 version (20220729-20250721) Environmental Management System",
+      "iso14001": "ISO 14001: 2015 Environmental Management System",
       "iso14064": "ISO 14064-1 2018 version (20220810) Greenhouse Gas Verification Statement",
       "iso14067": "ISO 14067 2018 version (20230306-20250305) Carbon Footprint Verification Statement",
       "iso17025": "ISO/IEC 17025: 2017; CNS17025: 2018 Laboratory Accreditation Certificate",
       "iatf16949": "IATF 16949 2016 version (20240426-20270425) Automotive Quality Management System Certification",
-      "bis-is-6911": "BIS IS 6911",
+      "bis-is-6911": "BIS MARK",
       "cns8499": "CNS 8499",
-      "jis4305": "JQA JIS G 4305",
+      "jis4305": "JIS MARK",
       "cns17025": "ISO/IEC 17025: 2017; CNS17025: 2018 Laboratory Accreditation Certificate",
       "iso14046_ch": "ISO 14046 (2014 version) - Chinese",
       "iso14046_en": "ISO 14046 (2014 version) - English"

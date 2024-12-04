@@ -89,6 +89,14 @@ export default {
                       </div>
                       <p>{{ t("cert.lists.iso14046_en") }}</p>
                     </div>
+                    <div class="col-6 col-md-4" @click="openModal('/assets/img/cert/iso-14001-2015.webp')">
+                      <div class="clickable-image">
+                        <div class="class-text">{{ t("cert.heading1") }}</div>
+                        <div class="material-icons">&#xe8ff;</div>
+                        <img class="w-100" src="/assets/img/cert/iso-14001-2015.webp">
+                      </div>
+                      <p>{{ t("cert.lists.iso14001") }}</p>
+                    </div>
                   </div>
 
                   <!-- 職業安全衛生認證 -->
