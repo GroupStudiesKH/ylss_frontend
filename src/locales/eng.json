@@ -13,7 +13,7 @@
     "askingPrice": "Inquiry"
   },
   "footer": {
-    "address": "No. 28, Daye S. Rd., Xiaogang Dist., Kaohsiung City 812, Taiwan (R.O.C.)",
+    "address": "No.28 Da-Ye S. Rd., Lin-Hai Industrial Park, Xiaogang Dist., 812 Kaohsiung City, Taiwan(R.O.C.)",
     "phone": "+886-7-975-7988",
     "fax": "+886-7-975-7986",
     "email": "{'sales@ylss.com.tw'}",
@@ -88,8 +88,8 @@
     "title": "About YLSS",
     "managePolicy": {
       "title": "Management Principles",
-      "phase1": "/assets/img/company_intro_left_eng.gif",
-      "phase2": "/assets/img/company_intro_right_eng.gif"
+      "phase1": "/assets/img/company_intro_left_eng.webp",
+      "phase2": "/assets/img/company_intro_right_eng.webp"
     },
     "companyIntro": {
       "title": "About YLSS",
@@ -220,7 +220,7 @@
     "close": "Close",
     "isSending": "Sending message",
     "askingPriceEmpty": "You can find the products you want to inquire about on the product introduction page and add them to the inquiry form to contact us.",
-    "infoImg": "/assets/img/contact_info_eng.gif"
+    "infoImg": "/assets/img/contact_info_eng.webp"
   },
   "common": {
     "openMenu": "Open Category Menu",

@@ -46,12 +46,12 @@ export default {
                 </div>
                 <div class="col-12 mt-3">
                   <h3>▎{{ t("quality.cert.title") }}</h3>
-                  <p v-html="t('quality.cert.phase1')"></p>
+                  <!-- <p v-html="t('quality.cert.phase1')"></p> -->
                 </div>
 
 
                 <div class="col-12">
-                  <h5 class="my-2">{{ t("quality.policy.title") }}</h5>
+                  <!-- <h5 class="my-2">{{ t("quality.policy.title") }}</h5> -->
                   <br><br>
                   <div class="row">
                     <div class="col-12 col-md-6 mb-3 mb-md-0">

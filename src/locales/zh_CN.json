@@ -88,8 +88,8 @@
     "title": "关于远龙",
     "managePolicy": {
       "title": "经营方针",
-      "phase1": "/assets/img/company_intro_left_cn.gif",
-      "phase2": "/assets/img/company_intro_right_cn.gif"
+      "phase1": "/assets/img/company_intro_left_cn.webp",
+      "phase2": "/assets/img/company_intro_right_cn.webp"
     },
     "companyIntro": {
       "title": "关于远龙",
@@ -113,7 +113,7 @@
   "quality":{
     "title": "质量政策",
     "cert": {
-      "title": "ISO 9001、JIS mark及IATF 16949 质量政策",
+      "title": "质量政策",
       "phase1": "我们全面执行ISO 9001、JIS Q1001及IATF 16949等相关作业标准来构建质量管理系统，以提升不锈钢专业能力及服务质量，并落实持续改进精神提升质量与生产力，达到客户满意的水平。 我们承诺会依据质量政策建立质量目标，并在符合客户及法规要求基础上，进行各项改进措施以持续改进质量管理系统。"
     },
     "policy": {
@@ -220,7 +220,7 @@
     "close": "关闭",
     "isSending": "讯息送出中",
     "askingPriceEmpty": "您可以在产品介绍页面里找到你想询价的产品，并且加入询价表单与我们联系。",
-    "infoImg": "/assets/img/contact_info_cn.gif"
+    "infoImg": "/assets/img/contact_info_cn.webp"
   },
   "common": {
     "openMenu": "开启分类选单",
