@@ -4,7 +4,7 @@
     "companyIntro": "公司介绍",
     "product": "产品介绍",
     "productSpec": "产品规格",
-    "techEquipment": "技术设备",
+    "techEquipment": "制程设备",
     "news": "最新消息",
     "sustainability": "企业永续",
     "contact": "联系我们",
@@ -52,7 +52,7 @@
     "title": "产品规格"
   },
   "tech":{
-    "title": "专业技术",
+    "title": "生产流程",
     "phase1": "远龙拥有不锈钢冷轧制程核心设备，更具备重卷、分切、裁剪、检验等专业能力，并设有分条机满足客户不同宽度订单需求。",
     "phase2": "/assets/img/tech_content_cn.jpg"
   },

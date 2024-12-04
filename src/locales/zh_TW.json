@@ -4,7 +4,7 @@
     "companyIntro": "公司介紹",
     "product": "產品介紹",
     "productSpec": "產品規格",
-    "techEquipment": "技術設備",
+    "techEquipment": "製程設備",
     "news": "最新消息",
     "sustainability": "企業永續",
     "contact": "聯絡我們",
@@ -52,7 +52,7 @@
     "title": "產品規格"
   },
   "tech":{
-    "title": "專業技術",
+    "title": "生產流程",
     "phase1": "遠龍擁有不銹鋼冷軋製程核心設備，更具備重捲、分切、裁剪、檢驗等專業能力，並設有分條機滿足客戶不同寬度訂單需求。",
     "phase2": "/assets/img/tech_content.webp"
   },
